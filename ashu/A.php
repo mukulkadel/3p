@@ -27,8 +27,8 @@
     <div style="float:left;width:80%;">
       <div id="output" ></div>
     </div>
-    <!--  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    <script src="js/jquery-2.2.3.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <!-- <script src="js/jquery-2.2.3.min.js"></script>-->
           <script type="text/javascript">
           function searchq()
               {
@@ -36,7 +36,7 @@
                   var hosteller=$("input[name='hosteller']:checked").val();
                   $.ajax({
                     type:'post',
-                    url:'/search.php',
+                    url:'search.php',
                     data:{'searchVal':searchtxt,
                           'hosteller':hosteller},
                     success:function(out){
@@ -49,10 +49,10 @@
               function showDetails(reg_no){
                 $.ajax({
                   type:'post',
-                  url:'/search.php',
+                  url:'search.php',
                   data:{'reg_no':reg_no},
                   success:function(out){
-                    window.location='/show-detail.php'
+                    window.location='show-detail.php'
                   }
                 });
               }

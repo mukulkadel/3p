@@ -8,13 +8,14 @@
   <button id="professional" class="tabs">Professional</button>
   <button id="placement" class="tabs">Placement</button>
   <div id="output"></div>
-  <script src="js/jquery-2.2.3.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="js/jquery-2.2.3.min.js"></script>-->
   <script>
     $(document).ready(function(){
       $("#personal").click(function(){
         $.ajax({
           type:'post',
-          url:'/ajax.php',
+          url:'ajax.php',
           data:{action:'personal'},
           success:function(out){
             $("#output").html(out);
@@ -24,7 +25,7 @@
         $("#professional").click(function(){
           $.ajax({
             type:'post',
-            url:'/ajax.php',
+            url:'ajax.php',
             data:{action:'professional'},
             success:function(out){
               $("#output").html(out);
@@ -34,7 +35,7 @@
           $("#placement").click(function(){
             $.ajax({
               type:'post',
-              url:'/ajax.php',
+              url:'ajax.php',
               data:{action:'placement'},
               success:function(out){
                 $("#output").html(out);
