@@ -1,0 +1,48 @@
+
+		a.button {
+			color:#FFFF00;
+		}
+
+		.calendar {
+			width: 100%;
+			border: 1px solid #ddd;
+		}
+
+		.calendar td a {
+			text-decoration: none;
+			color: #006699;
+		}
+
+		.calendar td a:hover {
+			text-decoration: underline;
+			color: #FF0000;
+		}
+
+		.calendar td, .calendar th {
+			width: 13%;
+			border: 1px solid #dd2c00;
+			padding: 3px 3px 3px 3px;
+		}
+
+		.calendar th {
+			background-color: #FF6F00;
+			color: #FFFF00;
+			font-weight: bold;
+		}
+		.calendar td {
+			height: 50px;
+			font-weight: bold;
+			vertical-align: top;
+		}
+
+		.blank {
+			background-color: #FFECB3;
+		}
+
+		.weekend {
+			color: #999;
+		}
+
+		.occassion {
+			background-color: #ffCA28;
+		}
