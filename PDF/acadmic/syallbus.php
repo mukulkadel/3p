@@ -62,7 +62,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
       <ul class="clear">
         <li class="active"><a href="../index.php">Home</a></li>
-         <li><a href="ABOUTUS.php">about us</a></li>
+         <li><a href="../aboutus/index.php">about us</a></li>
            <li><a class="drop" href="#">Acadmic</a>
         <ul>
           <li><a href="#">Planning</a></li>
