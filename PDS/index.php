@@ -62,6 +62,7 @@
 											<li><a href="recruiters/gallery.php">Gallery</a></li>
 											<li><a href="recruiters/present.php">present</a></li>
 											<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="aboutus/about.php">About us</a></li>
@@ -88,13 +89,13 @@
 									<img src="files/images/01-slide.jpg" data-fullwidthcentering="on" alt="slide">
 									<div class="tp-caption first-line lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="250" data-speed="1000" data-start="200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">YOM-DOWNLOAD ANYTHING</div>
 									<div class="tp-caption second-line lfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="340" data-speed="1000" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">From Yom you can download anything for free</div>
-									<div class="tp-caption slider-btn sfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="510" data-speed="1000" data-start="2200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0"><a href="#" class="btn btn-slider">Discover More</a></div>
+									<div class="tp-caption slider-btn sfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="510" data-speed="1000" data-start="2200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0"><a href="#" class="btn btn-slider">login</a></div>
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
 									<img src="files/images/02-slide.jpg" data-fullwidthcentering="on" alt="slide">
 									<div class="tp-caption first-line lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="250" data-speed="1000" data-start="200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Create a Multi Author Blog</div>
 									<div class="tp-caption second-line lfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="340" data-speed="1000" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Using Yom you can create multi author Blog platform</div>
-									<div class="tp-caption slider-btn sfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="510" data-speed="1000" data-start="2200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0"><a href="#" class=" second-btn btn btn-slider">Discover More</a></div>
+									<div class="tp-caption slider-btn sfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="510" data-speed="1000" data-start="2200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0"><a href="#" class="  btn btn-slider">Discover More</a></div>
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
 									<img src="files/images/03-slide.jpg" data-fullwidthcentering="on" alt="slide">
@@ -169,10 +170,10 @@
         <div class="col-md-3">
           <h1>
             <a href="index.php">
-             YOM
+             PDS
             </a>
           </h1>
-          <p>©2015 Yom. All rights reserved.</p>
+          <p>©2017 PDS. All rights reserved.</p>
           <div class="spacing"></div>
           <ul class="socials">
             <li>
@@ -203,11 +204,15 @@
           <div class="links">
             <h4>Some pages</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">View some works here</a></li>
-              <li><a href="#">Follow our blog</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Our services</a></li>
+               <li><a href="#">login</a></li>
+             
+              <li><a href="index.php">Home</a></li>
+              <li><a href="aboutus/about.php">aboutus</a></li>
+               <li><a href="contactus/contact.php">Contact us</a></li>
+              <li><a href="internship/internship.php">internship</a></li>
+            
+             
+              
             </ul>
           </div>
           <div class="spacing"></div>
@@ -215,30 +220,28 @@
         <div class="col-md-3">
           <div class="spacing"></div>
           <div class="links">
-            <h4>Recent posts</h4>
+            <h4>placement</h4>
             <ul>
-              <li><a href="#">Hello World!</a></li>
-              <li><a href="#">This is the post title here</a></li>
-              <li><a href="#">Our happy day</a></li>
-              <li><a href="#">The first works done</a></li>
-              <li><a href="#">The cats and dogs</a></li>
+              <li><a href="acadmic/planning.php">planning</a></li>
+              <li><a href="acadmic/syllabus.php">syllabus</a></li>
+              <li><a href="placement/current.php">current</a></li>
+              <li><a href="placement/previous1year.php">previous one year</a></li>
+              <li><a href="placement/previous2year.php">previous two year</a></li>
             </ul>
           </div>
           <div class="spacing"></div>
         </div>
         <div class="col-md-3">
           <div class="spacing"></div>
-          <h4>Email updats</h4>
-          <p>We want to share our latest trends, news and insights with you.</p>
-          <form>
-            <input class="email-address" placeholder="Your email address" type="text">
-            <input class="button boxed small" type="submit">
-          </form>
-          <div class="spacing"></div>
-        </div>
-      </div>
-	  </div>
-      <div class="two spacing"></div>
+           <div class="links">
+          <h4>recruiters</h4>
+           <ul>
+              <li><a href="recruiters/gallery.php">gallery</a></li>
+              <li><a href="recruiters/present.php">present</a></li>
+              <li><a href="recruiters/upcoming.php">upcoming</a></li>
+              
+            </ul>
+         
     </footer>
 				
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
@@ -252,29 +255,30 @@
 				<div class="content">
 					<nav class="responsive-menu">
 						<ul>
-							<li><a href="index-2.php">Home</a></li>
-							<li class="menu-item-has-children"><a href="#">Pages</a>
+							<li><a href="index.php">Home</a></li>
+							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
 								<ul class="sub-menu">
-									<li><a href="services.php">Services</a></li>
-									<li><a href="clients.php">Clients</a></li>
+										<li><a href="acadmic/planning.php">Planning</a></li>
+										<li><a href="acadmic/syllabus.php">syllabus</a></li>								
+										</ul>
+							</li>
+							<li class="menu-item-has-children"><a href="#">Recruiters</a>
+								<ul class="sub-menu">
+									<li><a href="recruiters/gallery.php">Gallery</a></li>
+									<li><a href="recruiters/present.php">present</a></li>
+									<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
 								</ul>
 							</li>
-							<li class="menu-item-has-children"><a href="#">Blog</a>
+							<li><a href="aboutus/about.php">About us</a></li>
+							<li class="menu-item-has-children"><a href="#">placement</a>
 								<ul class="sub-menu">
-									<li><a href="blog.php">Blog Classic</a></li>
-									<li><a href="blog-grid.php">Blog Grid</a></li>
-									<li><a href="blog-single.php">Single Post</a></li>
+									<li><a href="placement/current.php">current</a></li>
+									<li><a href="placement/previous1year.php">previous 1 year</a></li>
+									<li><a href="placement/previous2year.php">previous 2 year</a></li>
 								</ul>
 							</li>
-							<li><a href="about.php">About</a></li>
-							<li class="menu-item-has-children"><a href="#">Works</a>
-								<ul class="sub-menu">
-									<li><a href="work-3columns.php">Three Columns</a></li>
-									<li><a href="work-4columns.php">Four Columns</a></li>
-									<li><a href="single-project.php">Single Project</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.php">Contact</a></li>
+							<li><a href="contactus/contact.php">Contact us</a></li>
+							<li><a href="internship/internship.php">Internship</a></li>
 						</ul>
 					</nav>
 				</div>

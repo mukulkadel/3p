@@ -135,17 +135,17 @@
 					</div>
 				</section>
 
-				<footer class="footer">
+			   <footer class="footer">
       <div class="three spacing"></div>
 	  <div class="container">
       <div class="row">
         <div class="col-md-3">
           <h1>
-            <a href="index.html">
-             YOM
+            <a href="../index.php">
+             PDS
             </a>
           </h1>
-          <p>©2015 Yom. All rights reserved.</p>
+          <p>©2017 PDS. All rights reserved.</p>
           <div class="spacing"></div>
           <ul class="socials">
             <li>
@@ -176,11 +176,15 @@
           <div class="links">
             <h4>Some pages</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">View some works here</a></li>
-              <li><a href="#">Follow our blog</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Our services</a></li>
+               <li><a href="#">login</a></li>
+             
+              <li><a href="../index.php">Home</a></li>
+              <li><a href="../aboutus/about.php">aboutus</a></li>
+               <li><a href="../contactus/contact.php">Contact us</a></li>
+              <li><a href="../internship/internship.php">internship</a></li>
+            
+             
+              
             </ul>
           </div>
           <div class="spacing"></div>
@@ -188,31 +192,30 @@
         <div class="col-md-3">
           <div class="spacing"></div>
           <div class="links">
-            <h4>Recent posts</h4>
+            <h4>placement</h4>
             <ul>
-              <li><a href="#">Hello World!</a></li>
-              <li><a href="#">This is the post title here</a></li>
-              <li><a href="#">Our happy day</a></li>
-              <li><a href="#">The first works done</a></li>
-              <li><a href="#">The cats and dogs</a></li>
+              <li><a href="../acadmic/planning.php">planning</a></li>
+              <li><a href="../acadmic/syllabus.php">syllabus</a></li>
+              <li><a href="../placement/current.php">current</a></li>
+              <li><a href="../placement/previous1year.php">previous one year</a></li>
+              <li><a href="../placement/previous2year.php">previous two year</a></li>
             </ul>
           </div>
           <div class="spacing"></div>
         </div>
         <div class="col-md-3">
           <div class="spacing"></div>
-          <h4>Email updats</h4>
-          <p>We want to share our latest trends, news and insights with you.</p>
-          <form>
-            <input class="email-address" placeholder="Your email address" type="text">
-            <input class="button boxed small" type="submit">
-          </form>
-          <div class="spacing"></div>
-        </div>
-      </div>
-	  </div>
-      <div class="two spacing"></div>
+           <div class="links">
+          <h4>recruiters</h4>
+           <ul>
+              <li><a href="../recruiters/gallery.php">gallery</a></li>
+              <li><a href="../recruiters/present.php">present</a></li>
+              <li><a href="../recruiters/upcoming.php">upcoming</a></li>
+              
+            </ul>
+         
     </footer>
+				
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 			</div>
@@ -224,29 +227,30 @@
 				<div class="content">
 					<nav class="responsive-menu">
 						<ul>
-							<li><a href="index-2.html">Home</a></li>
-							<li class="menu-item-has-children"><a href="#">Pages</a>
+							<li><a href="../index.php">Home</a></li>
+							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
 								<ul class="sub-menu">
-									<li><a href="services.html">Services</a></li>
-									<li><a href="clients.html">Clients</a></li>
+										<li><a href="../acadmic/planning.php">Planning</a></li>
+										<li><a href="../acadmic/syllabus.php">syllabus</a></li>								
+										</ul>
+							</li>
+							<li class="menu-item-has-children"><a href="#">Recruiters</a>
+								<ul class="sub-menu">
+									<li><a href="../recruiters/gallery.php">Gallery</a></li>
+									<li><a href="../recruiters/present.php">present</a></li>
+									<li><a href="../recruiters/upcoming.php">upcoming recruiters</a></li>
 								</ul>
 							</li>
-							<li class="menu-item-has-children"><a href="#">Blog</a>
+							<li><a href="aboutus/about.php">About us</a></li>
+							<li class="menu-item-has-children"><a href="#">placement</a>
 								<ul class="sub-menu">
-									<li><a href="blog.html">Blog Classic</a></li>
-									<li><a href="blog-grid.html">Blog Grid</a></li>
-									<li><a href="blog-single.html">Single Post</a></li>
+									<li><a href="../placement/current.php">current</a></li>
+									<li><a href="../placement/previous1year.php">previous 1 year</a></li>
+									<li><a href="../placement/previous2year.php">previous 2 year</a></li>
 								</ul>
 							</li>
-							<li><a href="about.html">About</a></li>
-							<li class="menu-item-has-children"><a href="#">Works</a>
-								<ul class="sub-menu">
-									<li><a href="work-3columns.html">Three Columns</a></li>
-									<li><a href="work-4columns.html">Four Columns</a></li>
-									<li><a href="single-project.html">Single Project</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="../contactus/contact.php">Contact us</a></li>
+							<li><a href="../internship/internship.php">Internship</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -258,38 +262,17 @@
 
 	
 
-	<script type="text/javascript" src="files/js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="files/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script src="files/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="files/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="../files/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="../files/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-	<script type="text/javascript" src="files/js/plugins.js"></script>
-	<script type="text/javascript" src="files/js/custom.js"></script>
+	<script type="text/javascript" src="../files/js/plugins.js"></script>
+	<script type="text/javascript" src="../files/js/custom.js"></script>
 
 	<!-- Google Map -->
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="files/js/jquery.gmap3.min.js"></script>
-
-	<!-- Google Map Init-->
-    <script type="text/javascript">
-        jQuery(function($){
-            $('.contact-map').gmap3({
-                marker:{
-                    address: '48.777300, 9.179664' 
-                },
-                    map:{
-                    options:{
-                    zoom: 15,
-                    scrollwheel: false,
-                    streetViewControl : true
-                    }
-                }
-            });
-        });
-    </script>
+    
 
 </body>
-
-<!-- Mirrored from torchtemplates.net/html/YOM/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jun 2015 08:35:04 GMT -->
 </html>
