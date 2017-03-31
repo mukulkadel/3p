@@ -1,3 +1,58 @@
+<?php
+//Include GP config file && User class
+include_once 'gpConfig.php';
+
+if(isset($_GET['code'])){
+	$gClient->authenticate($_GET['code']);
+	$_SESSION['token'] = $gClient->getAccessToken();
+	header('Location:' . filter_var($redirectURL, FILTER_SANITIZE_URL));
+}
+
+if (isset($_SESSION['token'])) {
+	$gClient->setAccessToken($_SESSION['token']);
+}
+
+if ($gClient->getAccessToken()) {
+	//Get user profile data from google
+	$gpUserProfile = $google_oauthV2->userinfo->get();
+
+
+	//Insert or update user data to the database
+    $gpUserData = array(
+        'oauth_provider'=> 'google',
+        'oauth_uid'     => $gpUserProfile['id'],
+        'first_name'    => $gpUserProfile['given_name'],
+        'last_name'     => $gpUserProfile['family_name'],
+        'email'         => $gpUserProfile['email'],
+        'gender'        => $gpUserProfile['gender'],
+        'locale'        => $gpUserProfile['locale'],
+        'picture'       => $gpUserProfile['picture'],
+        'link'          => $gpUserProfile['link']
+    );
+
+	//Storing user data into session
+	$_SESSION['userData'] = $gpUserData;
+
+	//Render facebook profile data
+/*    if(!empty($gpUserData)){
+        $output = '<h1>Google+ Profile Details </h1>';
+        $output .= '<img src="'.$gpUserData['picture'].'" width="300" height="220">';
+        $output .= '<br/>Google ID : ' . $gpUserData['oauth_uid'];
+        $output .= '<br/>Name : ' . $gpUserData['first_name'].' '.$gpUserData['last_name'];
+        $output .= '<br/>Email : ' . $gpUserData['email'];
+        $output .= '<br/>Gender : ' . $gpUserData['gender'];
+        $output .= '<br/>Locale : ' . $gpUserData['locale'];
+        $output .= '<br/>Logged in with : Google';
+        $output .= '<br/><a href="'.$gpUserData['link'].'" target="_blank">Click to Visit Google+ Page</a>';
+        $output .= '<br/>Logout from <a href="logout.php">Google</a>';
+    }else{
+        $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+    }*/
+} else {
+	$authUrl = $gClient->createAuthUrl();
+	//$output = '<a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="images/glogin.png" alt=""/></a>';
+}
+?>
 <!DOCTYPE html>
 <!--[if IE 9]>
 <html class="ie ie9" lang="en-US">
@@ -75,12 +130,37 @@
 									</li>
 									<li><a href="contactus/contact.php">Contact us</a></li>
 									<li><a href="internship/internship.php">Internship</a></li>
+                  <li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 				</header>
 
+        <!-- Login button Popup-->
+        <div id="login" class="modal fade" role="dialog" style="margin-top:100px;">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login with Google+</h4>
+                </div>
+                <div class="modal-body">
+                  <p><center>
+                    <a class="btn btn-block btn-social btn-google" style="background-color:#DD4B39;color:#ffffff;width:200px;" href="<?php echo filter_var($authUrl, FILTER_SANITIZE_URL);?>">
+                      <span class="fa fa-google"></span> Sign in with Google
+                    </a>
+                </center> </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+          </div>
+        </div>
 				<div class="slider">
 					<div class="fullwidthbanner-container">
 						<div class="fullwidthbanner">
@@ -279,6 +359,7 @@
 							</li>
 							<li><a href="contactus/contact.php">Contact us</a></li>
 							<li><a href="internship/internship.php">Internship</a></li>
+<li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
 						</ul>
 					</nav>
 				</div>
