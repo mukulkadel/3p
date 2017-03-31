@@ -74,7 +74,7 @@
 										</ul>
 									</li>
 									<li><a href="../contactus/contact.php">Contact us</a></li>
-									<li><a href="../internship/intenship.php">Internship</a></li>
+									<li><a href="../internship/internship.php">Internship</a></li>
 								</ul>
 							</nav>
 						</div>
