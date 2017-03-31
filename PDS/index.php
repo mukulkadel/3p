@@ -41,7 +41,7 @@
 					<div id="main-header" class="main-header header-sticky">
 						<div class="inner-header clearfix">
 							<div class="logo">
-								<a href="index-2.php">PDS</a>
+								<a href="index.php">PDS</a>
 							</div>
 							<div class="header-right-toggle pull-right hidden-md hidden-lg">
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
