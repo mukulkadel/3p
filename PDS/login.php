@@ -1,7 +1,7 @@
 <?php
 include_once 'check.php';
 $usr="root";
-$pass="Kadel@1998";
+$pass="";
 if(!empty($gpUserData)){
 		if(preg_match('/@poornima\.org/',$gpUserData['email'])){
 			$email = $_SESSION["userData"]['email'];

@@ -5,7 +5,7 @@
 //  $_SESSION["reg_no"]='PIET/CE/13/001';
   $email=$_SESSION["email"];
   $usr="root";
-  $pass="Kadel@1998";
+  $pass="";
   $reg_no = $_SESSION["reg_no"];
 
   //Storing session variables
