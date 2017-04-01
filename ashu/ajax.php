@@ -3,7 +3,7 @@
 
 //Initialization
 //  $_SESSION["reg_no"]='PIET/CE/13/001';
-  $_SESSION["email"]='umapiet517@poornima.org';
+ $_SESSION["email"]='umapiet517@poornima.org';
   $usr="root";
   $pass="";
 
@@ -15,7 +15,7 @@
       global $usr, $pass, $reg_no, $email;
       $output="";
       try{
-        $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+        $con = new PDO("mysql:host=localhost;port=3307;dbname=pdb",$usr,$pass);
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query="select * from personal where reg_no='$reg_no';";
         $q = $con->prepare($query);
@@ -42,7 +42,7 @@
       global $usr, $pass, $reg_no, $email;
       $output="";
       try{
-        $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+        $con = new PDO("mysql:host=localhost;port=3307;dbname=pdb",$usr,$pass);
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query="select * from pro where reg_no='$reg_no';";
         $q = $con->prepare($query);
@@ -70,7 +70,7 @@
       $output="";
       echo "Registration no:$reg_no<br/>\nEmail:$email<br/>\nPlacement: ";
       try{
-        $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+        $con = new PDO("mysql:host=localhost;port=3307;dbname=pdb",$usr,$pass);
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query="select * from placement where reg_no='$reg_no';";
         $q = $con->prepare($query);
