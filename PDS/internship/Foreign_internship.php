@@ -74,7 +74,7 @@
 										</ul>
 									</li>
 									<li><a href="../contactus/contact.php">Contact us</a></li>
-									<li><a href="#">Internship</a></li>
+									<li><a href="internship.php">Internship</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -90,10 +90,11 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-10">	
 					<div class="col-md-6">
-					<div class="col-md-6"></div><div class="col-md-6"><a href="AIT.pdf"><img src="Asian_Institute_of_Technology-Logo.png" alt="Asian_Institute_of_Technology-Logo" height="130"></a></div>
-					<a href="Northumbria_University.pdf"><img src="northumbria-logo.png" alt="Asian_Institute_of_Technology-Logo" height="130"></a></div>
-					<div class="col-md-6"><div class="col-md-6"><a href="Hanyang_University.pdf"><img src="Hanyang_University_new_UI.svg_-296x300.png" alt="Asian_Institute_of_Technology-Logo"  height="130"></a></div><div class="col-md-6"></div>
-					<a href="AISEC.pdf"><img src="AIESEC.png" alt="Asian_Institute_of_Technology-Logo"  height="130"></a></div>
+					<div class="col-md-6"></div><div class="col-md-6"><a href="AIT.pdf" target="_blank"><img src="Asian_Institute_of_Technology-Logo.png" alt="Asian_Institute_of_Technology-Logo" height="130"></a></div>
+					<a href="Northumbria_University.pdf" target="_blank"><img src="northumbria-logo.png" alt="Northumbria-Logo" height="130"></a></div>
+					<div class="col-md-6"><div class="col-md-6"><a href="Hanyang_University.pdf" target="_blank"><img src="Hanyang_University_new_UI.svg_-296x300.png" alt="Hanyang-University-Logo"  height="130"></a></div><div class="col-md-6"></div>
+					<a href="AISEC.pdf" target="_blank"><img src="AIESEC.png" alt="AIESEC-Logo"  height="130"></a>
+					</div>
 				</div>
 				<div class="col-md-1"></div>
 				</div>
