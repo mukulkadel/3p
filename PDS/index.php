@@ -168,19 +168,18 @@ if ($gClient->getAccessToken()) {
 						<div class="fullwidthbanner">
 							<ul>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/01-slide.jpg" data-fullwidthcentering="on" alt="slide">
-									<div class="tp-caption first-line lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="250" data-speed="1000" data-start="200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">YOM-DOWNLOAD ANYTHING</div>
-									<div class="tp-caption second-line lfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="340" data-speed="1000" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">From Yom you can download anything for free</div>
+									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
+									
 									
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/02-slide.jpg" data-fullwidthcentering="on" alt="slide">
+									<img src="files/images/22.png" data-fullwidthcentering="on" alt="slide">
 									<div class="tp-caption first-line lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="250" data-speed="1000" data-start="200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Create a Multi Author Blog</div>
 									<div class="tp-caption second-line lfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="340" data-speed="1000" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Using Yom you can create multi author Blog platform</div>
 									
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/03-slide.jpg" data-fullwidthcentering="on" alt="slide">
+									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
 									<div class="tp-caption first-line lft tp-resizeme start" data-x="center" data-hoffset="0" data-y="250" data-speed="1000" data-start="200" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Create an E-commerce Site</div>
 									<div class="tp-caption second-line lfb tp-resizeme start" data-x="center" data-hoffset="0" data-y="340" data-speed="1000" data-start="800" data-easing="Power4.easeOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0">Using Yom your can create a Multi Author E-Commerce Website</div>
 									

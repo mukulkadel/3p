@@ -95,19 +95,20 @@
 						<div class="col-sm-12 text-center">
 							<div id="projects-filter">
 								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".furniture">local</a>
-								<a href="#" data-filter=".wallpaper">other</a>
-								
+								<a href="#" data-filter=".furniture">furniture</a>
+								<a href="#" data-filter=".wallpaper">wallpaper</a>
+								<a href="#" data-filter=".nature">nature</a>
+								<a href="#" data-filter=".branding">branding</a>
 							</div>
 						</div>
 						<div class="row">
 							<div class="row" id="portfolio-grid">
 								<div class="item col-md-3 col-sm-5 col-xs-10 furniture">
 								<figure>
-			        					<img alt="author" src="../files/images/gallery/1.jpg">
+			        					<img alt="author" src="../files/images/gallery/13.jpg">
 			        					<figcaption>
-			            					<h3>Majestic Technosoft Pvt. Ltd.</h3>
-			            					<p>Majestic Technosoft’s award winning web design and digital marketing experts have helped hundreds of local, national and international clients achieve new levels of success through exemplary site designs, optimum web development and innovative & intelligent marketing campaigns.</p>
+			            					<h3>Plaid Authentic</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>	
 							    </div>
@@ -116,100 +117,100 @@
 										
 							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
 							  		<figure>
-			        					<img alt="2-image" src="../files/images/gallery/2.png">
+			        					<img alt="2-image" src="../files/images/gallery/14.png">
 			        					<figcaption>
-			            					<h3>Noto IT Solutions</h3>
-			            					<p>The company commenced its operations in Dot Net, PHP, Mobile Technology, Digital Marketing, SEO, Agile, IOS8, Windows 8.1, Android Lollipop, PhoneGap, Unity, SharePoint2013, Drupal, Joomla, Azure, Amazon web service, Magento and Laravel.</p>
+			            					<h3>Portland Neutral</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>	
 							    </div>
 							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
 							  		<figure>
-			        					<img alt="3-image" src="../files/images/gallery/3.png">
+			        					<img alt="3-image" src="../files/images/gallery/15.png">
 			        					<figcaption>
-			            					<h3>Cognizant</h3>
-			            					<p>Cognizant is an American multinational corporation that provides digital, technology, consulting, and operations services. </p>
+			            					<h3>Synth Thundercats</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
 							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
 							  		<figure>
-			        					<img alt="4-image" src="../files/images/gallery/4.png">
+			        					<img alt="4-image" src="../files/images/gallery/16.jpg">
 			        					<figcaption>
-			            					<h3>Activant Solutions</h3>
-			            					<p>Activant Solutions contributes to the continuous improvement of education and delivers best value. These services are delivered under direct contract or in partnership with private or public sector organizations.</p>
+			            					<h3>Bushwick Letterpress</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
 							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
 							  		<figure>
-			        					<img alt="5-image" src="../files/images/gallery/5.jpg">
+			        					<img alt="5-image" src="../files/images/gallery/17.png">
 			        					<figcaption>
-			            					<h3>Appirio</h3>
-			            					<p>Appirio is a global services company that helps customers create next-generation Worker & Customer Experiences using the latest cloud technologies. </p>
+			            					<h3>Fashion Heirloom</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 nature">
 							  		<figure>
-			        					<img alt="6-image" src="../files/images/gallery/6.png">
+			        					<img alt="6-image" src="../files/images/gallery/18.png">
 			        					<figcaption>
-			            					<h3>ARVA SOFTWARE</h3>
-			            					<p>Arva SoftwareSolution is an Innovative, Leading-edge BPO and IT Solutions Provider. </p>
+			            					<h3>Locavore Brooklyn</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding">
 							  		<figure>
-			        					<img alt="7-image" src="../files/images/gallery/7.png">
+			        					<img alt="7-image" src="../files/images/gallery/19.png">
 			        					<figcaption>
-			            					<h3>Infosys</h3>
-			            					<p>Infosys Limited is an Indian multinational corporation that provides business consulting, information technology .</p>
+			            					<h3>Meggings Mixtape</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper ">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper furniture">
 							  		<figure>
-			        					<img alt="8-image" src="../files/images/gallery/8.png">
+			        					<img alt="8-image" src="../files/images/gallery/20.png">
 			        					<figcaption>
-			            					<h3>Metacube Software</h3>
-			            					<p>We are a leading software product development services company, partnering with both start-ups and established players globally in their innovation journey. </p>
+			            					<h3>Normcore Dreamcatcher</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
 							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/9.png">
+			        					<img alt="9-image" src="../files/images/gallery/21.png">
 			        					<figcaption>
-			            					<h3>Nagarro</h3>
-			            					<p>Nagarro is a custom software development and business consulting company that provides consulting and technology services to its clients.</p>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
 							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/10.png">
+			        					<img alt="9-image" src="../files/images/gallery/22.1.png">
 			        					<figcaption>
-			            					<h3>Tata Consultancy Services</h3>
-			            					<p>Tata Consultancy Services' IT services, consulting and business solutions deliver real results to global.</p>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
 							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/11.png">
+			        					<img alt="9-image" src="../files/images/gallery/23.png">
 			        					<figcaption>
-			            					<h3>BigStep Technologies</h3>
-			            					<p></p>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture ">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
 							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/12.png">
+			        					<img alt="9-image" src="../files/images/gallery/24.jpg">
 			        					<figcaption>
-			            					<h3>Wipro</h3>
-			            					<p>Wipro demerged its non-IT businesses into a separate companies to bring in more focus on independent businesses.</p>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
 			        					</figcaption>
 			    					</figure>
 							    </div>
@@ -218,10 +219,10 @@
 						<div class="col-md-12">
 							<div class="portfolio-page-nav text-center">
 								<ul>
-									<li><a href="../recruiters/gallery.php"  class="current" >1</a></li>
-									<li><a href="../recruiters/gallery1.php" >2</a></li>
+									<li><a href="../recruiters/gallery.php"   >1</a></li>
+									<li><a href="../recruiters/gallery1.php" class="current" >2</a></li>
 									<li><a href="../recruiters/gallery2.php">3</a></li>
-									<li><a href="../recruiters/gallery1.php"><i class="fa fa-angle-double-right"></i></a></li>
+									<li><a href="../recruiters/gallery2.php"><i class="fa fa-angle-double-right"></i></a></li>
 								</ul>
 							</div>
 						</div>
