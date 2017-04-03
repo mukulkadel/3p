@@ -74,43 +74,29 @@
 										</ul>
 									</li>
 									<li><a href="../contactus/contact.php">Contact us</a></li>
-									<li><a href="../internship/internship.php">Internship</a></li>
+									<li><a href="#">Internship</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 				</header>
 
-				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
-					<div class="container">
-						<div class="page-name">
-							<h1>internship</h1>
-							<span>Lovely layout of heading</span>
-						</div>
-					</div>
-				</section>
-
 				<section>
-					<div align="left">
-						<p>
-							<h5>Our Vision</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
-
-							<h5>Our Mission</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
-
-							<h5>Quality Policy</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
-
-							<h5>Core Values</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
-						</p>
+					<div>
+						<h1>  Foreign Internship	</h1>
+						<p style="text-align: justify;">Internships have long been valued as a vital tool for college students and graduates to gain important work experience before embarking on a career path. But it has only been little over a decade that international internships and work abroad experiences have become ever-more-popular. In particular during the past few years due to a rapidly growing international work environment in many careers and companies internships abroad have caught the attention of companies, educators, and students as a valuable career tool. Keeping this in mind Poornima Foundation has tie up with following foreign institutions :</p>
 					</div>
-		    			<div align="center">
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/Summer_internship.php">Summer Internship</a></div>
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/foreign_internship.php">Foreign Internship</a></div>
-    					</div>
-					
+				<div class="container-fluid">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">	
+					<div class="col-md-6">
+					<div class="col-md-6"></div><div class="col-md-6"><a href="AIT.pdf"><img src="Asian_Institute_of_Technology-Logo.png" alt="Asian_Institute_of_Technology-Logo" height="130"></a></div>
+					<a href="Northumbria_University.pdf"><img src="northumbria-logo.png" alt="Asian_Institute_of_Technology-Logo" height="130"></a></div>
+					<div class="col-md-6"><div class="col-md-6"><a href="Hanyang_University.pdf"><img src="Hanyang_University_new_UI.svg_-296x300.png" alt="Asian_Institute_of_Technology-Logo"  height="130"></a></div><div class="col-md-6"></div>
+					<a href="AISEC.pdf"><img src="AIESEC.png" alt="Asian_Institute_of_Technology-Logo"  height="130"></a></div>
+				</div>
+				<div class="col-md-1"></div>
+				</div>
 				</section>
 
 			   <footer class="footer">
