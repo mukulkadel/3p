@@ -90,25 +90,141 @@
 
 				<section class="services on-services green">
 					<div class="container">
-					<div class="row">
+					<div class="row" style=" text-align: left;">
 						<div class="section-heading">
-							<h2>What We Offer</h2>
-							<div class="section-dec"></div>
+							<h2>rule & regulation</h2>
+						</div >
+						
+						<h3 style="color:white;">A. ELIGIBILITY & REGISTRATION</h3>
+						<h5>1.	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.<br>
+
+							2.	Registration for all programmes will be done during the month of August.<br>
+							3.Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.
+							</h5>
+
+
+
 						</div>
-						abc
+						<div class="row" style=" text-align: left;">
+						<h3 style="color:white;">B. RESUME</h3>
+						<h5>
+                            <ol>
+                                <li>	Students are advised to read the announcements made, go through the company website and apply only if interested.</li>
+
+<li>	Students are expected to follow the institute resume template available in the placement website for preparing the resumes.</li>
+
+<li>	The details of the resume have to be genuine and any student found violating this rule will be disallowed from the placement for the rest of the academic year.</li>
+
+<li>	Students have to upload and submit their resumes on the website to individual companies well before the deadline. Resume once submitted cannot be modified. DEADLINES WILL NOT BE EXTENDED UNDER ANY CIRCUMSTANCE.</li>
+
+                                <li>	Students are advised to avoid last minute uploading, as it may lead to delays and some may even be left out. </li>
+                            </ol>
+
+</h5>
 						</div>
-						<div class="row">
-						efg
+						<div class="row" style=" text-align: left;">
+						<h3 style="color:white;">C. PRE-PLACEMENT TALKS (PPT)</h3>
+						<h5>
+						1.	Notices of the PPT will be published in the placement website well in advance. Students should be seated in the venue 15 minutes before the scheduled start of the PPT.<br>
+
+2.	Students interested in a particular company, can attend its PPT. Attendance for PPT is not compulsory.<br>
+
+3.	Students must go through the complete selection process of a particular company, once their resumes are uploaded.<br>
+
+4.	Any clarification regarding salary break-up, job profile, place of work, bond details etc. must be sought from the companies during PPT or interview.<br>
+
+5.	DRESS CODE: Students must be formally dressed whenever they participate in any interaction with a company<br>
+
+**This office reserves the right to refuse permission to a student to attend the selection process/PPT, if they do not dress up formally. Students are expected to know the norms for formal wear; for the benefit of those who claim ignorance, please note that the following are strictly not allowed:<br>
+*	T-shirts with printed text; un-collawhite T-shirts;<br>
+*	Shorts<br>
+*	Jeans<br>
+*	Shirt not-tucked in<br>
+*	Chappals / flip-flops<br>
+
+						</h5>
+							
 						</div>
 					</div>
 				</section>
 
 				<section class="call-to-action-2">
 					<div class="container">
-					<div class="left-text hidden-xs">
-						<h4>Know Us Better, Read This</h4>
-						<p><em>Lorem </em><br><br>Inventore </p>
-					</div>
+					
+						
+							
+							<	<h4 style=" text-align:center;color:black;">Department of Computer Engineering </h4>
+								<h3 style=" text-align:center;color:black;">Schedule of placement activities for  each Session  </h3>
+								
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+</style>
+
+
+<table style="width:50%" align="center">
+  <tr>
+    <th>sr.no</th>
+    <th>  activity</th>
+    <th> for 6 sem</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>CRT-1(3 DAYS)</td>
+    <td>session for each  section daily </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>MOCK DRIVE 1</td>
+    <td>every student</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>MOCK DRIVE 2</td>
+    <td>every student</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>CRT-2(3 DAYS)</td>
+    <td>session for each  section daily </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>MOCK DRIVE 3</td>
+    <td>every student</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>MOCK DRIVE 4</td>
+    <td>every student</td>
+  </tr>
+  <tr>
+  	<th> sr.no. </th>
+  	<th> activity</th>
+  	<th> for 4 sem</th>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>MOCK DRIVE 1</td>
+    <td> every student</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>MOCK DRIVE 2</td>
+    <td> every student</td>
+  </tr>
+</table>
+								
+							
+					
 						
 					</div>
 				</section>

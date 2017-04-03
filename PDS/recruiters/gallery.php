@@ -90,87 +90,125 @@
 					</div>
 				</section>
 				
-				<section class="on-blog-grid">
+				<section class="portfolio on-portfolio">
 					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/01-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Manohar Raj</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/02-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Manohar Raj</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/03-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Syam Kesav</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/04-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Manohar Raj</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/05-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Manohar Raj</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="blog-item">
-									<a href="#"><img src="../files/images/06-blog.jpg" alt=""></a>
-									<h3><a href="#">Lorum Ipsum5</a></h3>
-									<span><a href="#">Manohar Raj</a> / <a href="#">6 June 2015</a> / <a href="#">Uncategorized</a></span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro atque dolore corporis et iste assumenda quas, cumque modi quibusdam. Eveniet modi aliquid ex...</p>
-									<div class="read-more">
-										<a href="../#">Read more</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="blog-page-nav text-center">
-									<ul>
-										<li><a href="#" class="current">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-									</ul>
-								</div>
+						<div class="col-sm-12 text-center">
+							<div id="projects-filter">
+								<a href="#" data-filter="*" class="active">Show All</a>
+								<a href="#" data-filter=".furniture">furniture</a>
+								<a href="#" data-filter=".wallpaper">wallpaper</a>
+								<a href="#" data-filter=".nature">nature</a>
+								<a href="#" data-filter=".branding">branding</a>
 							</div>
 						</div>
-					</div>	
+						<div class="row">
+							<div class="row" id="portfolio-grid">
+								<div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+								<figure>
+			        					<img alt="author" src="../files/images/1.png">
+			        					<figcaption>
+			            					<h3>Plaid Authentic</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>	
+							    </div>
+							    
+							    
+										
+							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							  		<figure>
+			        					<img alt="2-image" src="../files/images/2.png">
+			        					<figcaption>
+			            					<h3>Portland Neutral</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>	
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							  		<figure>
+			        					<img alt="3-image" src="../files/images/3.png">
+			        					<figcaption>
+			            					<h3>Synth Thundercats</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							  		<figure>
+			        					<img alt="4-image" src="../files/images/4.png">
+			        					<figcaption>
+			            					<h3>Bushwick Letterpress</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							  		<figure>
+			        					<img alt="5-image" src="../files/images/5.png">
+			        					<figcaption>
+			            					<h3>Fashion Heirloom</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 nature">
+							  		<figure>
+			        					<img alt="6-image" src="../files/images/6.png">
+			        					<figcaption>
+			            					<h3>Locavore Brooklyn</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding">
+							  		<figure>
+			        					<img alt="7-image" src="../files/images/7.png">
+			        					<figcaption>
+			            					<h3>Meggings Mixtape</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper furniture">
+							  		<figure>
+			        					<img alt="8-image" src="../files/images/8.png">
+			        					<figcaption>
+			            					<h3>Normcore Dreamcatcher</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
+							  		<figure>
+			        					<img alt="9-image" src="../files/images/9.png">
+			        					<figcaption>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							    <div class="item col-md-3 col-sm-5 col-xs-10 branding nature">
+							  		<figure>
+			        					<img alt="9-image" src="../files/images/10.png">
+			        					<figcaption>
+			            					<h3>Street Fanny</h3>
+			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+			        					</figcaption>
+			    					</figure>
+							    </div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="portfolio-page-nav text-center">
+								<ul>
+									<li><a href="../recruiters/gallery.php"  class="current" >1</a></li>
+									<li><a href="../recruiters/gallery.php" class="current">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</section>
                  <footer class="footer">
       <div class="three spacing"></div>

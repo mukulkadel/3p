@@ -74,6 +74,8 @@ if ($gClient->getAccessToken()) {
 	<link rel="stylesheet" href="files/css/font-awesome.min.css">
 	<link rel="stylesheet" href="files/css/style.css">
 	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
+	 <link href="calendar/cala.css" rel="stylesheet">
+  <script type="text/javascript" src="calendar/reoccurringEventsCal.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -189,27 +191,19 @@ if ($gClient->getAccessToken()) {
 				</div>
 				
 				
-
+<!--calender section-->
 				<section class="services green">
 					<div class="container">
 						<div class="section-heading">
-							<h2>What We Offer</h2>
+							<h2>our system are follow</h2>
 							<div class="section-dec"></div>
 						</div>
-						<div class="service-item col-md-4">
-							<span><i class="fa fa-support"></i></span>
-							<div class="tittle"><h3>Stylish Design</h3></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam numquam voluptates cumque inventore, quibusdam corporis consequatur amet.</p>
-						</div>
-						<div class="service-item col-md-4">
-							<span><i class="fa fa-cogs"></i></span>
-							<div class="tittle"><h3>Fully Responsive</h3></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam numquam voluptates cumque inventore, quibusdam corporis consequatur amet.</p>
-						</div>
-						<div class="service-item col-md-4">
-							<span><i class="fa fa-eye"></i></span>
-							<div class="tittle"><h3>Retina Ready</h3></div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam numquam voluptates cumque inventore, quibusdam corporis consequatur amet.</p>
+						<div class="service-item col-md-12">
+							 <script type="text/javascript">
+ 								 document.write(droplists());
+ 							 document.write(createMonth());
+ 							 </script>
+						
 						</div>
 					</div>
 				</section>

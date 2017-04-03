@@ -117,7 +117,7 @@
 										</div>
 									</div>
 							  		<figure>
-			        					<img alt="author" src="../files/images/01-portfolio.jpg">
+			        					<img alt="author" src="../files/images/1.png">
 			        					<figcaption>
 			            					<h3>Plaid Authentic</h3>
 			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -129,7 +129,7 @@
 										
 							    <div class="item col-md-4 col-sm-6 col-xs-12 wallpaper">
 							  		<figure>
-			        					<img alt="2-image" src="../files/images/02-portfolio.jpg">
+			        					<img alt="2-image" src="../files/images/2.png">
 			        					<figcaption>
 			            					<h3>Portland Neutral</h3>
 			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
