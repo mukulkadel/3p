@@ -3,6 +3,9 @@
 
   unset($_SESSION['token']);
   unset($_SESSION['userData']);
+  unset($_SESSION['reg_no']);
+  unset($_SESSION['name']);
+  unset($_SESSION['email']);
 //Reset OAuth access token
   $gClient->revokeToken();
 

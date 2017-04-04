@@ -7,12 +7,13 @@ if(!empty($gpUserData)){
 			$email = $_SESSION["userData"]['email'];
 		  $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
 		  $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		  $query="select reg_no from personal where email='$email';";
+		  $query="select reg_no,name from personal where email='$email';";
 		  $q = $con->prepare($query);
 		  $q->execute();
 		  if($q->rowCount()>0){
 		    $row = $q->fetchAll();
-		    $_SESSION["reg_no"]=$row[0][0];
+		    $_SESSION["reg_no"]=$row[0]["reg_no"];
+		    $_SESSION["name"]=$row[0]["name"];
 				$_SESSION["email"]=$_SESSION["userData"]['email'];
 		  }
 			header('Location:/3p/PDS/home/');
