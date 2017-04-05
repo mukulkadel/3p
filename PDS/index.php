@@ -74,8 +74,8 @@ if ($gClient->getAccessToken()) {
 	<link rel="stylesheet" href="files/css/font-awesome.min.css">
 	<link rel="stylesheet" href="files/css/style.css">
 	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
-	 <link href="calendar/cala.css" rel="stylesheet">
-  <script type="text/javascript" src="calendar/reoccurringEventsCal.js"></script>
+  	<link href="cala.css" rel="stylesheet">
+	<script type="text/javascript" src="reoccurringEventsCal.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -189,51 +189,23 @@ if ($gClient->getAccessToken()) {
 				
 				
 <!--calender section-->
-				<section class="services green">
+				<section>
 					<div class="container">
-						<div class="section-heading">
+						<div class="section-heading" style="background-color: #000000">
 							<h2>our system are follow</h2>
 							<div class="section-dec"></div>
 						</div>
-						<div class="service-item col-md-12">
-							 <script type="text/javascript">
- 								 document.write(droplists());
- 							 document.write(createMonth());
- 							 </script>
-						
-						</div>
-					</div>
-				</section>
-				
-				
-				<section class="call-to-action-1">
-					<div class="container">
-						<h4>text must</h4>
-						<p class="col-md-10 col-md-offset-1"></p>
-						<div class="buttons">
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="border-btn"><a href="#">Learn More</a></div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="btn-black"><a href="#">Buy This Theme</a></div>
+						<div class="col-md-12" align="center">
+							<div id="showCal" class="rounded">
+								<script type="text/javascript">
+								document.write(droplists());
+								document.write(createMonth());
+								</script>
 							</div>
 						</div>
-					</div>	
-				</section>
-				
-
-				
-
-				<section class="call-to-action-3">
-					<div class="container">
-						<div class="col-md-12">
-							<h4 class="col-md-10 col-sm-8"></h4>
-							<div class="btn-black col-md-2 col-sm-4"><a href="#">Take it now</a></div>
-						</div>
-					</div>
 				</section>
 
-			
+
                 <footer class="footer">
       <div class="three spacing"></div>
 	  <div class="container">

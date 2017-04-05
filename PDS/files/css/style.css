@@ -33,7 +33,7 @@ ul, ol, dl {
 }
 .green
 {
-background:#00FF33;
+background:#eceff1;
 }
 
 .spacing.three {
@@ -393,7 +393,7 @@ color:#333;
     padding-bottom: 0.42857rem;
     padding-left: 1.71429rem;
     font-size: 1.14286rem;
-    background-color:#78cb01;
+    background-color:#1C2331;
     border-color: #fff;
     color: #FFFFFF;
     transition: background-color 300ms ease-out;
