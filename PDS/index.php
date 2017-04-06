@@ -131,7 +131,12 @@ if ($gClient->getAccessToken()) {
 										</ul>
 									</li>
 									<li><a href="contactus/contact.php">Contact us</a></li>
-									<li><a href="internship/internship.php">Internship</a></li>
+									<li><a href="internship/internship.php" class="has-submenu">Internship</a>
+										<ul class="sub-menu">
+											<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
+											<li><a href="internship/foreign_internship.php">Foreign Internship</a></li>
+										</ul>
+									</li>
                   <li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
 								</ul>
 							</nav>
@@ -318,7 +323,12 @@ if ($gClient->getAccessToken()) {
 								</ul>
 							</li>
 							<li><a href="contactus/contact.php">Contact us</a></li>
-							<li><a href="internship/internship.php">Internship</a></li>
+							<li class="menu-item-has-children"><a href="internship/internship.php">Internship</a>
+								<ul class="sub-menu">
+									<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
+									<li><a href="placement/Foregin_internship.php">Foreign Internship</a></li>
+								</ul>
+							</li>
 <li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
 						</ul>
 					</nav>
