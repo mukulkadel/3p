@@ -2,7 +2,7 @@
 include_once 'check.php';
 $usr="root";
 $pass="";
-if(!empty($gpUserData)){
+if(isset($_SESSION["userData"])){
 		if(preg_match('/@poornima\.org/',$gpUserData['email'])){
 			$email = $_SESSION["userData"]['email'];
 		  $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);

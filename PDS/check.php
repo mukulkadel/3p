@@ -23,10 +23,8 @@ if ($gClient->getAccessToken()) {
         'first_name'    => $gpUserProfile['given_name'],
         'last_name'     => $gpUserProfile['family_name'],
         'email'         => $gpUserProfile['email'],
-        'gender'        => $gpUserProfile['gender'],
         'locale'        => $gpUserProfile['locale'],
         'picture'       => $gpUserProfile['picture'],
-        'link'          => $gpUserProfile['link']
     );
 
 	//Storing user data into session

@@ -129,6 +129,7 @@ CREATE TABLE `language` (
   `photoshop` varchar(50) DEFAULT NULL,
   `coral_draw` varchar(50) DEFAULT NULL,
   `other` varchar(50) DEFAULT NULL,
+  `cpp` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`reg_no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -139,6 +140,7 @@ CREATE TABLE `language` (
 
 LOCK TABLES `language` WRITE;
 /*!40000 ALTER TABLE `language` DISABLE KEYS */;
+INSERT INTO `language` VALUES ('PIET/CE/12/517','C','Java',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Perl','C++');
 /*!40000 ALTER TABLE `language` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -270,13 +272,46 @@ DROP TABLE IF EXISTS `requests`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `requests` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `reg_no` varchar(50) DEFAULT NULL,
   `email_alter` varchar(50) DEFAULT NULL,
   `mobile` varchar(50) DEFAULT NULL,
   `mobile_father` varchar(50) DEFAULT NULL,
+  `c` varchar(50) DEFAULT NULL,
+  `cpp` varchar(50) DEFAULT NULL,
+  `java` varchar(50) DEFAULT NULL,
+  `java_adv` varchar(50) DEFAULT NULL,
+  `android` varchar(50) DEFAULT NULL,
+  `php` varchar(50) DEFAULT NULL,
+  `html` varchar(50) DEFAULT NULL,
+  `iot` varchar(50) DEFAULT NULL,
+  `python` varchar(50) DEFAULT NULL,
+  `ruby` varchar(50) DEFAULT NULL,
+  `php_frame` varchar(50) DEFAULT NULL,
+  `mysql` varchar(50) DEFAULT NULL,
+  `oracle` varchar(50) DEFAULT NULL,
+  `net` varchar(50) DEFAULT NULL,
+  `javascript` varchar(50) DEFAULT NULL,
+  `objective_c` varchar(50) DEFAULT NULL,
+  `red_hat` varchar(50) DEFAULT NULL,
+  `ubuntu` varchar(50) DEFAULT NULL,
+  `ios` varchar(50) DEFAULT NULL,
+  `bootstrap` varchar(50) DEFAULT NULL,
+  `matlab` varchar(50) DEFAULT NULL,
+  `ml` varchar(50) DEFAULT NULL,
+  `data_mining` varchar(50) DEFAULT NULL,
+  `r` varchar(50) DEFAULT NULL,
+  `mongodb` varchar(50) DEFAULT NULL,
+  `angular_js` varchar(50) DEFAULT NULL,
+  `node_js` varchar(50) DEFAULT NULL,
+  `ms_office` varchar(50) DEFAULT NULL,
+  `photoshop` varchar(50) DEFAULT NULL,
+  `coral_draw` varchar(50) DEFAULT NULL,
+  `other` varchar(50) DEFAULT NULL,
   `status` varchar(50) DEFAULT 'PENDING',
-  `ts` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ts` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -285,7 +320,7 @@ CREATE TABLE `requests` (
 
 LOCK TABLES `requests` WRITE;
 /*!40000 ALTER TABLE `requests` DISABLE KEYS */;
-INSERT INTO `requests` VALUES ('PIET/CE/12/517','usshukla517@gmail.com','987654321','','PENDING',NULL),('PIET/CE/12/517','usshukla517@gmail.com','987654321','','PENDING',NULL),('PIET/CE/12/517','usshukla517@gmail.com','987654321','987654321','PENDING',NULL),('PIET/CE/12/517','usshukla517@gmail.com','987654321','987654321','PENDING',NULL);
+INSERT INTO `requests` VALUES (9,'PIET/CE/12/517','usshukla517@gmail.com','987654321','987654321','C','C++','JAVA',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Perl','DONE','2017-04-06 19:07:53'),(11,'PIET/CE/12/517','usshukla517@gmail.com','987654321','987653421','C','C++','JAVA','ADV. JAVA','ANDROID','PHP','HTML/CSS',NULL,'PYTHON','RUBY','PHP FRAME WORKS',NULL,NULL,'NET',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'ML/DEEP LEARNING','DATA MINING',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Perl','PENDING','2017-04-06 19:18:19');
 /*!40000 ALTER TABLE `requests` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -298,4 +333,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-06 10:48:58
+-- Dump completed on 2017-04-07  0:51:59

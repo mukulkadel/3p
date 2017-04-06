@@ -8,7 +8,34 @@
   $pass="";
   $reg_no = $_SESSION["reg_no"];
 
-
+    function getlanguage(){
+      global $usr, $pass, $reg_no, $email;
+      $output="";
+      try{
+        $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $query="select * from language where reg_no='$reg_no';";
+        $q = $con->prepare($query);
+        $q->execute();
+        if($q->rowCount()>0){
+          $row = $q->fetch();
+          for($i=1;$i<count($row)/2;$i++){
+            if(isset($row[$i])){
+              $output.=$row[$i].", ";
+            }
+          }
+          $output=rtrim($output,", ");
+        }
+        else{
+          $output="No records!";
+        }
+      }
+      catch(PDOException $e){
+        echo $e->getMessage();
+        echo "<br/>\nConnection error!";
+      }
+      return $output;
+    }
     function personal(){
       global $usr, $pass, $reg_no, $email;
       $output="";
@@ -26,6 +53,7 @@
           $output.="<tr>\n<td>"."Branch"."</td>\n<td> ".$row["branch"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Section"."</td>\n<td> ".$row["section"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."College"."</td>\n<td> ".$row["college"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Knowledge about"."</td>\n<td>".getlanguage()."</td></tr>\n";
           $output.="<tr>\n<td>"."DOB"."</td>\n<td> ".$row["dob"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Higher studies"."</td>\n<td> ".(($row["higher_studies"]=="")?"No":$row["higher_studies"]) ."</td></tr>\n";
           $output.="<tr>\n<td>"."Mobile "."</td>\n<td> ".$row["mobile"] ."</td></tr>\n";
@@ -67,40 +95,121 @@
         $q->execute();
         if($q->rowCount()>0){
           $row = $q->fetch();
-          $output="<table class=\"table\">";
-          $output.="<tr>\n<td>"."10th marks"."</td>\n<td> ".$row["marks10"]."/".$row["max10"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."10th percentage"."</td>\n<td> ".$row["percent10"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."10th YOP"."</td>\n<td> ".$row["pass10"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."12th medium"."</td>\n<td> ".$row["medium12"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."12th marks"."</td>\n<td> ".$row["marks12"]."/".$row["max12"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."12th percentage"."</td>\n<td> ".$row["percent12"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."12th YOP"."</td>\n<td> ".$row["pass12"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."12th board"."</td>\n<td> ".$row["board12"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Diploma percentage"."</td>\n<td> ".$row["percent_diplo"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Diploma year"."</td>\n<td> ".$row["year_diplo"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-1 marks"."</td>\n<td> ".$row["marks_sem1"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-1 percentage"."</td>\n<td> ".$row["percent_sem1"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-1 backs"."</td>\n<td> ".(($row["result_sem1"]=="0")?"None":$row["result_sem1"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-2 marks"."</td>\n<td> ".$row["marks_sem2"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-2 percentage"."</td>\n<td> ".$row["percent_sem2"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-2 backs"."</td>\n<td> ".(($row["result_sem2"]=="0")?"None":$row["result_sem2"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-3 marks"."</td>\n<td> ".$row["marks_sem3"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-3 percentage"."</td>\n<td> ".$row["percent_sem3"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-3 backs"."</td>\n<td> ".(($row["result_sem3"]=="0")?"None":$row["result_sem3"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-4 marks"."</td>\n<td> ".$row["marks_sem4"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-4 percentage"."</td>\n<td> ".$row["percent_sem4"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-4 backs"."</td>\n<td> ".(($row["result_sem4"]=="0")?"None":$row["result_sem4"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-5 marks"."</td>\n<td> ".$row["marks_sem5"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-5 percentage"."</td>\n<td> ".$row["percent_sem5"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-5 backs"."</td>\n<td> ".(($row["result_sem5"]=="0")?"None":$row["result_sem5"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-6 marks"."</td>\n<td> ".$row["marks_sem6"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-6 percentage"."</td>\n<td> ".$row["percent_sem6"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."SEM-6 backs"."</td>\n<td> ".(($row["result_sem6"]=="0")?"None":$row["result_sem6"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Total marks "."</td>\n<td> ".$row["marks_total"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Max. marks"."</td>\n<td> ".$row["marks_max"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."B.Tech. percentage"."</td>\n<td> ".$row["aggregate"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Total Backs"."</td>\n<td> ".$row["backs"] ."</td></tr>\n";
-          $output.="</table>";
+          $output="<div class=\"container-fluid\" style=\"text-align:center;font-size:1.2em;\">\n";
+            $output.="<div class=\"row\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="  <div class=\"panel-heading\">10th</div>\n";
+                  $output.="<div class=\"panel-body\">\n";
+                  $output.="  <table class=\"table\">\n";
+                    $output.="  <tr><td>Marks</td><td>".$row["marks10"]."/".$row["max10"]."</td></tr>\n";
+                    $output.="  <tr><td>Percentage</td><td>".$row["percent10"]."%</td></tr>\n";
+                      $output.="<tr><td>Year of pass</td><td>".$row["pass10"]."</td></tr>\n";
+                    $output.="</table>\n";
+                $output.="  </div>\n";
+              $output.="  </div>\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                  $output.="<div class=\"panel-heading\">12th</div>\n";
+                $output.="  <div class=\"panel-bod\">\n";
+                  $output.="  <table class=\"table\">\n";
+                    $output.="  <tr><td>Marks</td><td>".$row["marks12"]."/".$row["max12"]."</td></tr>\n";
+                    $output.="  <tr><td>Percentage</td><td>".$row["percent12"]."%</td></tr>\n";
+                    $output.="  <tr><td>Year of pass</td><td>".$row["pass12"]."</td></tr>\n";
+                    $output.="  <tr><td>Board</td><td>".$row["board12"]."</td></tr>\n";
+                    $output.="  <tr><td>Medium</td><td>".$row["medium12"]."</td></tr>\n";
+                  $output.="  </table>\n";
+                $output.="  </div>\n";
+              $output.="  </div>\n";
+              $output.="  <div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="  <div class=\"panel-heading\">Diploma</div>\n";
+                $output.="  <div class=\"panel-body\">\n";
+                if($row["percent_diplo"]!="0"){
+                  $output.="    <table class=\"table\">\n";
+                  $output.="    <tr><td>Percentage</td><td>".$row["percent_diplo"]."%</td></tr>\n";
+                  $output.="    <tr><td>Year</td><td>".$row["year_diplo"]."</td></tr>\n";
+                  $output.="  </table>\n";
+                }
+                else{
+                  $output.="No records!";
+                }
+                $output.="</div>\n";
+            $output.="</div>\n";
+          $output.="  <div class=\"row\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel-heading\">SEM-1</div>\n";
+                $output.="<div class=\"panel-body\">\n";
+                  $output.="<table class=\"table\">\n";
+                    $output.="<tr><td>Marks</td><td>".$row["marks_sem1"]."</td></tr>\n";
+                    $output.="<tr><td>Percentage</td><td>".$row["percent_sem1"]."%</td></tr>\n";
+                    $output.="<tr><td>Backs</td><td>".(($row["result_sem1"]=="0")?"None":$row["result_sem1"])."</td></tr>\n";
+                $output.="  </table>\n";
+                $output.="</div>\n";
+              $output.="</div>\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="  <div class=\"panel-heading\">SEM-2</div>\n";
+                $output.="<div class=\"panel-body\">\n";
+                  $output.="<table class=\"table\">\n";
+                    $output.="<tr><td>Marks</td><td>".$row["marks_sem2"]."</td></tr>\n";
+                    $output.="<tr><td>Percentage</td><td>".$row["percent_sem2"]."%</td></tr>\n";
+                    $output.="<tr><td>Backs</td><td>".(($row["result_sem2"]=="0")?"None":$row["result_sem2"])."</td></tr>\n";
+                  $output.="</table>\n";
+              $output.="  </div>\n";
+              $output.="</div>\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel-heading\">SEM-3</div>\n";
+                $output.="<div class=\"panel-body\">\n";
+                  $output.="<table class=\"table\">\n";
+                    $output.="<tr><td>Marks</td><td>".$row["marks_sem3"]."</td></tr>\n";
+                      $output.="<tr><td>Percentage</td><td>".$row["percent_sem3"]."%</td></tr>\n";
+                      $output.="<tr><td>Backs</td><td>".(($row["result_sem3"]=="0")?"None":$row["result_sem3"])."</td></tr>\n";
+                    $output.="</table>\n";
+                  $output.="</div>\n";
+                $output.="</div>\n";
+              $output.="</div>\n";
+              $output.="<div class=\"row\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                  $output.="<div class=\"panel-heading\">SEM-4</div>\n";
+                  $output.="<div class=\"panel-body\">\n";
+                    $output.="<table class=\"table\">\n";
+                      $output.="<tr><td>Marks</td><td>".$row["marks_sem4"]."</td></tr>\n";
+                      $output.="<tr><td>Percentage</td><td>".$row["percent_sem4"]."%</td></tr>\n";
+                      $output.="<tr><td>Backs</td><td>".(($row["result_sem4"]=="0")?"None":$row["result_sem4"])."</td></tr>\n";
+                    $output.="</table>\n";
+                  $output.="</div>\n";
+                $output.="</div>\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                  $output.="<div class=\"panel-heading\">SEM-5</div>\n";
+                  $output.="<div class=\"panel-body\">\n";
+                    $output.="<table class=\"table\">\n";
+                      $output.="<tr><td>Marks</td><td>".$row["marks_sem5"]."</td></tr>\n";
+                      $output.="<tr><td>Percentage</td><td>".$row["percent_sem5"]."%</td></tr>\n";
+                    $output.="  <tr><td>Backs</td><td>".(($row["result_sem5"]=="0")?"None":$row["result_sem5"])."</td></tr>\n";
+                    $output.="</table>\n";
+                  $output.="</div>\n";
+                $output.="</div>\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                  $output.="<div class=\"panel-heading\">SEM-6</div>\n";
+                  $output.="<div class=\"panel-body\">\n";
+                  $output.="  <table class=\"table\">\n";
+                      $output.="<tr><td>Marks</td><td>".$row["marks_sem6"]."</td></tr>\n";
+                      $output.="<tr><td>Percentage</td><td>".$row["percent_sem6"]."%</td></tr>\n";
+                      $output.="<tr><td>Backs</td><td>".(($row["result_sem6"]=="0")?"None":$row["result_sem6"])."</td></tr>\n";
+                    $output.="</table>\n";
+                $output.="  </div>\n";
+                $output.="</div>\n";
+              $output.="</div>\n";
+              $output.="<div class=\"row\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                  $output.="<div class=\"panel-heading\">B.Tech.</div>\n";
+                  $output.="<div class=\"panel-body\">\n";
+                    $output.="<table class=\"table\">\n";
+                      $output.="<tr><td>Marks</td><td>".$row["marks_total"]."/".$row["marks_max"]."</td></tr>\n";
+                    $output.="  <tr><td>Percentage</td><td>".$row["aggregate"]."%</td></tr>\n";
+                    $output.="  <tr><td>Total Backs</td><td>".(($row["backs"]=="0")?"None":$row["backs"])."</td></tr>\n";
+                    $output.="</table>\n";
+                  $output.="</div>\n";
+                $output.="</div>\n";
+              $output.="</div>\n";
+          $output.="  </div>\n";
         }
         else{
           $output="No records!";
@@ -115,7 +224,6 @@
     function placement(){
       global $usr, $pass, $reg_no, $email;
       $output="";
-      echo "Registration no:$reg_no<br/>\nEmail:$email<br/>\nPlacement: ";
       try{
         $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -123,9 +231,15 @@
         $q = $con->prepare($query);
         $q->execute();
         if($q->rowCount()>0){
-          while($row = $q->fetch()){
-            $output.=$row[1].", ";
+          $ctr=$q->rowCount();
+          $row = $q->fetchAll();
+          $output="<table class=\"table\">\n";
+          $output.="<tr><td rowspan=\"$ctr\" style=\"padding-top:40px\">Placed in</td>";
+          $output.="<td>".$row[0]["company"]."</td></tr>";
+          for($i=1;$i<$ctr;$i++){
+            $output.="<tr><td>".$row[$i]["company"]."</td></tr>";
           }
+          $output.="</table>";
         }
         else{
           $output="No records!";

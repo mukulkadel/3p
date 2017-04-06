@@ -1,5 +1,47 @@
 <?php
-include_once '../check.php';
+  session_start();
+try{
+  include_once '../check.php';
+}
+catch(Exception $e){
+  header("location:../logout.php");
+}
+
+//Initializing variables
+  $email=$_SESSION["email"];
+  $usr="root";
+  $pass="";
+  $reg_no = $_SESSION["reg_no"];
+
+  function showRequests(){
+      global $usr, $pass, $reg_no, $email;
+      $output="";
+      try{
+        $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $query="select id,status from requests where reg_no='$reg_no';";
+        $q = $con->prepare($query);
+        $q->execute();
+        if($q->rowCount()>0){
+          $row=$q->fetchAll();
+          $count=$q->rowCount();
+          $output="<table class=\"table\">\n";
+          $output.="<tr>\n<td>Request id</td>\n<td>Status</td>\n</tr>\n";
+          for($i=0;$i<$count;$i++){
+            $output.="<tr>\n<td>#".$row[$i]["id"]."</td>\n<td><span style=\"font-size:0.8em;\"class=\"label ".(($row[$i]["status"]=="DONE")?"label-success":"label-danger")."\">".$row[$i]["status"]."</span></td>\n</tr>\n";
+          }
+          $output.="</table>\n";
+        }
+        else{
+          $output="No records!";
+        }
+      }
+      catch(PDOException $e){
+        echo $e->getMessage();
+        echo "<br/>\nConnection error!";
+      }
+      return $output;
+    }
 ?>
 <!DOCTYPE html>
 <!--[if IE 9]>
@@ -12,7 +54,7 @@ include_once '../check.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Home | PDS</title>
+	<title>Show Requests | PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -69,20 +111,22 @@ include_once '../check.php';
               <div class="row">Email: <?php echo $_SESSION['email']; ?></div>
               <div class="row" style="margin-top:40px;">
               <ul style="list-style-type:none;">
-                <li><a href="./index.php" style="color:#ff0000;">Show Details</a></li>
-                  <li><a href="./update.php">Update</a></li>
-                <li><a href="./requests.php">Requests</a></li>
+                <li><a href="index.php">Show Details</a></li>
+                  <li><a href="./update.php"">Update</a></li>
+                <li><a href="./requests.php" style="color:#ff0000;">Requests</a></li>
               </ul>
               </div>
             </div>
             <div class="col-md-10">
-              <div>
-                <button id="personal" class="btn btn-default">Personal</button>
-                <button id="professional" class="btn btn-default">Professional</button>
-                <button id="placement" class="btn btn-default">Placement</button>
-              </div>
-              <div>
-                <div id="output" style=""></div>
+              <div class="container-fluid">
+                <div class="panel panel-default">
+                  <div class="panel-heading" style="height:70px;"><span style="font-size:1.3em;">Requests</span></div>
+                  <div class="panel-body" style="text-align:center;">
+                    <div class="container">
+                      <?php echo showRequests(); ?>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </section>
@@ -203,49 +247,6 @@ include_once '../check.php';
 
   <!--  ajax calls for data-->
   <script>
-      $(document).ready(function(){
-        $("#personal").click(function(){
-            $("#personal").attr("class","btn");
-            $("#professional").attr("class","btn btn-default");
-            $("#placement").attr("class","btn btn-default");
-          $.ajax({
-            type:'post',
-            url:'ajax.php',
-            data:{action:'personal'},
-            success:function(out){
-              $("#output").html(out);
-            }
-          });
-        });
-          $("#professional").click(function(){
-              $("#personal").attr("class","btn btn-default");
-              $("#professional").attr("class","btn");
-              $("#placement").attr("class","btn btn-default");
-            $.ajax({
-              type:'post',
-              url:'ajax.php',
-              data:{action:'professional'},
-              success:function(out){
-                $("#output").html(out);
-              }
-            });
-          });
-            $("#placement").click(function(){
-                $("#personal").attr("class","btn btn-default");
-                $("#professional").attr("class","btn btn-default");
-                $("#placement").attr("class","btn");
-              $.ajax({
-                type:'post',
-                url:'ajax.php',
-                data:{action:'placement'},
-                success:function(out){
-                  $("#output").html(out);
-                }
-              });
-            });
-
-          $("#personal").click();
-      });
       function logout(){
         window.location="../logout.php"
       }
