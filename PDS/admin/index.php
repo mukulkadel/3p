@@ -27,11 +27,9 @@
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
-	<script type="text/javascript">
-       $(document).ready(function(){
-	   $('#slider').slider();
-	   });
-	</script>
+
+      
+
 
 </head>
 <body>
@@ -96,12 +94,12 @@
 					
 					<div class="container-fluid">
 					 <form method="post" action="search.php">
-      <input type="text" name="searchVal" onKeyUp="searchq()"/>
-      <input type="submit" name="submit" value="search"/>
+    <label>Search by name or registration number-:</label><br/>  <input type="text" name="searchVal" onKeyUp="searchq()"/>
+      
       </form>
 	  
 	   <div style="float:left;width:20%;min-width:150px;">
-        Hosteller <br/>
+        <label>Hosteller-:</label> <br/>
         <form onchange="searchq()">
           <input type="radio" name="hosteller" value="H" />Yes<br/>
           <input type="radio" name="hosteller" value="D" />NO<br/>
@@ -115,7 +113,7 @@
 	<!--According to language known-->
 	<!--Checkboxes-->
 	<div class="container-fluid" style="overflow-y:scroll; height:200px">
-	On the bases of languages
+	<label>On the bases of languages-:</label>
 	 <form  method="post" action="search.php" onClick="searchq()">
 	 <input type="checkbox" name="a" value="C" />C<br/>
 	 <input type="checkbox" name="b" value="CPP" />C++<br/>
@@ -156,40 +154,36 @@
 	  <br/>
 	   <br/>
     </div>
-	
-	
-	<div class="container-fluid">
-	   Max-marks:<span id="spanoutput"></span><br/>
-	   <label for="txtminmarks">minimum marks</label><br/><br/>
-	   <input type="text" id="txtminmarks"/><br/><br/>
-	   <label for="txtmaxmarks">maximum marks</label><br/><br/>
-	   <input type="text" id="txtmaxmarks"/><br/><br/>
-	</div>
+	<br/>
+
 	  
 	<!--range filter -->
 <!--on the basis of btech aggregate -->
 	<div class="container-fluid">
+	   <label>On the bases of percentage-:</label>
+	
  <form onchange="searchq()" method="post" action="search.php">
- <input type="range" min="0" max="100" id="min_range" name="min_range" step="0" value="100"></br>
+ <input type="range" min="0" max="100" id="min_range" name="min_range" step="0" value="0"></br>
 		<!--12th aggregate -->
 <span id="range"> </span>
 	  </form>
 	  
 <!--12th aggregate -->	  
 <form method="post" onchange="searchq()" action="search.php">
-<input type="range" min="0"  max="100" id="twelve" name="twelve" step="0" value="100"></br>
+<input type="range" min="0"  max="100" id="twelve" name="twelve" step="0" value="0"></br>
 <span id="range1"> </span>
 </form>	
 
 <!--10th aggregate -->
 <form onchange="searchq()" method="post" action="search.php">
-<input type="range" min="0" max="100" id="tenth" name="tenth" step="0" value="100"></br>
+<input type="range" min="0" max="100" id="tenth" name="tenth" step="0" value="0"></br>
 <span id="range2"></span>
 </form>  
 </div>
 
 
 <div class="container-fluid">
+    <label>On the bases of Backlogs-:</label>
 	<!--filter according backlogs-->   
       <form method="post" action="search.php">
       <input type="number" name="subm" onKeyUp="searchq()"/>Backlogs
@@ -395,9 +389,9 @@
 				  var ae=$("input[name='ae']:checked").val();
 
 
-				  $("#range").text("B.TECH Aggregate less than:"+min_range);
-				  $("#range1").text("12th Aggregate less than:"+twelve);
-				  $("#range2").text("10th Aggregate less than:"+tenth);
+				  $("#range").text("B.TECH Aggregate greater than:"+min_range);
+				  $("#range1").text("12th Aggregate greater than:"+twelve);
+				  $("#range2").text("10th Aggregate greater than:"+tenth);
                   $.ajax({
                     type:'post',
                     url:'search.php',
