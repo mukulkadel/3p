@@ -159,8 +159,14 @@
 	  
 	<!--range filter -->
 <!--on the basis of btech aggregate -->
+
+
+
+
+
 	<div class="container-fluid">
 	   <label>On the bases of percentage-:</label>
+	
 	
  <form onchange="searchq()" method="post" action="search.php">
  <input type="range" min="0" max="100" id="min_range" name="min_range" step="0" value="0"></br>
@@ -181,7 +187,44 @@
 </form>  
 </div>
 
+<div class="container-fluid">
+  <form  method="post" action="search.php">
+<label>Search by Aggregate percentage in between-:</label><br/> 
+MIN <input type="text" style="width:50px;" name="min1" onKeyUp="searchq()"/>
+MAX <input type="text" style="width:50px;" name="max1" onKeyUp="searchq()"/>
 
+<span id="range2"></span>
+</form>  
+</div>
+<br/>
+<br/>
+
+<div class="container-fluid">
+  <form  method="post" action="search.php">
+<label>Search by 12th percentage in between-:</label><br/> 
+MIN <input type="text" style="width:50px;" name="min2" onKeyUp="searchq()"/>
+MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
+
+<span id="range2"></span>
+</form>  
+</div>
+
+
+<br/>
+<br/>
+
+<div class="container-fluid">
+  <form  method="post" action="search.php">
+<label>Search by 10th percentage in between-:</label><br/> 
+MIN <input type="text" style="width:50px;" name="min3" onKeyUp="searchq()"/>
+MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
+
+<span id="range2"></span>
+</form>  
+</div>
+
+<br/>
+<br/>
 <div class="container-fluid">
     <label>On the bases of Backlogs-:</label>
 	<!--filter according backlogs-->   
@@ -200,12 +243,7 @@
 					
 					
 				</section>
-				<div id="import">
-				<form action="excel.php" method="post">
-				<input type="submit" name="export_excel" class="btn-btn-sucess" value="Export to excel"/>
-				
-				</form>
-                </div>
+		
 
 				
 
@@ -356,9 +394,15 @@
 				  var tenth=$("input[name='tenth']").val();
 			      var searchtxt=$("input[name='searchVal']").val();
                   var hosteller=$("input[name='hosteller']:checked").val();
+				  var min1=$("input[name='min1']").val();
+				  var max1=$("input[name='max1']").val();
+				  var min2=$("input[name='min2']").val();
+				  var max2=$("input[name='max2']").val();
+				  var min3=$("input[name='min3']").val();
+			      var max3=$("input[name='max3']").val();
 				  var a=$("input[name='a']:checked").val();
 				  var b=$("input[name='b']:checked").val();
-				   var c=$("input[name='c']:checked").val();
+				  var c=$("input[name='c']:checked").val();
 				  var d=$("input[name='d']:checked").val();
 				  var e=$("input[name='e']:checked").val();
 				  var f=$("input[name='f']:checked").val();
@@ -401,6 +445,13 @@
 						  'twelve':twelve,
 						  'tenth':tenth,
 						  'subm':subm,
+						  'max1':max1,
+						  'min1':min1,
+						  'max2':max2,
+						  'min2':min2,
+						  'max3':max3,
+						  'min3':min3,
+						  
 						 'a':a,'b':b,'c':c,'d':d,'e':e,
 						 'f':f,'g':g,'h':h,'i':i,'j':j,
 						 'k':k,'l':l,'m':m,'n':n,'o':o,
@@ -425,6 +476,7 @@
                   }
                 });
               }
+			  searchq();
           </script>
     
 

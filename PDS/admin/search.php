@@ -188,13 +188,29 @@ if($_POST['ae']!="")
 }
 
 
-
+	if(($_POST['min1'] && $_POST['max1'])!="" )
+	{
+	
+	 $query.="and pro.aggregate BETWEEN '".$_POST['min1']."'AND '".$_POST['max1']."'";
+	}
+	
+		if(($_POST['min2'] && $_POST['max2'])!="" )
+	{
+	
+	 $query.="and pro.percent12 BETWEEN '".$_POST['min2']."'AND '".$_POST['max2']."'";
+	}
+	
+		if(($_POST['min3'] && $_POST['max3'])!="" )
+	{
+	
+	 $query.="and pro.percent10 BETWEEN '".$_POST['min3']."'AND '".$_POST['max3']."'";
+	}
 
  //query to filter according to aggregate B.TECH percentage
      if($_POST['min_range']!="")
 	 $query.="and pro.aggregate >= '".$_POST['min_range']."'";
-	//echo $query;
-	// $query.="aggregate BETWEEN '".$_POST['min_range']."'AND '".$_POST['max_range']."'";
+	 
+
 	
 	
 	//query to filter according to aggregate 12th percentage
@@ -211,16 +227,19 @@ if($_POST['ae']!="")
 	 $query.="and pro.backs >= '".$_POST['subm']."'";
 	//echo $query;
      $query.=";";
+	 $_SESSION['varname'] = $query;
 	  $c=$con->prepare($query);
      $c->execute();
  if($c->rowCount()> 0)
      {
-         $output="<table border=\"1\">";
+         $output="<table class=\"table\">";
            while($rows=$c->fetch())
          {
+		  
            $reg_no=$rows['reg_no'];
            $output.="<tr><td>".$rows['reg_no']."</td><td>".$rows['name']."</td><td><button onclick=\"showDetails('$reg_no')\">Show Details</button></td></tr>\n";
           }
+		   $output.="<center><tr><td>".'<input type="button" value="Excel Format" class="btn btn-success"  onclick="location.href = \'http://localhost/3p/PDS/admin/excel.php\' ;"/>'."</td><td></center>";
          $output.="</table>";
      }
      else{
@@ -230,5 +249,6 @@ if($_POST['ae']!="")
 
   
 echo $output;
+
 
 ?>

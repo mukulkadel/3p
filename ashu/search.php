@@ -4,6 +4,7 @@ $name="";
 $output="";
 $usr="root";
 $pass="";
+error_reporting(0);
 
 
 if(isset($_POST['reg_no'])){
@@ -21,8 +22,35 @@ if(isset($_POST['reg_no'])){
 	//query for filter hostellers 
     if($_POST['hosteller']!="L")
 	{
-	$query.=" and (hosteller='".$_POST['hosteller']."'or hosteller='')";
+	$query.=" and (personal.hosteller='".$_POST['hosteller']."'or personal.hosteller='')";
 	}else{}
+	//filter by language
+	 if($_POST['check']!="")
+	{
+			$a=$_POST['check'];
+			$string = implode('/', $a);
+			echo $string;
+		
+			$query.=" and txp= '".$string."'";
+   //         $ashquery="select personal.reg_no,name from personal,pro txp='".$string."'".";";	
+		//    $a=$con->prepare($ashquery);
+          //  $a->execute();
+		//	$results = $a->fetchAll(PDO::FETCH_ASSOC);
+		//	$strings= implode(',',$results);
+			//print_r($results);
+           // $ProductID = $row['ProductID'];
+            }	
+ 		//	echo $query;
+		//	$pattern="/^"+$query+"$/i";//we will write query
+		//	$matched= preg_match($pattern,$string);
+		//		if($matched)
+		//		{
+		//			 echo $string;
+		//			 echo "Here we are";
+		//			 again there is a query
+		//		} else{echo "You are a loser you cannt do anything";}
+	 
+	}else{echo "You lose";}
 	
 	
  // $query.="aggregate BETWEEN '".$_POST['']."'AND '".$_POST['']."'";
@@ -71,7 +99,7 @@ if(isset($_POST['reg_no'])){
            $output="No result";
      }
 
-    }
+    
 echo $output;
 
 ?>
