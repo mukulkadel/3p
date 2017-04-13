@@ -88,16 +88,26 @@
 
 				
 				<section class="contact-map-wrapper">
-					<div class="container">
+				
+				
+<div class="container">
 <div class="col-sm-3 col-md-3">
 					
-					
-					<div class="container-fluid">
-					 <form method="post" action="search.php">
-    <label>Search by name or registration number-:</label><br/>  <input type="text" name="searchVal" onKeyUp="searchq()"/>
+<!-- Search by name or registration number-->					
+<div class="container-fluid">
+<form method="post" action="search.php">
+ <label>Search by name or registration number-:</label><br/>  <input type="text" name="searchVal" onKeyUp="searchq()"/>
       
       </form>
 	  
+	  	<br/>
+    <label>On the bases of Backlogs-:</label>
+	<!--filter according backlogs-->   
+      <form method="post" action="search.php">
+      <input type="number" name="subm" onKeyUp="searchq()"/>Backlogs
+      </form>	   
+	
+	  <br/>
 	   <div style="float:left;width:20%;min-width:150px;">
         <label>Hosteller-:</label> <br/>
         <form onchange="searchq()">
@@ -109,10 +119,18 @@
          </form>
     </div>
 	<br/>
+	
+
+	
+	
 	</div>
+	
+	
+	
 	<!--According to language known-->
 	<!--Checkboxes-->
-	<div class="container-fluid" style="overflow-y:scroll; height:200px">
+	<button href="#Ash" class="btn btn-default" data-toggle="collapse">Search by language</button>
+	<div id="Ash"  style="overflow-y:scroll; height:100px" class="collapse" >
 	<label>On the bases of languages-:</label>
 	 <form  method="post" action="search.php" onClick="searchq()">
 	 <input type="checkbox" name="a" value="C" />C<br/>
@@ -124,7 +142,7 @@
 	 <input type="checkbox" name="g" value="HTML/CSS" />HTML/CSS<br/>
 	 <input type="checkbox" name="h" value="IOT/ROBOTICS/EMBEDED"/>IOT/ROBOTICS/EMBEDED<br/>
 	 <input type="checkbox" name="i" value="PYTHON" />PYTHON<br/>
-	 <input type="checkbox" name="j" value="RUBY"/>DRUBY<br/>
+	 <input type="checkbox" name="j" value="RUBY"/>RUBY<br/>
 	 <input type="checkbox" name="k" value="PHP_FRAME" />PHP_FRAME<br/>
 	 <input type="checkbox" name="l" value="MYSQL" />MYSQL<br/>
 	 <input type="checkbox" name="m" value="ORACLE" />ORACLE<br/>
@@ -164,7 +182,9 @@
 
 
 
-	<div class="container-fluid">
+
+<a href="#Eminem" aria-expanded="false" class="btn btn-default" data-toggle="collapse">percentage(Sliders)</a>
+<div  id="Eminem" class="collapse">
 	   <label>On the bases of percentage-:</label>
 	
 	
@@ -187,7 +207,12 @@
 </form>  
 </div>
 
-<div class="container-fluid">
+
+<a href="#Hip-Hop" aria-expanded="false" class="btn btn-default" data-toggle="collapse">percentage(min-max)</a>
+<div class="container-fluid" id="Hip-Hop" >
+
+
+
   <form  method="post" action="search.php">
 <label>Search by Aggregate percentage in between-:</label><br/> 
 MIN <input type="text" style="width:50px;" name="min1" onKeyUp="searchq()"/>
@@ -195,11 +220,11 @@ MAX <input type="text" style="width:50px;" name="max1" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
 </form>  
-</div>
+
 <br/>
 <br/>
 
-<div class="container-fluid">
+
   <form  method="post" action="search.php">
 <label>Search by 12th percentage in between-:</label><br/> 
 MIN <input type="text" style="width:50px;" name="min2" onKeyUp="searchq()"/>
@@ -207,13 +232,13 @@ MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
 </form>  
-</div>
+
 
 
 <br/>
 <br/>
 
-<div class="container-fluid">
+
   <form  method="post" action="search.php">
 <label>Search by 10th percentage in between-:</label><br/> 
 MIN <input type="text" style="width:50px;" name="min3" onKeyUp="searchq()"/>
@@ -221,25 +246,18 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
 </form>  
-</div>
 
-<br/>
-<br/>
-<div class="container-fluid">
-    <label>On the bases of Backlogs-:</label>
-	<!--filter according backlogs-->   
-      <form method="post" action="search.php">
-      <input type="number" name="subm" onKeyUp="searchq()"/>Backlogs
-      </form>	   
-	</div>
-	
+</div>
 	
 </div>
 					
 				
 					
-<div class="col-sm-9 col-md-9"> <div class="container-fluid" id="output"> </div>   </div>
-					</div>
+<div class="col-sm-9 col-md-9"> <div class="container-fluid" id="output"> </div>  
+
+
+</div>
+</div>
 					
 					
 				</section>
@@ -386,6 +404,10 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 	
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	 <script type="text/javascript">
+
+
+
+
           function searchq()
               {
 			      var subm=$("input[name='subm']").val();
@@ -477,6 +499,8 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
                 });
               }
 			  searchq();
+			  
+			  
           </script>
     
 

@@ -1,14 +1,3 @@
-<?php
-$text1=$_POST['text1'];
-$text2=$_POST['text2'];
-$text3=$_POST['text3'];
-$text4=$_POST['text4'];
-$text5=$_POST['text5'];
-$text6=$_POST['text6'];
-
-?>
-
-
 <!DOCTYPE html>
 <!--[if IE 9]>
 <html class="ie ie9" lang="en-US">
@@ -91,41 +80,60 @@ $text6=$_POST['text6'];
 						</div>
 					</div>
 				</header>
+				
+				
+
 
 
 <section class="contact-map-wrapper">
+<div class="container">
+<form method="post" action="form.php">
+<table  class="table">
 
-<div class="col-sm-3 col-md-3"></div>
-
-
-				<div id="card" class="">
-				
-				
-					<center><h4>POORNIMA FOUNDATION</h4>
-<h3>Poornima Mission for Training Placement and Outreach</h3></center>
-
-REPORT OF  <?php echo $text1; ?> RECRUITMENT DRIVE<br/>
-
-<?php echo $text1; ?> has visited Poornima Foundatation on <?php echo $text2; ?>  . Maximum <?php echo $text3; ?>  from department of Computer Engineering were eligible. <br/>
- The procedures of selection was as follows:<br/>
-1. Pre-placement talk<br/>
-2. Written Test (Technical & Aptitude) - 1 Hour<br/>
-3. Interviews - Technical & HR<br/>
+     
+    <tr>
+	<td>Enter company name:</td>
+	<td><input type="text" name="text1"/></td>
+	</tr>
  
-<?php echo $text4; ?>  had cleared the 1st round (Aptitude). <?php echo $text5; ?> had appeared in the Final Interview round.<?php echo $text6; ?>  had been selected by the <?php echo $text1; ?>.
-<br/>
+     <tr>
+	<td>Date:</td>
+	<td><input type="date" name="text2" /></td>
+	</tr>
+	
+	    <tr>
+	<td>total students:</td>
+	<td><input type="text" name="text3"/></td>
+	</tr>
+	
+	    <tr>
+	<td>No. of students cleared first round:</td>
+	<td><input type="text" name="text4"/></td>
+	</tr>
+	
+	    <tr>
+	<td>No. of students appeared in interview:</td>
+	<td><input type="text" name="text5"/></td>
+	</tr>
+	
+	    <tr>
+	<td>No. of selected students:</td>
+	<td><input type="text" name="text6"/></td>
+	</tr>
+	
 
-Department of Computer Engineering congratulates the following students for the endeavor and wishes Best of Luck for their future.
-          
-			   
-			    </div>
 
+	
 
-
-</section>
+</table>
+<center><input type="submit" value="Submit" class="btn btn-primary"></center>
+</form>
+</div>
+				</section>
 
 
 			
+
    <footer class="footer">
       <div class="three spacing"></div>
 	  <div class="container">
