@@ -11,15 +11,21 @@ if(isset($_SESSION["userData"])){
 		  $q = $con->prepare($query);
 		  $q->execute();
 		  if($q->rowCount()>0){
-		    $row = $q->fetchAll();
-		    $_SESSION["reg_no"]=$row[0]["reg_no"];
-		    $_SESSION["name"]=$row[0]["name"];
+		    $row = $q->fetch();
+		    $_SESSION["reg_no"]=$row["reg_no"];
+		    $_SESSION["name"]=$row["name"];
 				$_SESSION["email"]=$_SESSION["userData"]['email'];
 		  }
-			header('Location:/3p/PDS/home/');
+			header('Location:./home/');
+		}
+		elseif($gpUserData["email"]=="mukulkadel@gmail.com"){
+			$_SESSION["admin"]=1;
+			$_SESSION["name"]=$_SESSION["userData"]['first_name']." ".$_SESSION["userData"]['last_name'];
+			$_SESSION["email"]=$_SESSION["userData"]['email'];
+			header('Location:./admin/');
 		}
 		else {
-			header('location:/3p/PDS/logout.php');
+			header('location:./logout.php');
 		}
 }else{
 		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';

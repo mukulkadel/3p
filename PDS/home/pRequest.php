@@ -1,5 +1,10 @@
 <?php
 include_once("../check.php");
+
+//admin check
+if(isset($_SESSION["admin"]))
+  header("location:../login.php");
+
 $reg_no = $_SESSION["reg_no"];
 $usr="root";
 $pass="";

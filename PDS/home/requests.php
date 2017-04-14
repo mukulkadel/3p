@@ -7,6 +7,11 @@ catch(Exception $e){
   header("location:../logout.php");
 }
 
+//admin check
+if(isset($_SESSION["admin"]))
+  header("location:../login.php");
+
+
 //Initializing variables
   $email=$_SESSION["email"];
   $usr="root";
@@ -112,7 +117,7 @@ catch(Exception $e){
               <div class="row" style="margin-top:40px;">
               <ul style="list-style-type:none;">
                 <li><a href="index.php">Show Details</a></li>
-                  <li><a href="./update.php"">Update</a></li>
+                  <li><a href="./update.php">Update</a></li>
                 <li><a href="./requests.php" style="color:#ff0000;">Requests</a></li>
               </ul>
               </div>

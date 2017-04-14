@@ -7,6 +7,10 @@ catch(Exception $e){
   header("location:../logout.php");
 }
 
+//admin check
+if(isset($_SESSION["admin"]))
+  header("location:../login.php");
+
 //Initializing variables
   $email=$_SESSION["email"];
   $usr="root";
