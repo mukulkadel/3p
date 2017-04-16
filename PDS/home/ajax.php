@@ -61,6 +61,8 @@
           $output.="<tr>\n<td>"."DOB"."</td>\n<td> ".$row["dob"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Email"."</td>\n<td> ".$row["email"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Alternative email"."</td>\n<td> ".$row["email_alter"] ."</td></tr>\n";
+          if(isset($row["fb"]))
+            $output.="<tr>\n<td>"."Facebook"."</td>\n<td> <a href=\"https://www.facebook.com/".$row["fb"] ."\" >".$row["fb"] ."</a></td></tr>\n";
           $output.="<tr>\n<td>"."Mobile "."</td>\n<td> ".$row["mobile"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Father's mobile"."</td>\n<td> ".$row["mobile_father"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Higher studies"."</td>\n<td> ".(($row["higher_studies"]=="")?"No":$row["higher_studies"]) ."</td></tr>\n";
@@ -84,7 +86,7 @@
           $output.="<div class=\"panel-heading\">College</div>\n";
           $output.="<div class=\"panel-body\">\n";
           $output.="<table class=\"table\">";
-          $output.="<tr>\n<td>"."Registration No"."</td>\n<td> ".$row["reg_no"] ."</td></tr>\n";
+          $output.="<tr>\n<td style=\"width:35.5%\">"."Registration No"."</td>\n<td> ".$row["reg_no"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."College"."</td>\n<td> ".$row["college"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Branch"."</td>\n<td> ".$row["branch"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Section"."</td>\n<td> ".$row["section"] ."</td></tr>\n";

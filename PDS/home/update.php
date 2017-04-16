@@ -93,6 +93,7 @@ function personal(){
         $output.="<tr>\n<td>"."Father's mobile"."</td>\n<td> <input type=\"text\" name=\"mobile_father\" value=\"".$row["mobile_father"] ."\"/></td></tr>\n";
         $output.="<tr>\n<td>"."Email"."</td>\n<td> ".$row["email"] ."</td></tr>\n";
         $output.="<tr>\n<td>"."Alternative email"."</td>\n<td> <input type=\"email\" name=\"email_alter\" value=\"".$row["email_alter"] ."\"/></td></tr>\n";
+        $output.="<tr>\n<td>"."Facebook"."</td>\n<td> https://www.facebook.com/<input type=\"text\" name=\"fb\" value=\"".$row["fb"] ."\"/></td></tr>\n";
         $output.="<tr>\n<td>"."Home city"."</td>\n<td> ".$row["home_city"] ."</td></tr>\n";
         $output.="<tr>\n<td>"."Training Company"."</td>\n<td> ".$row["tcompany"] ."</td></tr>\n";
         $output.="<tr>\n<td>"."Training experience"."</td>\n<td> ".$row["txp"] ."</td></tr>\n";

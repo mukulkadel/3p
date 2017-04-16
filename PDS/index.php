@@ -1,57 +1,56 @@
 <?php
 //Include GP config file && User class
-include_once 'gpConfig.php';
+include_once 'check.php';
 
-if(isset($_GET['code'])){
-	$gClient->authenticate($_GET['code']);
-	$_SESSION['token'] = $gClient->getAccessToken();
-	header('Location:' . filter_var($redirectURL, FILTER_SANITIZE_URL));
+function loginButton($part){
+	global $authUrl;
+	$output="";
+	if($part==0){
+		if(isset($_SESSION["email"])){					//logined
+			if(!isset($_SESSION["admin"])){
+				$output.="<li><a href=\"./home/\">Show Details</a></li>\n";
+			}
+			elseif(isset($_SESSION["admin"])){
+				$output.="<li><a href=\"./admin/\">Search</a></li>\n";
+			}
+			$output.="<li><button class=\"btn btn-info btn-lg\" onclick=\"logout()\">Log out</button></li>\n";
+		}
+		elseif(!isset($_SESSION["email"])){
+			$output.="<li><button class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#login\">Log in</button></li>\n";
+		}
+	}
+	else{
+		if(isset($_SESSION["email"])){
+			$output.="<script>\nfunction logout(){\nwindow.location=\"./logout.php\";\n}\n</script>\n";
+		}
+		else{
+			$output.="<div id=\"login\" class=\"modal fade\" role=\"dialog\" style=\"margin-top:100px;\">";
+					$output.="<div class=\"modal-dialog\">";
+
+						$output.="<!-- Modal content-->";
+						$output.="<div class=\"modal-content\">";
+							$output.="<div class=\"modal-header\">";
+							$output.="	<button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>";
+							$output.="	<h4 class=\"modal-title\">Login with Google+</h4>";
+							$output.="</div>";
+							$output.="<div class=\"modal-body\">";
+								$output.="<p><center>";
+								$output.="	<a class=\"btn btn-block btn-social btn-google\" style=\"background-color:#DD4B39;color:#ffffff;width:200px;\" href=\"".filter_var($authUrl, FILTER_SANITIZE_URL)."\">";
+								$output.="		<span class=\"fa fa-google\"></span> Sign in with Google";
+								$output.="	</a>";
+							$output.="</center> </p>";
+							$output.="</div>";
+							$output.="<div class=\"modal-footer\">";
+							$output.="	<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>";
+						$output.="	</div>";
+						$output.="</div>";
+				$output.="</div>";
+			$output.="</div>";
+		}
+	}
+	return $output;
 }
 
-if (isset($_SESSION['token'])) {
-	$gClient->setAccessToken($_SESSION['token']);
-}
-
-if ($gClient->getAccessToken()) {
-	//Get user profile data from google
-	$gpUserProfile = $google_oauthV2->userinfo->get();
-
-
-	//Insert or update user data to the database
-    $gpUserData = array(
-        'oauth_provider'=> 'google',
-        'oauth_uid'     => $gpUserProfile['id'],
-        'first_name'    => $gpUserProfile['given_name'],
-        'last_name'     => $gpUserProfile['family_name'],
-        'email'         => $gpUserProfile['email'],
-        'gender'        => $gpUserProfile['gender'],
-        'locale'        => $gpUserProfile['locale'],
-        'picture'       => $gpUserProfile['picture'],
-        'link'          => $gpUserProfile['link']
-    );
-
-	//Storing user data into session
-	$_SESSION['userData'] = $gpUserData;
-
-	//Render facebook profile data
-/*    if(!empty($gpUserData)){
-        $output = '<h1>Google+ Profile Details </h1>';
-        $output .= '<img src="'.$gpUserData['picture'].'" width="300" height="220">';
-        $output .= '<br/>Google ID : ' . $gpUserData['oauth_uid'];
-        $output .= '<br/>Name : ' . $gpUserData['first_name'].' '.$gpUserData['last_name'];
-        $output .= '<br/>Email : ' . $gpUserData['email'];
-        $output .= '<br/>Gender : ' . $gpUserData['gender'];
-        $output .= '<br/>Locale : ' . $gpUserData['locale'];
-        $output .= '<br/>Logged in with : Google';
-        $output .= '<br/><a href="'.$gpUserData['link'].'" target="_blank">Click to Visit Google+ Page</a>';
-        $output .= '<br/>Logout from <a href="logout.php">Google</a>';
-    }else{
-        $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
-    }*/
-} else {
-	$authUrl = $gClient->createAuthUrl();
-	//$output = '<a href="'.filter_var($authUrl, FILTER_SANITIZE_URL).'"><img src="images/glogin.png" alt=""/></a>';
-}
 ?>
 <!DOCTYPE html>
 <!--[if IE 9]>
@@ -74,8 +73,6 @@ if ($gClient->getAccessToken()) {
 	<link rel="stylesheet" href="files/css/font-awesome.min.css">
 	<link rel="stylesheet" href="files/css/style.css">
 	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
-  	<link href="cala.css" rel="stylesheet">
-	<script type="text/javascript" src="reoccurringEventsCal.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -85,7 +82,7 @@ if ($gClient->getAccessToken()) {
 </head>
 <body>
 
-	
+
 	<div class="sidebar-menu-container" id="sidebar-menu-container">
 
 		<div class="sidebar-menu-push">
@@ -110,34 +107,35 @@ if ($gClient->getAccessToken()) {
 										<ul class="sub-menu">
 											<li><a href="acadmic/planning.php">Planning</a></li>
 
-											<li><a href="acadmic/syllabus.php">syllabus</a></li>
-											
+											<li><a href="acadmic/syllabus.php">Syllabus</a></li>
+
 										</ul>
 									</li>
-									<li><a href="#" class="has-submenu">Recruiters</a>
+									<li><a href="recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="recruiters/gallery.php">Gallery</a></li>
-											<li><a href="recruiters/present.php">present</a></li>
-											<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
-											
+											<li><a href="recruiters/index.php">Present</a></li>
+											<li><a href="recruiters/upcoming.php">Upcoming recruiters</a></li>
+
 										</ul>
 									</li>
-									<li><a href="aboutus/about.php">About us</a></li>
-									<li><a href="#" class="has-submenu">placement</a>
+									<li><a href="aboutus/index.php">About us</a></li>
+									<li><a href="placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
-											<li><a href="placement/current.php">current</a></li>
-											<li><a href="placement/previous1year.php">previous 1 year</a></li>
-											<li><a href="placement/previous2year.php">previous 2 year</a></li>
+											<li><a href="placement/index.php">Current</a></li>
+											<li><a href="placement/previous1year.php">Previous 1 year</a></li>
+											<li><a href="placement/previous2year.php">Previous 2 year</a></li>
 										</ul>
 									</li>
-									<li><a href="contactus/contact.php">Contact us</a></li>
-									<li><a href="internship/internship.php" class="has-submenu">Internship</a>
+									<li><a href="contactus/index.php">Contact us</a></li>
+									<li><a href="internship/index.php" class="has-submenu">Internship</a>
 										<ul class="sub-menu">
 											<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
-											<li><a href="internship/foreign_internship.php">Foreign Internship</a></li>
+											<li><a href="internship/Foreign_internship.php">Foreign Internship</a></li>
 										</ul>
 									</li>
-                  <li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
+									<!-- Login button -->
+								  <?php echo loginButton(0); ?>
 								</ul>
 							</nav>
 						</div>
@@ -145,54 +143,33 @@ if ($gClient->getAccessToken()) {
 				</header>
 
         <!-- Login button Popup-->
-        <div id="login" class="modal fade" role="dialog" style="margin-top:100px;">
-            <div class="modal-dialog">
+				<?php echo loginButton(1); ?>
 
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Login with Google+</h4>
-                </div>
-                <div class="modal-body">
-                  <p><center>
-                    <a class="btn btn-block btn-social btn-google" style="background-color:#DD4B39;color:#ffffff;width:200px;" href="<?php echo filter_var($authUrl, FILTER_SANITIZE_URL);?>">
-                      <span class="fa fa-google"></span> Sign in with Google
-                    </a>
-                </center> </p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-
-          </div>
-        </div>
 				<div class="slider">
 					<div class="fullwidthbanner-container">
 						<div class="fullwidthbanner">
 							<ul>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
 									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
-									
-									
+
+
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
 									<img src="files/images/22.png" data-fullwidthcentering="on" alt="slide">
-									
-									
+
+
 								</li>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
 									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
-									
-									
+
+
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				
-				
+
+
 <!--calender section-->
 				<section>
 					<div class="container">
@@ -208,7 +185,7 @@ if ($gClient->getAccessToken()) {
 				</section>
 
 
-                <footer class="footer">
+    <footer class="footer">
       <div class="three spacing"></div>
 	  <div class="container">
       <div class="row">
@@ -249,15 +226,13 @@ if ($gClient->getAccessToken()) {
           <div class="links">
             <h4>Some pages</h4>
             <ul>
-               <li><a href="#">login</a></li>
-             
               <li><a href="index.php">Home</a></li>
-              <li><a href="aboutus/about.php">aboutus</a></li>
-               <li><a href="contactus/contact.php">Contact us</a></li>
-              <li><a href="internship/internship.php">internship</a></li>
-            
-             
-              
+              <li><a href="aboutus/index.php">About us</a></li>
+               <li><a href="contactus/index.php">Contact us</a></li>
+              <li><a href="internship/index.php">Internship</a></li>
+
+
+
             </ul>
           </div>
           <div class="spacing"></div>
@@ -265,13 +240,13 @@ if ($gClient->getAccessToken()) {
         <div class="col-md-3">
           <div class="spacing"></div>
           <div class="links">
-            <h4>placement</h4>
+            <h4>Placement</h4>
             <ul>
-              <li><a href="acadmic/planning.php">planning</a></li>
-              <li><a href="acadmic/syllabus.php">syllabus</a></li>
-              <li><a href="placement/current.php">current</a></li>
-              <li><a href="placement/previous1year.php">previous one year</a></li>
-              <li><a href="placement/previous2year.php">previous two year</a></li>
+              <li><a href="acadmic/planning.php">Planning</a></li>
+              <li><a href="acadmic/syllabus.php">Syllabus</a></li>
+              <li><a href="placement/index.php">Current</a></li>
+              <li><a href="placement/previous1year.php">Previous one year</a></li>
+              <li><a href="placement/previous2year.php">Previous two year</a></li>
             </ul>
           </div>
           <div class="spacing"></div>
@@ -279,16 +254,16 @@ if ($gClient->getAccessToken()) {
         <div class="col-md-3">
           <div class="spacing"></div>
            <div class="links">
-          <h4>recruiters</h4>
+          <h4>Recruiters</h4>
            <ul>
-              <li><a href="recruiters/gallery.php">gallery</a></li>
-              <li><a href="recruiters/present.php">present</a></li>
-              <li><a href="recruiters/upcoming.php">upcoming</a></li>
-              
+              <li><a href="recruiters/gallery.php">Gallery</a></li>
+              <li><a href="recruiters/index.php">Present</a></li>
+              <li><a href="recruiters/upcoming.php">Upcoming</a></li>
+
             </ul>
-         
+
     </footer>
-				
+
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 			</div>
@@ -304,32 +279,33 @@ if ($gClient->getAccessToken()) {
 							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="acadmic/planning.php">Planning</a></li>
-										<li><a href="acadmic/syllabus.php">syllabus</a></li>								
+										<li><a href="acadmic/syllabus.php">Syllabus</a></li>
 										</ul>
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
 								<ul class="sub-menu">
 									<li><a href="recruiters/gallery.php">Gallery</a></li>
-									<li><a href="recruiters/present.php">present</a></li>
-									<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
+									<li><a href="recruiters/index.php">Present</a></li>
+									<li><a href="recruiters/upcoming.php">Upcoming recruiters</a></li>
 								</ul>
 							</li>
-							<li><a href="aboutus/about.php">About us</a></li>
-							<li class="menu-item-has-children"><a href="#">placement</a>
+							<li><a href="aboutus/index.php">About us</a></li>
+							<li class="menu-item-has-children"><a href="#">Placement</a>
 								<ul class="sub-menu">
-									<li><a href="placement/current.php">current</a></li>
-									<li><a href="placement/previous1year.php">previous 1 year</a></li>
-									<li><a href="placement/previous2year.php">previous 2 year</a></li>
+									<li><a href="placement/index.php">Current</a></li>
+									<li><a href="placement/previous1year.php">Previous 1 year</a></li>
+									<li><a href="placement/previous2year.php">Previous 2 year</a></li>
 								</ul>
 							</li>
-							<li><a href="contactus/contact.php">Contact us</a></li>
-							<li class="menu-item-has-children"><a href="internship/internship.php">Internship</a>
+							<li><a href="contactus/index.php">Contact us</a></li>
+							<li class="menu-item-has-children"><a href="#">Internship</a>
 								<ul class="sub-menu">
 									<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
-									<li><a href="placement/Foregin_internship.php">Foreign Internship</a></li>
+									<li><a href="internship/Foregin_internship.php">Foreign Internship</a></li>
 								</ul>
 							</li>
-<li><button class="btn btn-info btn-lg" data-toggle="modal" data-target="#login">Log in</button></li>
+							<!-- Login button -->
+							<?php echo loginButton(0); ?>
 						</ul>
 					</nav>
 				</div>
@@ -339,7 +315,7 @@ if ($gClient->getAccessToken()) {
 	</div>
 
 
-	
+
 
 	<script type="text/javascript" src="files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="files/js/bootstrap.min.js"></script>

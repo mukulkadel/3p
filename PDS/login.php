@@ -28,6 +28,6 @@ if(isset($_SESSION["userData"])){
 			header('location:./logout.php');
 		}
 }else{
-		$output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
+		header('location:./index.php');
 }
 ?>

@@ -28,13 +28,13 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 
-      
+
 
 
 </head>
 <body>
 
-	
+
 	<div class="sidebar-menu-container" id="sidebar-menu-container">
 
 		<div class="sidebar-menu-push">
@@ -60,7 +60,7 @@
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
 											<li><a href="../acadmic/syllabus.php">syllabus</a></li>
-											
+
 										</ul>
 									</li>
 									<li><a href="#" class="has-submenu">Recruiters</a>
@@ -86,27 +86,27 @@
 					</div>
 				</header>
 
-				
+
 				<section class="contact-map-wrapper">
-				
-				
+
+
 <div class="container">
 <div class="col-sm-3 col-md-3">
-					
-<!-- Search by name or registration number-->					
+
+<!-- Search by name or registration number-->
 <div class="container-fluid">
 <form method="post" action="search.php">
  <label>Search by name or registration number-:</label><br/>  <input type="text" name="searchVal" onKeyUp="searchq()"/>
-      
+
       </form>
-	  
+
 	  	<br/>
     <label>On the bases of Backlogs-:</label>
-	<!--filter according backlogs-->   
+	<!--filter according backlogs-->
       <form method="post" action="search.php">
       <input type="number" name="subm" onKeyUp="searchq()"/>Backlogs
-      </form>	   
-	
+      </form>
+
 	  <br/>
 	   <div style="float:left;width:20%;min-width:150px;">
         <label>Hosteller-:</label> <br/>
@@ -119,14 +119,14 @@
          </form>
     </div>
 	<br/>
-	
 
-	
-	
+
+
+
 	</div>
-	
-	
-	
+
+
+
 	<!--According to language known-->
 	<!--Checkboxes-->
 	<button href="#Ash" class="btn btn-default" data-toggle="collapse">Search by language</button>
@@ -164,17 +164,17 @@
 	 <input type="checkbox" name="ac" value="PHOTOSHOP" />PHOTOSHOP<br/>
 	 <input type="checkbox" name="ad" value="CORAL_DRAW" />CORAL DRAW<br/>
 	 <input type="checkbox" name="ae" value="OTHERS" />OTHERS<br/>
-	
-	 
+
+
 	 </form>
-	 
+
 	 <br/>
 	  <br/>
 	   <br/>
     </div>
 	<br/>
 
-	  
+
 	<!--range filter -->
 <!--on the basis of btech aggregate -->
 
@@ -186,25 +186,25 @@
 <a href="#Eminem" aria-expanded="false" class="btn btn-default" data-toggle="collapse">percentage(Sliders)</a>
 <div  id="Eminem" class="collapse">
 	   <label>On the bases of percentage-:</label>
-	
-	
+
+
  <form onchange="searchq()" method="post" action="search.php">
  <input type="range" min="0" max="100" id="min_range" name="min_range" step="0" value="0"></br>
 		<!--12th aggregate -->
 <span id="range"> </span>
 	  </form>
-	  
-<!--12th aggregate -->	  
+
+<!--12th aggregate -->
 <form method="post" onchange="searchq()" action="search.php">
 <input type="range" min="0"  max="100" id="twelve" name="twelve" step="0" value="0"></br>
 <span id="range1"> </span>
-</form>	
+</form>
 
 <!--10th aggregate -->
 <form onchange="searchq()" method="post" action="search.php">
 <input type="range" min="0" max="100" id="tenth" name="tenth" step="0" value="0"></br>
 <span id="range2"></span>
-</form>  
+</form>
 </div>
 
 
@@ -214,24 +214,24 @@
 
 
   <form  method="post" action="search.php">
-<label>Search by Aggregate percentage in between-:</label><br/> 
+<label>Search by Aggregate percentage in between-:</label><br/>
 MIN <input type="text" style="width:50px;" name="min1" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max1" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
-</form>  
+</form>
 
 <br/>
 <br/>
 
 
   <form  method="post" action="search.php">
-<label>Search by 12th percentage in between-:</label><br/> 
+<label>Search by 12th percentage in between-:</label><br/>
 MIN <input type="text" style="width:50px;" name="min2" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
-</form>  
+</form>
 
 
 
@@ -240,30 +240,30 @@ MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
 
 
   <form  method="post" action="search.php">
-<label>Search by 10th percentage in between-:</label><br/> 
+<label>Search by 10th percentage in between-:</label><br/>
 MIN <input type="text" style="width:50px;" name="min3" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 
 <span id="range2"></span>
-</form>  
+</form>
 
 </div>
-	
+
 </div>
-					
-				
-					
-<div class="col-sm-9 col-md-9"> <div class="container-fluid" id="output"> </div>  
+
+
+
+<div class="col-sm-9 col-md-9"> <div class="container-fluid" id="output"> </div>
 
 
 </div>
 </div>
-					
-					
+
+
 				</section>
-		
 
-				
+
+
 
 			   <footer class="footer">
       <div class="three spacing"></div>
@@ -307,14 +307,14 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
             <h4>Some pages</h4>
             <ul>
                <li><a href="#">login</a></li>
-             
+
               <li><a href="../index.php">Home</a></li>
               <li><a href="../aboutus/about.php">aboutus</a></li>
                <li><a href="../contactus/contact.php">Contact us</a></li>
               <li><a href="../internship/internship.php">internship</a></li>
-            
-             
-              
+
+
+
             </ul>
           </div>
           <div class="spacing"></div>
@@ -341,11 +341,11 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
               <li><a href="../recruiters/gallery.php">gallery</a></li>
               <li><a href="../recruiters/present.php">present</a></li>
               <li><a href="../recruiters/upcoming.php">upcoming</a></li>
-              
+
             </ul>
-         
+
     </footer>
-				
+
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 			</div>
@@ -361,7 +361,7 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="../acadmic/planning.php">Planning</a></li>
-										<li><a href="../acadmic/syllabus.php">syllabus</a></li>								
+										<li><a href="../acadmic/syllabus.php">syllabus</a></li>
 										</ul>
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
@@ -390,8 +390,8 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 	</div>
 
 
-	
-           
+
+
 	<script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
@@ -401,7 +401,7 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 	<script type="text/javascript" src="../files/js/plugins.js"></script>
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
-	
+
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	 <script type="text/javascript">
 
@@ -473,7 +473,7 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 						  'min2':min2,
 						  'max3':max3,
 						  'min3':min3,
-						  
+
 						 'a':a,'b':b,'c':c,'d':d,'e':e,
 						 'f':f,'g':g,'h':h,'i':i,'j':j,
 						 'k':k,'l':l,'m':m,'n':n,'o':o,
@@ -492,20 +492,17 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
                 $.ajax({
                   type:'post',
                   url:'search.php',
-                  data:{'reg_no':reg_no},
+                  data:{'reg_no':reg_no,},
                   success:function(out){
-                    window.location='show-detail.php'
+                    window.location='./showDetails.php';
                   }
                 });
               }
 			  searchq();
-			  
-			  
+
+
           </script>
-    
+
 
 </body>
 </html>
-
-
-

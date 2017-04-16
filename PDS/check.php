@@ -32,6 +32,5 @@ if ($gClient->getAccessToken()) {
 
 } else {
 	$authUrl = $gClient->createAuthUrl();
-	header("location:/3p/PDS/");
 }
 ?>
