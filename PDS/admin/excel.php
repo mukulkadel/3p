@@ -17,23 +17,13 @@ $query =$var_value ;
      $c->execute();
 
 // Write data to file
-$flag = false;
-while($rows=$c->fetch()) {
-    if (!$flag)
-	
-	 {
-        // display field/column names as first row
-        echo implode("\t ", array_keys($rows)) . "\r\n";
-        $flag = true;
-		
-    }
-    echo implode("\t", array_values($rows)) . "\r\n";
-	
-	
+echo "Reg. no \tName\r\n";
+while($rows=$c->fetch()){
+	echo $rows["reg_no"]."\t".$rows["name"]."\r\n";
 }
 // Download file
 header("Content-Disposition: attachment; filename=\"$filename\"");
 header("Content-Type: application/vnd.ms-excel");
 header("Pragma: no-cache"); 
-header("Expires: 0")
+header("Expires: 0");
 ?>
