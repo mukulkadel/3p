@@ -98,35 +98,41 @@
  
      <tr>
 	<td>Date:</td>
-	<td><input type="date" name="text2" /></td>
+	<td><input type="date" id="input" name="text2" onSelect="date()" /></td>
 	</tr>
 	
 	    <tr>
 	<td>total students:</td>
-	<td><input type="text" name="text3"/></td>
+	<td><input type="number" name="text3"/></td>
 	</tr>
 	
 	    <tr>
 	<td>No. of students cleared first round:</td>
-	<td><input type="text" name="text4"/></td>
+	<td><input type="number" name="text4"/></td>
 	</tr>
 	
 	    <tr>
 	<td>No. of students appeared in interview:</td>
-	<td><input type="text" name="text5"/></td>
+	<td><input type="number" name="text5"/></td>
 	</tr>
 	
 	    <tr>
 	<td>No. of selected students:</td>
-	<td><input type="text" name="text6"/></td>
+	<td><input type="number" name="text6"/></td>
 	</tr>
 	
+    <tr>
+	<td>No. of selected students:</td>
+	<td><input type="number"  name="text6"/></td>
+	</tr>
 
 
 	
 
 </table>
-<center><input type="submit" value="Submit" class="btn btn-primary"></center>
+
+
+<center><input type="submit" id="shady" value="Submit" class="btn btn-primary"></center>
 </form>
 </div>
 				</section>
@@ -270,8 +276,18 @@
 	<script type="text/javascript" src="../files/js/plugins.js"></script>
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
-	<!-- Google Map -->
-    
+<script>
+function date() {
+  var input = document.getElementById("input").value;
+  var date = new Date(input).getUTCDay();
+  
+  var weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  
+ alert( document.getElementById('output').textContent = weekday[date];);
+}
+
+</script>
+
 
 </body>
 
