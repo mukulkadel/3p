@@ -18,7 +18,7 @@ if(isset($_SESSION["userData"])){
 		  }
 			header('Location:./home/');
 		}
-		elseif($gpUserData["email"]=="ashdon94@gmail.com"||$gpUserData["email"]=="ayushbhasker09@gmail.com"||$gpUserData["email"]=="bhanucool09@gmail.com"||$gpUserData["email"]=="mukulkadel@gmail.com"){
+		elseif($gpUserData["email"]=="mukulkadel@gmail.com"){
 			$_SESSION["admin"]=1;
 			$_SESSION["name"]=$_SESSION["userData"]['first_name']." ".$_SESSION["userData"]['last_name'];
 			$_SESSION["email"]=$_SESSION["userData"]['email'];

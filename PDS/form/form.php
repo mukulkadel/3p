@@ -61,7 +61,7 @@ $text6=$_POST['text6'];
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="../index.php">Home</a></li>
-									<li><a href="#" class="has-submenu">Acadmic</a>
+									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
 										<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -2149,7 +2149,7 @@ Department of Computer Engineering congratulates the following students for the 
 					<nav class="responsive-menu">
 						<ul>
 							<li><a href="../index.php">Home</a></li>
-							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
+							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="../acadmic/planning.php">Planning</a></li>
 										<li><a href="../acadmic/syllabus.php">syllabus</a></li>								

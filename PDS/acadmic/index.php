@@ -148,31 +148,16 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>internship</h1>
+							<h1>Acadmic</h1>
 							<span>Lovely layout of heading</span>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<div align="left">
-						<p>
-							<h5>Our Vision</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
-
-							<h5>Our Mission</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
-
-							<h5>Quality Policy</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
-
-							<h5>Core Values</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
-						</p>
-					</div>
 		    			<div align="center">
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/Summer_internship.php">Summer Internship</a></div>
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/foreign_internship.php">Foreign Internship</a></div>
+		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../acadmic/planning.php">Planning</a></div>
+		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../acadmic/syllabus.php">Syllabus</a></div>
     					</div>
 
 				</section>
