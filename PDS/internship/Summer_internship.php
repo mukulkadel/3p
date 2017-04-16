@@ -122,9 +122,10 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
+											<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/index.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-											<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -486,9 +487,10 @@ function loginButton($part){
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+              
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -534,9 +536,10 @@ function loginButton($part){
                   <li><a href="../aboutus/index.php">About us</a></li>
                   <li class="menu-item-has-children"><a href="#">Placement</a>
                     <ul class="sub-menu">
+                    <li><a href="../placement/activity.php">Placement Activities</a></li>
                       <li><a href="../placement/index.php">Current</a></li>
                       <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-                      <li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+                    
                     </ul>
                   </li>
                   <li><a href="../contactus/index.php">Contact us</a></li>

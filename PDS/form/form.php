@@ -79,9 +79,10 @@ $text6=$_POST['text6'];
 									<li><a href="../aboutus/about.php">About us</a></li>
 									<li><a href="#" class="has-submenu">placement</a>
 										<ul class="sub-menu">
+											<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">current</a></li>
 											<li><a href="../placement/previous1year.php">previous 1 year</a></li>
-											<li><a href="../placement/previous2year.php">previous 2 year</a></li>
+											\
 										</ul>
 									</li>
 									<li><a href="../contactus/contact.php">Contact us</a></li>
@@ -2117,9 +2118,10 @@ Department of Computer Engineering congratulates the following students for the 
             <ul>
               <li><a href="../acadmic/planning.php">planning</a></li>
               <li><a href="../acadmic/syllabus.php">syllabus</a></li>
+              <li><a href="../placement/activity.php">Placement Activities</a></li>
               <li><a href="../placement/current.php">current</a></li>
               <li><a href="../placement/previous1year.php">previous one year</a></li>
-              <li><a href="../placement/previous2year.php">previous two year</a></li>
+              
             </ul>
           </div>
           <div class="spacing"></div>
@@ -2165,9 +2167,10 @@ Department of Computer Engineering congratulates the following students for the 
 							<li><a href="aboutus/about.php">About us</a></li>
 							<li class="menu-item-has-children"><a href="#">placement</a>
 								<ul class="sub-menu">
+									<li><a href="../placement/activity.php">Placement Activities</a></li>
 									<li><a href="../placement/current.php">current</a></li>
 									<li><a href="../placement/previous1year.php">previous 1 year</a></li>
-									<li><a href="../placement/previous2year.php">previous 2 year</a></li>
+								
 								</ul>
 							</li>
 							<li><a href="../contactus/contact.php">Contact us</a></li>

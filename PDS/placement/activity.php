@@ -61,7 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Previous 2 years | PDS</title>
+	<title>Placement Activities| PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -122,9 +122,10 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
+										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/index.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-											<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+										
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -145,132 +146,77 @@ function loginButton($part){
         <!-- Login button Popup-->
 				<?php echo loginButton(1); ?>
 
+
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>previous2 year</h1>
-							<span>Lovely layout </span>
+							<h1>Activities</h1>
+							
 						</div>
 					</div>
 				</section>
 
-				<section class="portfolio on-portfolio">
+				<section class="call-to-action-1" >
 					<div class="container">
-						<div class="col-sm-12 text-center">
-							<div id="projects-filter">
-								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".furniture">Furniture</a>
-								<a href="#" data-filter=".wallpaper">Wallpaper</a>
-								<a href="#" data-filter=".nature">Nature</a>
-								<a href="#" data-filter=".branding">Branding</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="row" id="portfolio-grid">
-								<div class="item col-md-4 col-sm-6 col-xs-12 furniture">
+						<div class="row" style=" text-align: left;">
+								<h2 style=" font-style: italic;font-size: 1.875em;">Placement Activities</h2>
+								<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
+									
+									•	Weekly two hours training on Aptitude.<br>
+									•	 Weekly two hours training on Verbal and Non-Verbal Reasoning sessions.<br>
+									•	 Monthly one group discussion session.<br>
+									•	Special Communication Development Training programs will be conducted by P-PROSKEP once in a month<br>
+									•	Fortnightly once communication development training will be conducted by our trained faculties.<br>
+									•	 The division mainly focuses on 100 % Placements.<br>
+									•	 Regular interaction by the Placement Officer with the students for fine tuning.<br>
+									•	Imparting the importance of English by implementing as English Campus.<br>
+									•	 Equipped Language laboratory used to improve the students Communication in English.<br>
+									•	 Organizing the sessions for making the students employable and to meet the corporate expectations.<br>
+									•	 Individual counselling to make them understand the certainty of life.<br>
+									•	Train them to work towards the goal.
+								</p>
+									<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
+										The record breaking placement at Department of Computer Engineering is an apt testimony to its focus on upholding the highest academic standards right from selecting topmost faculty to help students, introducing world-class pedagogical practices to personality development of the students.<br>
 
-								 <div class="about-author">
-								 <img src="../files/images/author.png" alt="author">
-										<div class="author-contet">
-											<h3>Syam Meri</h3>
-											<span>Webdesigner</span>
-											<p>Lore</p>
-										</div>
-									</div>
-							  		<figure>
-			        					<img alt="author" src="../files/images/01-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Plaid Authentic</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
+										Training and Placement cell is well organized by<span style="font-weight:900;color:blue;"> Mr.  Abhishek Dadhich,</span>  Hardworking, Dedication and Experience of many years in various aspects and he also maintains the amicable environment with the good organizations. In his presence students procure so many placements in top MNC companies.<br>
 
 
-
-							    <div class="item col-md-4 col-sm-6 col-xs-12 wallpaper">
-							  		<figure>
-			        					<img alt="2-image" src="../files/images/02-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Portland Neutral</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 furniture">
-							  		<figure>
-			        					<img alt="3-image" src="../files/images/03-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Synth Thundercats</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 wallpaper">
-							  		<figure>
-			        					<img alt="4-image" src="../files/images/04-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Bushwick Letterpress</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 furniture">
-							  		<figure>
-			        					<img alt="5-image" src="../files/images/05-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Fashion Heirloom</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 nature">
-							  		<figure>
-			        					<img alt="6-image" src="../files/images/06-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Locavore Brooklyn</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 branding">
-							  		<figure>
-			        					<img alt="7-image" src="../files/images/07-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Meggings Mixtape</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 wallpaper furniture">
-							  		<figure>
-			        					<img alt="8-image" src="../files/images/08-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Normcore Dreamcatcher</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-4 col-sm-6 col-xs-12 branding nature">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/09-portfolio.jpg">
-			        					<figcaption>
-			            					<h3>Street Fanny</h3>
-			            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="portfolio-page-nav text-center">
-								<ul>
-									<li><a href="#" class="current">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-								</ul>
-							</div>
+									</p>
+								<h2 style=" font-style: italic;font-size: 1.875em; background-color:lightgrey; "align="center">Corporate Relations Officers</h2>
+								<table width="643" height="340" border="1" align="center">
+  <tr>
+    <td width="24" height="69"  ><p><strong>Sr.<br />
+No.</strong></p>
+    </td>
+    <td width="128"><strong>Name</strong></td>
+    <td width="143"><strong>Designation</strong></td>
+    <td width="200"><strong>Email</strong></td>
+    <td width="114"><strong>Mobile  Number</strong></td>
+  </tr>
+  <tr>
+    <td height="77">1</td>
+    <td><u><strong>Deepak Moud</strong></u></td>
+    <td>Head  of Department, Department of Computer Engineering</td>
+    <td ><a href="mailto:deepakmoud@poornima.org"><span style="color:blue;">deepakmoud@poornima.org</span></a></td>
+    <td>+91-7568748510</td>
+  </tr>
+  <tr>
+    <td>2</td>
+   	<td><u><strong>Abhishek Dadhich</strong></u></td>
+    <td>Senior  Manager Corporate Relations,&nbsp;<br />
+Department of Computer Engineering</td>
+    <td><a href="mailto:abhishek.dadhich@poornima.org"><span style="color:blue;">abhishek.dadhich@poornima.org</span></a></td>
+    <td>+91-9001571710</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><u><strong>Krutibash Nayak</strong></u></td>
+    <td>Placement  In-Charge,<br />
+Department of Computer Engineering</td>
+    <td><a href="mailto:kruti@poornima.org"><span style="color:blue;">kruti@poornima.org</span></a></td>
+    <td>+91-9799644596</td>
+  </tr>
+</table>
 						</div>
 					</div>
 				</section>
@@ -334,9 +280,10 @@ function loginButton($part){
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+                 
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -382,9 +329,10 @@ function loginButton($part){
     							<li><a href="../aboutus/index.php">About us</a></li>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
+    									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/index.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    									<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+    									
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>

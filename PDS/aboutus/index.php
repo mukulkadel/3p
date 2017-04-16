@@ -122,9 +122,10 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
+										<li><a href="../placement/activity.php">Activities</a></li>
 											<li><a href="../placement/index.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-											<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -149,45 +150,75 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>About Us</h1>
-							<span>Lovely layout of heading</span>
+							<span></span>
 						</div>
 					</div>
 				</section>
 
 				<section class="call-to-action-1">
 					<div class="container">
-						<h4>Why </h4>
-						<p class="col-md-10 col-md-offset-1"></p>
-						<div class="buttons">
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="border-btn"><a href="#">Learn More</a></div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6">
-								<div class="btn-black"><a href="#">Buy This Theme</a></div>
-							</div>
+						<div class="row" style=" text-align: left;">
+						
+								<h2 style=" font-style: italic;font-size: 1.875em;">About Placement Cell</h2>
+							<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey;  " >The Department of Training & Placement is the backbone of any institute. From the very beginning the department lays greater emphasis on industrial training, practical training for Engineering. The students are introduced to industrial practices through training in the institute workshops and in industries.<br>
+
+								The Training and Placement Cell imparts training to students from the first year onwards giving emphasis to motivational skills, communication skills, interpersonal relationships, leadership qualities, group discussions and interview techniques. Resource persons and professionals from reputed Industries and Institutions along with college faculties train the students. The Training and Placement Cell provides the infra-structural facilities to conduct group discussions, tests and interviews besides catering to other logistics. <br>
+
+								The department of Computer Engineering provides its students the best in life, with placement centre functioning in the campus under the able administration with the assistance of an experienced faculty in each discipline. The very active placement centre serves as a foundation for many careers by guiding students in right direction through continuous counselling and arranging for campus recruitments. This centre creates a meticulous database and assists the students in getting placed in national & multinational companies through campus recruitment.The Placement Cell also helps the weak students to improve their academic performance by counselling. This cell also helpings students to improve their command on English language & Communication skill.The database of the students is managed by the cell, which plays a critical role in getting jobs for the alumni.Alumni are visiting regularly to motivate and share experience regarding current market scenario as well as placement drives.
+
+							</p>
+								<h2 style=" font-style: italic;font-size: 1.875em;">MISSION: </h2>
+							<p style="font-size:130%;font-family:  Times, serif;  background-color:lightgrey;" >
+								The mission of Training and Placement Cell of the department is to achieve maximum placement for students through dedication, attitude and complete involvement.To achieve 100% placement for students through dedication, attitude and complete involvement is our mission. <br>
+								The cell conducts training activities for the students mainly focusing on Career planning, Personality Development Industry- Institute Interaction, off site training, Industrial visits, Campus placements, Entrepreneurship Development. Continuous interaction of the cell with the industries also helps in achieving the above goals & motivating students to contribute in this direction.<br> 
+								Training and Placement Cell arranges and coordinates various programmes that aim at moulding the students so as to meet the expectations in career building and in turn bring glory to the parent institution. In this regard, we organize common placement programs and guide the students for campus recruitments conducted in Poornima Foundation and other reputed institutions.<br>
+								> To focus on Placement from the day one.<br>
+								> To impart the importance of Human Values to our students.<br>
+								> To help the students to get confidence psychologically to meet the reality of life and outshine in their field.<br>
+								> To maintain a regular relationship with companies and train the students according to their expectations.<br>
+							</p>
+
+							<h2 style=" font-style: italic;font-size: 1.875em;">VISION: </h2>
+							<p style="font-size:130%;font-family:  Times, serif;  background-color:lightgrey;" >
+								The placement cell holds the objective of acquainting the students of the Institute with Industries. The Placement cell organizes and extends services towards collaborative placement activities. Equipping the students with significant and conceptualized professional skills and guiding them towards a bright future and career all around the world with the values of – Sincerity, Hard Work and Justice.The goal of the Training & Placement Cell of the Department is to provide employment opportunities and world class training to students of the department in leading organizations/Industry.<br>
+								>Train the students equally.<br>
+								> To get employed in reputed companies.<br>
+								> To excel as an Entrepreneur.<br>
+								> Importance of Research.<br>
+								> Creating enthusiastic competent personalities.<br>
+								> Empowering the students with Values and professional skills to get placed in the appropriate field.<br>
+								> Students expertise themselves.
+							</p>
+							<h2 style=" font-style: italic;font-size: 1.875em;"> OBJECTIVES:</h2>
+							<p style="font-size:130%;font-family:  Times, serif;  background-color:lightgrey;" >
+								•	Create awareness among students regarding available career options and help them in identifying their career objectives.<br>
+								•	Guide the students in developing skills and job-search strategies required to achieve their career objectives.<br>
+								•	Identify suitable potential employers and help them achieve their hiring goals.<br>
+								•	Organize activities concerning career planning.<br>
+								•	Act as a bridge between students, alumni and employers.
+
+							</p>
+
 						</div>
 					</div>
 				</section>
 
-				<section class="testimonials">
+				<section >
 					<div class="container">
-						<div class="section-heading">
-							<h2>What They Say</h2>
-							<div class="section-dec"></div>
-						</div>
-
-				</section>
-
-
-				<section class="clients">
-					<div class="container">
-						<div class="section-heading">
-							<h2>Our Clients</h2>
-
-						</div>
-
+					<div class="row" style=" text-align: left;">
+							<h2 style=" font-style: italic;font-size: 1.875em; background-color:black; color:blue;" align="center"> HOD’S MESSAGE</h2>
+							<p style="font-size:130%;font-family:  Times, serif;  background-color:lightgrey;" >
+								The Industry is changing at a fast pace. We need to adapt ourselves with this changing scenario in the professional environment. At our department; our mission is to produce professionally competent world class Engineers by providing value based and quality education to the students and to make them adaptable to ever changing demands and requirements of the industry by grooming their soft skills and life skills.<br>
+								Department of Computer Engineering has proved its mettle by standing amongst top department of Poornima Foundation and by providing best placement within short span of 8 years.<br>
+								Our collaboration with various industries has resulted in mutual benefits both for the students, as well for the industry. We encourage all private and government sector organizations to participate in the recruitment process towards the overall development of the students.<br>
+								It is a matter of honor to mention here that our placement process is a culmination of a strong training structure, which includes technical training, industry oriented trainings, aptitude, communication, soft skills life skills training throughout the year. With great pleasure and honour, we invite industrial & corporate houses at our department and to meet our students to share a common platform towards the overall growth of the nation.
+							</p>
+					</div>
 					</div>
 				</section>
+
+
+			
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -248,9 +279,10 @@ function loginButton($part){
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+                 
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -296,9 +328,10 @@ function loginButton($part){
     							<li><a href="../aboutus/index.php">About us</a></li>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
+    								<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/index.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    									<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+    									
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>
