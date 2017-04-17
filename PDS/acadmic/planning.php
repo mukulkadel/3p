@@ -156,19 +156,19 @@ function loginButton($part){
 					</div>
 				</section>
 
-				<section class="services on-services green">
+				<section>
 					<div class="container">
 					<div class="row" style=" text-align: left;">
-						<div class="section-heading">
-							<h2>rule & regulation</h2>
+						<div class="">
+							<h2 align="center">Rule & Regulation</h2>
 						</div >
 
-					<h3 style="color:white;">A. ELIGIBILITY & REGISTRATION</h3>
+					<h3 >A. ELIGIBILITY & REGISTRATION</h3>
             <h5>
                 <ol>
-    						  <li>1.	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.</li>
-                  <li>2.	Registration for all programmes will be done during the month of August.</li>
-    							<li>3.Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.<
+    						  <li>	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.</li>
+                  <li>	Registration for all programmes will be done during the month of August.</li>
+    							<li>Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.<
                </ol>
             </h5>
 
@@ -176,7 +176,7 @@ function loginButton($part){
 
 						</div>
 						<div class="row" style=" text-align: left;">
-						<h3 style="color:white;">B. RESUME</h3>
+						<h3 >B. RESUME</h3>
 						<h5>
                             <ol>
                                 <li>	Students are advised to read the announcements made, go through the company website and apply only if interested.</li>
@@ -193,7 +193,7 @@ function loginButton($part){
 </h5>
 						</div>
 						<div class="row" style=" text-align: left;">
-						<h3 style="color:white;">C. PRE-PLACEMENT TALKS (PPT)</h3>
+						<h3>C. PRE-PLACEMENT TALKS (PPT)</h3>
 						<h5>
             <ol>
 						<li>	Notices of the PPT will be published in the placement website well in advance. Students should be seated in the venue 15 minutes before the scheduled start of the PPT.<br></li>
@@ -291,13 +291,15 @@ th {
     <td>MOCK DRIVE 2</td>
     <td> every student</td>
   </tr>
+   
 </table>
 
 
 
-
+ <br>
 					</div>
 				</section>
+        
 
         <footer class="footer">
           <div class="three spacing"></div>
