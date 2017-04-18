@@ -152,7 +152,7 @@ function loginButton($part){
 						<div class="fullwidthbanner">
 							<ul>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
+									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide" style="border-radius: 100px;">
 
 
 								</li>
