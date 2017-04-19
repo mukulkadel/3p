@@ -109,6 +109,7 @@ function loginButton($part){
 
 											<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
 
+                      <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
 										</ul>
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
@@ -241,54 +242,54 @@ th {
 
 <table style="width:50%" align="center">
   <tr>
-    <th>sr.no</th>
-    <th>  activity</th>
-    <th> for 6 sem</th>
+    <th>Sr.no</th>
+    <th>Activity</th>
+    <th>For 6 Sem</th>
   </tr>
   <tr>
     <td>1</td>
     <td>CRT-1(3 DAYS)</td>
-    <td>session for each  section daily </td>
+    <td>Session for each  section daily </td>
   </tr>
   <tr>
     <td>2</td>
     <td>MOCK DRIVE 1</td>
-    <td>every student</td>
+    <td>Every student</td>
   </tr>
   <tr>
     <td>3</td>
     <td>MOCK DRIVE 2</td>
-    <td>every student</td>
+    <td>Every student</td>
   </tr>
   <tr>
     <td>4</td>
     <td>CRT-2(3 DAYS)</td>
-    <td>session for each  section daily </td>
+    <td>Session for each  section daily </td>
   </tr>
   <tr>
     <td>5</td>
     <td>MOCK DRIVE 3</td>
-    <td>every student</td>
+    <td>Every student</td>
   </tr>
   <tr>
     <td>6</td>
     <td>MOCK DRIVE 4</td>
-    <td>every student</td>
+    <td>Every student</td>
   </tr>
   <tr>
-  	<th> sr.no. </th>
-  	<th> activity</th>
-  	<th> for 4 sem</th>
+  	<th> Sr.no. </th>
+  	<th> Activity</th>
+  	<th> For 4 Sem</th>
   </tr>
   <tr>
     <td>7</td>
     <td>MOCK DRIVE 1</td>
-    <td> every student</td>
+    <td>Every student</td>
   </tr>
   <tr>
     <td>8</td>
     <td>MOCK DRIVE 2</td>
-    <td> every student</td>
+    <td>Every student</td>
   </tr>
    
 </table>
@@ -397,6 +398,7 @@ th {
     								<ul class="sub-menu">
     										<li><a href="../acadmic/planning.php">Planning</a></li>
     										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                        <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
     										</ul>
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
