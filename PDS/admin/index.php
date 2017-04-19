@@ -130,7 +130,9 @@
 	<!--According to language known-->
 	<!--Checkboxes-->
 	<button href="#Ash" class="btn btn-default" style="height:40px; width:200px" data-toggle="collapse">Search by language</button>
-	<div id="Ash"  style="overflow-y:scroll; height:100px" class="collapse" >
+	<div id="Ash" class="collapse">
+	
+	<div style="overflow-y:scroll; height:200px">
 	<label>On the bases of languages-:</label>
 	 <form  method="post" action="search.php" onClick="searchq()">
 	 <input type="checkbox" name="a" value="C" />C<br/>
@@ -169,8 +171,9 @@
 	 </form>
 	 
 	 <br/>
-	  <br/>
-	   <br/>
+	 <br/>
+	 <br/>
+	 </div>
     </div>
 	<br/>
 
@@ -208,8 +211,10 @@
 </div>
 
 
-<a href="#Hip-Hop" aria-expanded="true" class="btn btn-default" style="height:40px; width:200px" data-toggle="collapse">percentage(min-max)</a>
-<div class="container-fluid" id="Hip-Hop" >
+<a href="#Hip-Hop" aria-expanded="false" class="btn btn-default" style="height:40px; width:200px" data-toggle="collapse">percentage(min-max)</a>
+
+
+<div class="collapse" id="Hip-Hop" >
 
 
 
@@ -218,7 +223,7 @@
 MIN <input type="text" style="width:50px;" name="min1" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max1" onKeyUp="searchq()"/>
 
-<span id="range2"></span>
+
 </form>  
 
 <br/>
@@ -230,7 +235,6 @@ MAX <input type="text" style="width:50px;" name="max1" onKeyUp="searchq()"/>
 MIN <input type="text" style="width:50px;" name="min2" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
 
-<span id="range2"></span>
 </form>  
 
 
@@ -244,7 +248,7 @@ MAX <input type="text" style="width:50px;" name="max2" onKeyUp="searchq()"/>
 MIN <input type="text" style="width:50px;" name="min3" onKeyUp="searchq()"/>
 MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 
-<span id="range2"></span>
+
 </form>  
 
 </div>
@@ -456,7 +460,10 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 
 
 				  $("#range").text("B.TECH Aggregate greater than:"+min_range);
+				  
 				  $("#range1").text("12th Aggregate greater than:"+twelve);
+				  
+				  
 				  $("#range2").text("10th Aggregate greater than:"+tenth);
                   $.ajax({
                     type:'post',
