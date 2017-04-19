@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  //admin check
+  //admin check & login check
   if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
     header("location:../login.php");
 
@@ -121,7 +121,7 @@
           $row = $q->fetch();
           $output="<div class=\"container-fluid\" style=\"text-align:center;font-size:1.2em;\">\n";
             $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="  <div class=\"panel-heading\">10th</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
@@ -131,7 +131,7 @@
                     $output.="</table>\n";
                 $output.="  </div>\n";
               $output.="  </div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">12th</div>\n";
                 $output.="  <div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
@@ -143,7 +143,7 @@
                   $output.="  </table>\n";
                 $output.="  </div>\n";
               $output.="  </div>\n";
-              $output.="  <div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="  <div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="  <div class=\"panel-heading\">Diploma</div>\n";
                 $output.="  <div class=\"panel-body\">\n";
                 if($row["percent_diplo"]!="0"){
@@ -158,7 +158,7 @@
                 $output.="</div>\n";
             $output.="</div>\n";
           $output.="  <div class=\"row\">\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="<div class=\"panel-heading\">SEM-1</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -168,7 +168,7 @@
                 $output.="  </table>\n";
                 $output.="</div>\n";
               $output.="</div>\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
               $output.="  <div class=\"panel-heading\">SEM-2</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -178,7 +178,7 @@
                   $output.="</table>\n";
               $output.="  </div>\n";
               $output.="</div>\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="<div class=\"panel-heading\">SEM-3</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -190,7 +190,7 @@
                 $output.="</div>\n";
               $output.="</div>\n";
               $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-4</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";
@@ -200,7 +200,7 @@
                     $output.="</table>\n";
                   $output.="</div>\n";
                 $output.="</div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-5</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";
@@ -210,7 +210,7 @@
                     $output.="</table>\n";
                   $output.="</div>\n";
                 $output.="</div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-6</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
@@ -222,7 +222,7 @@
                 $output.="</div>\n";
               $output.="</div>\n";
               $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">B.Tech.</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";

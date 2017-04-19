@@ -3,10 +3,11 @@
 session_start();
 
 //admin check & login check
-if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
+if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
   header("location:../login.php");
 
 ?>
+
 <!DOCTYPE html>
 <!--[if IE 9]>
 <html class="ie ie9" lang="en-US">
@@ -15,10 +16,12 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 
 <head>
+
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Home | PDS</title>
+	<title>Upload Student Details</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -34,6 +37,9 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
+
+
+
 
 </head>
 <body>
@@ -58,9 +64,13 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
-									<li><a href="../index.php">Home</a></li>
-									<li><a href="./index.php">Show Details</a></li>
-									<li><a href="../internship/index.php">Internship</a></li>
+                  <li><a href="../index.php">Home</a></li>
+                  <li><a href="./index.php">Search</a></li>
+                  <li><a href="./uploadData.php">Upload</a></li>
+                  <li><a href="./requests.php">Requests</a></li>
+                  <li><a href="./addAdmins.php">Admins</a></li>
+                  <li><a href="../placement/index.php">Placement</a></li>
+                  <li><a href="../internship/index.php">Internship</a></li>
                   <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
 								</ul>
 							</nav>
@@ -68,30 +78,22 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 					</div>
 				</header>
 
-        <section id="details" class="container-fluid" style="margin-top:80px;">
-            <div class="col-md-2" style="margin-top:10px;">
-              <div class="row">Registration no: <?php echo $_SESSION['reg_no']; ?></div>
-              <div class="row">Name: <?php echo $_SESSION['name']; ?></div>
-              <div class="row">Email: <?php echo $_SESSION['email']; ?></div>
-              <div class="row" style="margin-top:40px;">
-              <ul style="list-style-type:none;">
-                <li><a href="./index.php" style="color:#ff0000;">Show Details</a></li>
-                  <li><a href="./update.php">Update</a></li>
-                <li><a href="./requests.php">Requests</a></li>
-              </ul>
-              </div>
+
+				<section class="contact-map-wrapper">
+          <div class="container" style="/*box-shadow: 10px 10px -5px #888888;*/">
+            <div class="container-fluid">
+              <div class="col-md-2"></div>
+              <form method="post" enctype="multipart/form-data" action="pupload.php">
+                <input type="file" name="file" class="col-md-6"/>
+                <input type="submit" value="Upload" name="submit" class="col-md-2"/>
+              </form>
+              <div class="col-md-2"></div>
             </div>
-            <div class="col-md-10">
-              <div>
-                <button id="personal" class="btn btn-default">Personal</button>
-                <button id="professional" class="btn btn-default">Professional</button>
-                <button id="placement" class="btn btn-default">Placement</button>
-              </div>
-              <div>
-                <div id="output" style=""></div>
-              </div>
-            </div>
+          </div>
         </section>
+
+
+
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -182,18 +184,25 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 			<div class="nano">
 				<div class="content">
 					<nav class="responsive-menu">
-            <ul>
+						<ul>
               <li><a href="../index.php">Home</a></li>
-              <li><a href="#">Show Details</a></li>
+              <li><a href="./index.php">Search</a></li>
+              <li><a href="./uploadData.php">Upload</a></li>
+              <li><a href="./requests.php">Requests</a></li>
+              <li><a href="./addAdmins.php">Admins</a></li>
+              <li><a href="../placement/index.php">Placement</a></li>
               <li><a href="../internship/index.php">Internship</a></li>
               <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
-            </ul>
+						</ul>
 					</nav>
 				</div>
 			</div>
 		</nav>
 
 	</div>
+
+
+
 
 	<script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
@@ -205,55 +214,9 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
 
-  <!--  ajax calls for data-->
-  <script>
-      $(document).ready(function(){
-        $("#personal").click(function(){
-            $("#personal").attr("class","btn");
-            $("#professional").attr("class","btn btn-default");
-            $("#placement").attr("class","btn btn-default");
-          $.ajax({
-            type:'post',
-            url:'ajax.php',
-            data:{action:'personal'},
-            success:function(out){
-              $("#output").html(out);
-            }
-          });
-        });
-          $("#professional").click(function(){
-              $("#personal").attr("class","btn btn-default");
-              $("#professional").attr("class","btn");
-              $("#placement").attr("class","btn btn-default");
-            $.ajax({
-              type:'post',
-              url:'ajax.php',
-              data:{action:'professional'},
-              success:function(out){
-                $("#output").html(out);
-              }
-            });
-          });
-            $("#placement").click(function(){
-                $("#personal").attr("class","btn btn-default");
-                $("#professional").attr("class","btn btn-default");
-                $("#placement").attr("class","btn");
-              $.ajax({
-                type:'post',
-                url:'ajax.php',
-                data:{action:'placement'},
-                success:function(out){
-                  $("#output").html(out);
-                }
-              });
-            });
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	 <script type="text/javascript"></script>
 
-          $("#personal").click();
-      });
-      function logout(){
-        window.location="../logout.php"
-      }
-    </script>
 
 </body>
 </html>

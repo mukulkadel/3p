@@ -1,5 +1,5 @@
 <?php
-// Connection 
+// Connection
 $name="";
 $output="";
 $usr="root";
@@ -24,6 +24,6 @@ while($rows=$c->fetch()){
 // Download file
 header("Content-Disposition: attachment; filename=\"$filename\"");
 header("Content-Type: application/vnd.ms-excel");
-header("Pragma: no-cache"); 
+header("Pragma: no-cache");
 header("Expires: 0");
 ?>

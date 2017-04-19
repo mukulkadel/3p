@@ -1,8 +1,9 @@
 <?php
-include_once("../check.php");
 
-//admin check
-if(isset($_SESSION["admin"]))
+session_start();
+
+//admin check & login check
+if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
   header("location:../login.php");
 
 $reg_no = $_SESSION["reg_no"];
@@ -27,8 +28,11 @@ if(isset($_REQUEST["submit"])&&$_REQUEST["submit"]=="Request update"){
 
     //adding values to query
     $query.=") values('$reg_no'";
+    $f=0;
+    if(isset($_REQUEST["other"])&&$_REQUEST["other"]=="other")
+      $f=1;
     foreach ($_REQUEST as $key => $value) {
-      if($key!="other"&&$key!="submit")
+      if(($key!="other"&&$key!="submit"&&$key!="otherValue")||($f==1&&$key=="otherValue"))
       $query.=",'".$value."'";
     }
     $query.=");";
@@ -38,6 +42,12 @@ if(isset($_REQUEST["submit"])&&$_REQUEST["submit"]=="Request update"){
     echo "Error in processing request<br/>";
   }
 }
+
+/*foreach ($_REQUEST as $key => $value) {
+  echo "$key $value<br/>";
+}
+echo $query;*/
+
 //Redirecting after sending request
 header("Location:./requests.php");
  ?>

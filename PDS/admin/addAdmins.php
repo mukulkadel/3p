@@ -3,10 +3,11 @@
 session_start();
 
 //admin check & login check
-if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
+if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
   header("location:../login.php");
 
 ?>
+
 <!DOCTYPE html>
 <!--[if IE 9]>
 <html class="ie ie9" lang="en-US">
@@ -15,10 +16,12 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 
 <head>
+
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Home | PDS</title>
+	<title>Upload Student Details</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -34,6 +37,9 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
+
+
+
 
 </head>
 <body>
@@ -58,9 +64,13 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
-									<li><a href="../index.php">Home</a></li>
-									<li><a href="./index.php">Show Details</a></li>
-									<li><a href="../internship/index.php">Internship</a></li>
+                  <li><a href="../index.php">Home</a></li>
+                  <li><a href="./index.php">Search</a></li>
+                  <li><a href="./uploadData.php">Upload</a></li>
+                  <li><a href="./requests.php">Requests</a></li>
+                  <li><a href="./addAdmins.php">Admins</a></li>
+                  <li><a href="../placement/index.php">Placement</a></li>
+                  <li><a href="../internship/index.php">Internship</a></li>
                   <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
 								</ul>
 							</nav>
@@ -68,30 +78,49 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 					</div>
 				</header>
 
-        <section id="details" class="container-fluid" style="margin-top:80px;">
-            <div class="col-md-2" style="margin-top:10px;">
-              <div class="row">Registration no: <?php echo $_SESSION['reg_no']; ?></div>
-              <div class="row">Name: <?php echo $_SESSION['name']; ?></div>
-              <div class="row">Email: <?php echo $_SESSION['email']; ?></div>
-              <div class="row" style="margin-top:40px;">
-              <ul style="list-style-type:none;">
-                <li><a href="./index.php" style="color:#ff0000;">Show Details</a></li>
-                  <li><a href="./update.php">Update</a></li>
-                <li><a href="./requests.php">Requests</a></li>
-              </ul>
+
+				<section class="contact-map-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="panel panel-info" style="margin-top:15px;">
+                <div class="panel-heading">Site admins</div>
+                <div class="panel-body">
+                  <table class="table">
+                    <thead>
+                      <tr><th>Emails</th><th>Authority</th><th style="width:150px;"></th></tr>
+                    </thead>
+                    <tbody id="output">
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-            <div class="col-md-10">
-              <div>
-                <button id="personal" class="btn btn-default">Personal</button>
-                <button id="professional" class="btn btn-default">Professional</button>
-                <button id="placement" class="btn btn-default">Placement</button>
-              </div>
-              <div>
-                <div id="output" style=""></div>
+            <div class="row">
+              <div class="panel panel-info" style="margin-top:15px;">
+                <div class="panel-heading">Add admin</div>
+                 <div class="panel-body">
+                   <table class="table">
+                    <tbody>
+                      <tr id="addTable">
+                        <td><label>Email</label><input type="email"/></td>
+                        <td><label>Authority</label>
+                          <select>
+                            <option value="FULL">FULL</option>
+                            <option value="PARTIAL">PARTIAL</option>
+                          </select>
+                        </td>
+                        <td style="width:150px;"><button onclick="addAdmin()">Add</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
+          </div>
         </section>
+
+
+
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -182,18 +211,25 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 			<div class="nano">
 				<div class="content">
 					<nav class="responsive-menu">
-            <ul>
+						<ul>
               <li><a href="../index.php">Home</a></li>
-              <li><a href="#">Show Details</a></li>
+              <li><a href="./index.php">Search</a></li>
+              <li><a href="./uploadData.php">Upload</a></li>
+              <li><a href="./requests.php">Requests</a></li>
+              <li><a href="./addAdmins.php">Admins</a></li>
+              <li><a href="../placement/index.php">Placement</a></li>
               <li><a href="../internship/index.php">Internship</a></li>
               <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
-            </ul>
+						</ul>
 					</nav>
 				</div>
 			</div>
 		</nav>
 
 	</div>
+
+
+
 
 	<script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
@@ -205,55 +241,80 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
 
-  <!--  ajax calls for data-->
-  <script>
-      $(document).ready(function(){
-        $("#personal").click(function(){
-            $("#personal").attr("class","btn");
-            $("#professional").attr("class","btn btn-default");
-            $("#placement").attr("class","btn btn-default");
-          $.ajax({
-            type:'post',
-            url:'ajax.php',
-            data:{action:'personal'},
-            success:function(out){
-              $("#output").html(out);
-            }
-          });
-        });
-          $("#professional").click(function(){
-              $("#personal").attr("class","btn btn-default");
-              $("#professional").attr("class","btn");
-              $("#placement").attr("class","btn btn-default");
-            $.ajax({
-              type:'post',
-              url:'ajax.php',
-              data:{action:'professional'},
-              success:function(out){
-                $("#output").html(out);
-              }
-            });
-          });
-            $("#placement").click(function(){
-                $("#personal").attr("class","btn btn-default");
-                $("#professional").attr("class","btn btn-default");
-                $("#placement").attr("class","btn");
-              $.ajax({
-                type:'post',
-                url:'ajax.php',
-                data:{action:'placement'},
-                success:function(out){
-                  $("#output").html(out);
-                }
-              });
-            });
-
-          $("#personal").click();
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	 <script type="text/javascript">
+    $(document).ready(function(){
+      displayAdmins();
+    });
+    function addAdmin(){
+      var email=document.querySelector("#addTable input").value;
+      var authority=document.querySelector("#addTable select").value;
+      $.ajax({
+        type:"post",
+        url:"./padmins.php",
+        data:{"action":"addAdmin",
+              "email":email,
+              "authority":authority},
+        success:function(out){
+          displayAdmins();
+          document.querySelector("#addTable input").value="";
+        }
       });
-      function logout(){
-        window.location="../logout.php"
-      }
-    </script>
+    }
+    function deleteAdmin(code){
+      var key = document.querySelector("#"+code+" input[type='hidden']").value;
+      $.ajax({
+        type:"post",
+        url:"./padmins.php",
+        data:{"action":"deleteAdmin",
+              "key":key},
+        success:function(out){
+          displayAdmins();
+        }
+      });
+    }
+    function save(code){
+      var key = document.querySelector("#"+code+" input[type='hidden']").value;
+      var email = document.querySelector("#"+code+" input[type='email']").value;
+      var authority = document.querySelector("#"+code+" select").value;
+      $.ajax({
+        type:"post",
+        url:"./padmins.php",
+        data:{"action":"save",
+              "key":key,
+              "email":email,
+              "authority":authority},
+        success:function(out){
+          displayAdmins();
+        }
+      });
+    }
+    function editAdmin(code,email){
+      var authority = document.querySelector("#"+code+" #authority").innerHTML;
+      $.ajax({
+        type:"post",
+        url:"./padmins.php",
+        data:{"action":"editAdmin",
+              "email":email,
+              "authority":authority,
+              "code":code},
+        success:function(out){
+          $("#"+code).html(out);
+        }
+      });
+    }
+    function displayAdmins(){
+      $.ajax({
+        type:"post",
+        url:"./padmins.php",
+        data:{"action":"displayAdmins"},
+        success:function(out){
+          $("#output").html(out);
+        }
+      });
+    }
+   </script>
+
 
 </body>
 </html>

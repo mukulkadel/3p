@@ -1,13 +1,13 @@
 <?php
   session_start();
 
-  //admin check
+  //admin check & login check
   if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
     header("location:../login.php");
 
 //Initialization
 //  $_SESSION["reg_no"]='PIET/CE/13/001';
-  $email=$_SESSION["email"];
+  $email=$_SESSION["student_email"];
   $usr="root";
   $pass="";
   $reg_no = $_SESSION["reg_no"];
@@ -51,22 +51,23 @@
         $q->execute();
         if($q->rowCount()>0){
           $row = $q->fetch();
-          $output="<table class=\"table\">";
-          $output.="<tr>\n<td>"."Registration No"."</td>\n<td> ".$row["reg_no"] ."</td></tr>\n";
+          $output="<div class=\"container-fluid\" style=\"margin-top:10px;font-size:1.1em;\">\n";
+          $output.="<div class=\"row\">\n";
+          $output.="<div class=\"panel panel-info\">\n";
+          $output.="<div class=\"panel-heading\">Basic info</div>\n";
+          $output.="<div class=\"panel-body\">\n";
+          $output.="<table class=\"table\">";
           $output.="<tr>\n<td>"."Name"."</td>\n<td> ".$row["name"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Branch"."</td>\n<td> ".$row["branch"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Section"."</td>\n<td> ".$row["section"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."College"."</td>\n<td> ".$row["college"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Knowledge about"."</td>\n<td>".getlanguage()."</td></tr>\n";
           $output.="<tr>\n<td>"."DOB"."</td>\n<td> ".$row["dob"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Higher studies"."</td>\n<td> ".(($row["higher_studies"]=="")?"No":$row["higher_studies"]) ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Mobile "."</td>\n<td> ".$row["mobile"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Father's mobile"."</td>\n<td> ".$row["mobile_father"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Email"."</td>\n<td> ".$row["email"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Alternative email"."</td>\n<td> ".$row["email_alter"] ."</td></tr>\n";
+          if(isset($row["fb"]))
+            $output.="<tr>\n<td>"."Facebook"."</td>\n<td> <a href=\"https://www.facebook.com/".$row["fb"] ."\" >".$row["fb"] ."</a></td></tr>\n";
+          $output.="<tr>\n<td>"."Mobile "."</td>\n<td> ".$row["mobile"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Father's mobile"."</td>\n<td> ".$row["mobile_father"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Higher studies"."</td>\n<td> ".(($row["higher_studies"]=="")?"No":$row["higher_studies"]) ."</td></tr>\n";
           $output.="<tr>\n<td>"."Home city"."</td>\n<td> ".$row["home_city"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Training Company"."</td>\n<td> ".$row["tcompany"] ."</td></tr>\n";
-          $output.="<tr>\n<td>"."Training experience"."</td>\n<td> ".$row["txp"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Knowledge about"."</td>\n<td>".getlanguage()."</td></tr>\n";
           $output.="<tr>\n<td>"."Hosteller"."</td>\n";
           switch($row["hosteller"]){
             case 'D':$output.="<td>No</td></tr>\n";
@@ -77,6 +78,25 @@
               break;
           }
           $output.="</table>";
+          $output.="  </div>\n";
+          $output.="  </div>\n";
+          $output.="  </div>\n";
+          $output.="<div class=\"row\">\n";
+          $output.="<div class=\"panel panel-info\">\n";
+          $output.="<div class=\"panel-heading\">College</div>\n";
+          $output.="<div class=\"panel-body\">\n";
+          $output.="<table class=\"table\">";
+          $output.="<tr>\n<td style=\"width:35.5%\">"."Registration No"."</td>\n<td> ".$row["reg_no"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."College"."</td>\n<td> ".$row["college"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Branch"."</td>\n<td> ".$row["branch"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Section"."</td>\n<td> ".$row["section"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Training Company"."</td>\n<td> ".$row["tcompany"] ."</td></tr>\n";
+          $output.="<tr>\n<td>"."Training experience"."</td>\n<td> ".$row["txp"] ."</td></tr>\n";
+          $output.="</table>";
+          $output.="  </div>\n";
+          $output.="  </div>\n";
+          $output.="  </div>\n";
+          $output.="  </div>\n";
         }
         else{
           $output="No records!";
@@ -101,7 +121,7 @@
           $row = $q->fetch();
           $output="<div class=\"container-fluid\" style=\"text-align:center;font-size:1.2em;\">\n";
             $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="  <div class=\"panel-heading\">10th</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
@@ -111,9 +131,9 @@
                     $output.="</table>\n";
                 $output.="  </div>\n";
               $output.="  </div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">12th</div>\n";
-                $output.="  <div class=\"panel-bod\">\n";
+                $output.="  <div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
                     $output.="  <tr><td>Marks</td><td>".$row["marks12"]."/".$row["max12"]."</td></tr>\n";
                     $output.="  <tr><td>Percentage</td><td>".$row["percent12"]."%</td></tr>\n";
@@ -123,7 +143,7 @@
                   $output.="  </table>\n";
                 $output.="  </div>\n";
               $output.="  </div>\n";
-              $output.="  <div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="  <div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="  <div class=\"panel-heading\">Diploma</div>\n";
                 $output.="  <div class=\"panel-body\">\n";
                 if($row["percent_diplo"]!="0"){
@@ -138,7 +158,7 @@
                 $output.="</div>\n";
             $output.="</div>\n";
           $output.="  <div class=\"row\">\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="<div class=\"panel-heading\">SEM-1</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -148,7 +168,7 @@
                 $output.="  </table>\n";
                 $output.="</div>\n";
               $output.="</div>\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
               $output.="  <div class=\"panel-heading\">SEM-2</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -158,7 +178,7 @@
                   $output.="</table>\n";
               $output.="  </div>\n";
               $output.="</div>\n";
-              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+              $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                 $output.="<div class=\"panel-heading\">SEM-3</div>\n";
                 $output.="<div class=\"panel-body\">\n";
                   $output.="<table class=\"table\">\n";
@@ -170,7 +190,7 @@
                 $output.="</div>\n";
               $output.="</div>\n";
               $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-4</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";
@@ -180,7 +200,7 @@
                     $output.="</table>\n";
                   $output.="</div>\n";
                 $output.="</div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-5</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";
@@ -190,7 +210,7 @@
                     $output.="</table>\n";
                   $output.="</div>\n";
                 $output.="</div>\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">SEM-6</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                   $output.="  <table class=\"table\">\n";
@@ -202,7 +222,7 @@
                 $output.="</div>\n";
               $output.="</div>\n";
               $output.="<div class=\"row\">\n";
-                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:250px;margin:10px 10px 10px 10px;\">\n";
+                $output.="<div class=\"panel panel-info col-md-4\" style=\"min-width:300px;width:30%;height:265px;margin:10px 10px 10px 10px;\">\n";
                   $output.="<div class=\"panel-heading\">B.Tech.</div>\n";
                   $output.="<div class=\"panel-body\">\n";
                     $output.="<table class=\"table\">\n";

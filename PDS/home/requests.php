@@ -1,16 +1,9 @@
 <?php
   session_start();
-try{
-  include_once '../check.php';
-}
-catch(Exception $e){
-  header("location:../logout.php");
-}
 
-//admin check
-if(isset($_SESSION["admin"]))
-  header("location:../login.php");
-
+  //admin check & login check
+  if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
+    header("location:../login.php");
 
 //Initializing variables
   $email=$_SESSION["email"];
@@ -24,7 +17,7 @@ if(isset($_SESSION["admin"]))
       try{
         $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
         $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $query="select id,status from requests where reg_no='$reg_no';";
+        $query="select id,status from requests where reg_no='$reg_no' order by ts desc;";
         $q = $con->prepare($query);
         $q->execute();
         if($q->rowCount()>0){
@@ -33,12 +26,20 @@ if(isset($_SESSION["admin"]))
           $output="<table class=\"table\">\n";
           $output.="<tr>\n<td>Request id</td>\n<td>Status</td>\n</tr>\n";
           for($i=0;$i<$count;$i++){
-            $output.="<tr>\n<td>#".$row[$i]["id"]."</td>\n<td><span style=\"font-size:0.8em;\"class=\"label ".(($row[$i]["status"]=="DONE")?"label-success":"label-danger")."\">".$row[$i]["status"]."</span></td>\n</tr>\n";
+            $output.="<tr>\n<td>#".$row[$i]["id"]."</td>\n<td><span style=\"font-size:0.8em;\" class=\"label ";
+            if($row[$i]["status"]=="ACCEPTED")
+              $output.="label-success";
+            elseif($row[$i]["status"]=="PENDING")
+              $output.="label-warning";
+            elseif($row[$i]["status"]=="REJECTED")
+              $output.="label-danger";
+            $output.="\">";
+            $output.=$row[$i]["status"]."</span></td>\n</tr>\n";
           }
           $output.="</table>\n";
         }
         else{
-          $output="No records!";
+          $output="No requests!";
         }
       }
       catch(PDOException $e){
@@ -101,7 +102,7 @@ if(isset($_SESSION["admin"]))
 								<ul>
 									<li><a href="../index.php">Home</a></li>
 									<li><a href="./index.php">Show Details</a></li>
-									<li><a href="../internship/internship.php">Internship</a></li>
+									<li><a href="../internship/index.php">Internship</a></li>
                   <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
 								</ul>
 							</nav>
@@ -136,86 +137,84 @@ if(isset($_SESSION["admin"]))
             </div>
         </section>
 
-			   <footer class="footer">
-      <div class="three spacing"></div>
-	  <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <h1>
-            <a href="../index.php">
-             PDS
-            </a>
-          </h1>
-          <p>©2017 PDS. All rights reserved.</p>
-          <div class="spacing"></div>
-          <ul class="socials">
-            <li>
-              <a href="http://facebook.com">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://dribbble.com">
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-            <li>
-              <a href="http://tumblr.com">
-                <i class="fa fa-tumblr"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="spacing"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="spacing"></div>
-          <div class="links">
-            <h4>Some pages</h4>
-            <ul>
-               <li><a href="#">login</a></li>
-
-              <li><a href="../index.php">Home</a></li>
-              <li><a href="../aboutus/about.php">aboutus</a></li>
-               <li><a href="../contactus/contact.php">Contact us</a></li>
-              <li><a href="../internship/internship.php">internship</a></li>
+        <footer class="footer">
+          <div class="three spacing"></div>
+    	  <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>
+                <a href="../index.php">
+                 PDS
+                </a>
+              </h1>
+              <p>©2017 PDS. All rights reserved.</p>
+              <div class="spacing"></div>
+              <ul class="socials">
+                <li>
+                  <a href="http://facebook.com">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://dribbble.com">
+                    <i class="fa fa-dribbble"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://tumblr.com">
+                    <i class="fa fa-tumblr"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="spacing"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="spacing"></div>
+              <div class="links">
+                <h4>Some pages</h4>
+                <ul>
+                  <li><a href="../index.php">Home</a></li>
+                  <li><a href="../aboutus/index.php">About us</a></li>
+                   <li><a href="../contactus/index.php">Contact us</a></li>
+                  <li><a href="../internship/index.php">Internship</a></li>
 
 
 
-            </ul>
-          </div>
-          <div class="spacing"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="spacing"></div>
-          <div class="links">
-            <h4>placement</h4>
-            <ul>
-              <li><a href="../acadmic/planning.php">planning</a></li>
-              <li><a href="../acadmic/syllabus.php">syllabus</a></li>
-              <li><a href="../placement/current.php">current</a></li>
-              <li><a href="../placement/previous1year.php">previous one year</a></li>
-              <li><a href="../placement/previous2year.php">previous two year</a></li>
-            </ul>
-          </div>
-          <div class="spacing"></div>
-        </div>
-        <div class="col-md-3">
-          <div class="spacing"></div>
-           <div class="links">
-          <h4>recruiters</h4>
-           <ul>
-              <li><a href="../recruiters/gallery.php">gallery</a></li>
-              <li><a href="../recruiters/present.php">present</a></li>
-              <li><a href="../recruiters/upcoming.php">upcoming</a></li>
+                </ul>
+              </div>
+              <div class="spacing"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="spacing"></div>
+              <div class="links">
+                <h4>Placement</h4>
+                <ul>
+                  <li><a href="../acadmic/planning.php">Planning</a></li>
+                  <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/index.php">Current</a></li>
+                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+                </ul>
+              </div>
+              <div class="spacing"></div>
+            </div>
+            <div class="col-md-3">
+              <div class="spacing"></div>
+               <div class="links">
+              <h4>Recruiters</h4>
+               <ul>
+                  <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
-            </ul>
+                </ul>
 
-    </footer>
+        </footer>
 
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
@@ -230,7 +229,7 @@ if(isset($_SESSION["admin"]))
             <ul>
               <li><a href="../index.php">Home</a></li>
               <li><a href="#">Show Details</a></li>
-              <li><a href="../internship/internship.php">Internship</a></li>
+              <li><a href="../internship/index.php">Internship</a></li>
               <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
             </ul>
 					</nav>
