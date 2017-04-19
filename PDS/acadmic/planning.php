@@ -151,7 +151,7 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>planning</h1>
-							<span>Lovely layout of heading</span>
+							<span>Rule & Regulation</span>
 						</div>
 					</div>
 				</section>
@@ -159,24 +159,25 @@ function loginButton($part){
 				<section>
 					<div class="container">
 					<div class="row" style=" text-align: left;">
-						<div class="">
-							<h2 align="center">Rule & Regulation</h2>
-						</div >
-
-					<h3 >A. ELIGIBILITY & REGISTRATION</h3>
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#er">ELIGIBILITY & REGISTRATION</a></li>
+              <li><a data-toggle="tab" href="#res"> RESUME</a></li>
+              <li><a data-toggle="tab" href="#prept">PRE-PLACEMENT TALKS (PPT)</a></li>
+              <li><a data-toggle="tab" href="#sch">Schedule</a></li>
+            </ul>
+          <div class="tab-content">
+          <div id="er" class="tab-pane fade in active">
+            <br>
             <h5>
                 <ol>
     						  <li>	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.</li>
                   <li>	Registration for all programmes will be done during the month of August.</li>
-    							<li>Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.<
+    							<li>Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.
                </ol>
             </h5>
-
-
-
-						</div>
-						<div class="row" style=" text-align: left;">
-						<h3 >B. RESUME</h3>
+          </div>
+						<div id="res" class="row tab-pane fade" style=" text-align: left;">
+            <br>
 						<h5>
                             <ol>
                                 <li>	Students are advised to read the announcements made, go through the company website and apply only if interested.</li>
@@ -192,8 +193,8 @@ function loginButton($part){
 
 </h5>
 						</div>
-						<div class="row" style=" text-align: left;">
-						<h3>C. PRE-PLACEMENT TALKS (PPT)</h3>
+						<div id="prept" class="row tab-pane fade" style=" text-align: left;">
+            <br>
 						<h5>
             <ol>
 						<li>	Notices of the PPT will be published in the placement website well in advance. Students should be seated in the venue 15 minutes before the scheduled start of the PPT.<br></li>
@@ -215,15 +216,13 @@ function loginButton($part){
 						</h5>
 
 						</div>
-					</div>
-				</section>
-
-				<section class="call-to-action-2">
+        <div id="sch" class="tab-pane fade">
+        <br>
 					<div class="container">
 
 
 
-							<	<h4 style=" text-align:center;color:black;">Department of Computer Engineering </h4>
+							<h4 style=" text-align:center;color:black;">Department of Computer Engineering </h4>
 								<h3 style=" text-align:center;color:black;">Schedule of placement activities for  each Session  </h3>
 
 <style>
@@ -298,6 +297,7 @@ th {
 
  <br>
 					</div>
+          </div>
 				</section>
         
 
