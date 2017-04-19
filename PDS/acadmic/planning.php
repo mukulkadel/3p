@@ -103,7 +103,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="../index.php">Home</a></li>
-									<li><a href="#" class="has-submenu">Acadmic</a>
+									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
 										<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -122,9 +122,10 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
+                    <li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/index.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-											<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -155,25 +156,27 @@ function loginButton($part){
 					</div>
 				</section>
 
-				<section class="services on-services green">
+				<section>
 					<div class="container">
 					<div class="row" style=" text-align: left;">
-						<div class="section-heading">
-							<h2>rule & regulation</h2>
+						<div class="">
+							<h2 align="center">Rule & Regulation</h2>
 						</div >
 
-						<h3 style="color:white;">A. ELIGIBILITY & REGISTRATION</h3>
-						<h5>1.	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.<br>
-
-							2.	Registration for all programmes will be done during the month of August.<br>
-							3.Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.
-							</h5>
+					<h3 >A. ELIGIBILITY & REGISTRATION</h3>
+            <h5>
+                <ol>
+    						  <li>	All students who expect to graduate from the Institute by the end of the academic year 2016-17 and are seeking employment may register for campus placements with this office. Placement Registration is for ONE ACADEMIC YEAR ONLY.</li>
+                  <li>	Registration for all programmes will be done during the month of August.</li>
+    							<li>Campus placement is a facility provided for the students. Registration is not compulsory. Students not interested in placement are advised not to register for placement.<
+               </ol>
+            </h5>
 
 
 
 						</div>
 						<div class="row" style=" text-align: left;">
-						<h3 style="color:white;">B. RESUME</h3>
+						<h3 >B. RESUME</h3>
 						<h5>
                             <ol>
                                 <li>	Students are advised to read the announcements made, go through the company website and apply only if interested.</li>
@@ -190,25 +193,25 @@ function loginButton($part){
 </h5>
 						</div>
 						<div class="row" style=" text-align: left;">
-						<h3 style="color:white;">C. PRE-PLACEMENT TALKS (PPT)</h3>
+						<h3>C. PRE-PLACEMENT TALKS (PPT)</h3>
 						<h5>
-						1.	Notices of the PPT will be published in the placement website well in advance. Students should be seated in the venue 15 minutes before the scheduled start of the PPT.<br>
+            <ol>
+						<li>	Notices of the PPT will be published in the placement website well in advance. Students should be seated in the venue 15 minutes before the scheduled start of the PPT.<br></li>
+<li>	Students interested in a particular company, can attend its PPT. Attendance for PPT is not compulsory.</li>
+<li>	Students must go through the complete selection process of a particular company, once their resumes areaded.</li>
 
-2.	Students interested in a particular company, can attend its PPT. Attendance for PPT is not compulsory.<br>
+<li>	Any clarification regarding salary break-up, job profile, place of work, bond details etc. must be sought from the companies during PPT or interview.</li>
 
-3.	Students must go through the complete selection process of a particular company, once their resumes are uploaded.<br>
+<li>	DRESS CODE: Students must be formally dressed whenever they participate in any interaction with a company</li>
 
-4.	Any clarification regarding salary break-up, job profile, place of work, bond details etc. must be sought from the companies during PPT or interview.<br>
-
-5.	DRESS CODE: Students must be formally dressed whenever they participate in any interaction with a company<br>
-
-**This office reserves the right to refuse permission to a student to attend the selection process/PPT, if they do not dress up formally. Students are expected to know the norms for formal wear; for the benefit of those who claim ignorance, please note that the following are strictly not allowed:<br>
+<li>This office reserves the right to refuse permission to a student to attend the selection process/PPT, if they do not dress up formally. Students are expected to know the norms for formal wear; for the benefit of those who claim ignorance, please note that the following are strictly not allowed:</li>
 *	T-shirts with printed text; un-collawhite T-shirts;<br>
 *	Shorts<br>
 *	Jeans<br>
 *	Shirt not-tucked in<br>
 *	Chappals / flip-flops<br>
-
+          
+            </ol>
 						</h5>
 
 						</div>
@@ -288,13 +291,15 @@ th {
     <td>MOCK DRIVE 2</td>
     <td> every student</td>
   </tr>
+   
 </table>
 
 
 
-
+ <br>
 					</div>
 				</section>
+        
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -355,9 +360,10 @@ th {
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+                
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -387,7 +393,7 @@ th {
     					<nav class="responsive-menu">
     						<ul>
     							<li><a href="../index.php">Home</a></li>
-    							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
+    							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
     								<ul class="sub-menu">
     										<li><a href="../acadmic/planning.php">Planning</a></li>
     										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
@@ -403,9 +409,10 @@ th {
     							<li><a href="../aboutus/index.php">About us</a></li>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
+                    <li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/index.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    									<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
+    							
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>

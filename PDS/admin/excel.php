@@ -5,7 +5,7 @@ $output="";
 $usr="root";
 $pass="";
 $con = new PDO('mysql:host=localhost;port=3307;dbname=pdb',$usr,$pass);
-
+$i=1;
 session_start();
 $var_value = $_SESSION['varname'];//getting query from different file
 $filename = "Eminem.xls"; // File Name
@@ -17,9 +17,12 @@ $query =$var_value ;
      $c->execute();
 
 // Write data to file
-echo "Reg. no \tName\r\n";
+echo "S.no.\tReg. no \tName\r\n";
 while($rows=$c->fetch()){
-	echo $rows["reg_no"]."\t".$rows["name"]."\r\n";
+		
+	
+			echo   $i."\t".$rows["reg_no"]."\t".$rows["name"]."\r\n";
+		    $i++;
 }
 // Download file
 header("Content-Disposition: attachment; filename=\"$filename\"");

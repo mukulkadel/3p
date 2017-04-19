@@ -203,7 +203,7 @@ if ($gClient->getAccessToken()) {
 						</div>
 						<div class="col-md-12" align="center">
 							<div id="showCal" class="rounded">
-								<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=poornima.org_8g9j6q0c2pa7dcdvv0p4egmbd8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+								<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=poornima.org_r56krr5c58a3vjfimn0fbru7i8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
 							</div>
 						</div>
 						<div align="center">
@@ -213,7 +213,7 @@ if ($gClient->getAccessToken()) {
 						            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
 						                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
 						                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-						                s.src = 'bhanu.js';
+						                s.src = 'addevent.js';
 						                var h = d[g]('body')[0];h.appendChild(s); }})();
 						    </script>
 
@@ -223,11 +223,11 @@ if ($gClient->getAccessToken()) {
 						            <var class="atc_date_start">2016-05-04 12:00:00</var>
 						            <var class="atc_date_end">2016-05-04 18:00:00</var>
 						            <var class="atc_timezone">Asia/Kolkata</var>
-						            <var class="atc_title">Star Wars Day Party</var>
-						            <var class="atc_description">Hello</var>
-						            <var class="atc_location">Tatooine</var>
-						            <var class="atc_organizer">Luke Skywalker</var>
-						            <var class="atc_organizer_email">luke@starwars.com</var>
+						            <var class="atc_title">Event_Title</var>
+						            <var class="atc_description">Event_Description</var>
+						            <var class="atc_location">Event_location</var>
+						            <var class="atc_organizer">Event_coordinator</var>
+						            <var class="atc_organizer_email">abhishek.dadhich@poornima.org</var>
 						        </var>
 						    </span>
 						</div>

@@ -103,7 +103,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="index.php">Home</a></li>
-									<li><a href="#" class="has-submenu">Acadmic</a>
+									<li><a href="acadmic/index.php" class="has-submenu">Acadmic</a>
 										<ul class="sub-menu">
 											<li><a href="acadmic/planning.php">Planning</a></li>
 
@@ -122,9 +122,11 @@ function loginButton($part){
 									<li><a href="aboutus/index.php">About us</a></li>
 									<li><a href="placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
+											<li><a href="placement/activity.php">Activities</a></li>
 											<li><a href="placement/index.php">Current</a></li>
 											<li><a href="placement/previous1year.php">Previous 1 year</a></li>
-											<li><a href="placement/previous2year.php">Previous 2 year</a></li>
+											
+
 										</ul>
 									</li>
 									<li><a href="contactus/index.php">Contact us</a></li>
@@ -150,7 +152,7 @@ function loginButton($part){
 						<div class="fullwidthbanner">
 							<ul>
 								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
+									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide" style="border-radius: 100px;">
 
 
 								</li>
@@ -179,7 +181,7 @@ function loginButton($part){
 						</div>
 						<div class="col-md-12" align="center">
 							<div id="showCal" class="rounded">
-								<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=poornima.org_8g9j6q0c2pa7dcdvv0p4egmbd8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+								<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=poornima.org_r56krr5c58a3vjfimn0fbru7i8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
 							</div>
 						</div>
 				</section>
@@ -244,6 +246,7 @@ function loginButton($part){
             <ul>
               <li><a href="acadmic/planning.php">Planning</a></li>
               <li><a href="acadmic/syllabus.php">Syllabus</a></li>
+              <li><a href="placement/activity.php">Placement Activities</a></li>
               <li><a href="placement/index.php">Current</a></li>
               <li><a href="placement/previous1year.php">Previous one year</a></li>
               <li><a href="placement/previous2year.php">Previous two year</a></li>
@@ -276,7 +279,7 @@ function loginButton($part){
 					<nav class="responsive-menu">
 						<ul>
 							<li><a href="index.php">Home</a></li>
-							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
+							<li class="menu-item-has-children"><a href="/acadmic/index.php" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="acadmic/planning.php">Planning</a></li>
 										<li><a href="acadmic/syllabus.php">Syllabus</a></li>
@@ -292,9 +295,10 @@ function loginButton($part){
 							<li><a href="aboutus/index.php">About us</a></li>
 							<li class="menu-item-has-children"><a href="#">Placement</a>
 								<ul class="sub-menu">
+								<li><a href="placement/activity.php"> Activities</a></li>
 									<li><a href="placement/index.php">Current</a></li>
 									<li><a href="placement/previous1year.php">Previous 1 year</a></li>
-									<li><a href="placement/previous2year.php">Previous 2 year</a></li>
+									
 								</ul>
 							</li>
 							<li><a href="contactus/index.php">Contact us</a></li>

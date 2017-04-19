@@ -61,7 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Internship | PDS</title>
+	<title>Placement Activities| PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -122,7 +122,7 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
-										<li><a href="placement/activity.php">Activities</a></li>
+										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/index.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 										
@@ -146,36 +146,79 @@ function loginButton($part){
         <!-- Login button Popup-->
 				<?php echo loginButton(1); ?>
 
+
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>internship</h1>
-							<span>Lovely layout of heading</span>
+							<h1>Activities</h1>
+							
 						</div>
 					</div>
 				</section>
 
-				<section>
-					<div align="left">
-						<p>
-							<h5>Our Vision</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
+				<section class="call-to-action-1" >
+					<div class="container">
+						<div class="row" style=" text-align: left;">
+								<h2 style=" font-style: italic;font-size: 1.875em;">Placement Activities</h2>
+								<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
+									
+									•	Weekly two hours training on Aptitude.<br>
+									•	 Weekly two hours training on Verbal and Non-Verbal Reasoning sessions.<br>
+									•	 Monthly one group discussion session.<br>
+									•	Special Communication Development Training programs will be conducted by P-PROSKEP once in a month<br>
+									•	Fortnightly once communication development training will be conducted by our trained faculties.<br>
+									•	 The division mainly focuses on 100 % Placements.<br>
+									•	 Regular interaction by the Placement Officer with the students for fine tuning.<br>
+									•	Imparting the importance of English by implementing as English Campus.<br>
+									•	 Equipped Language laboratory used to improve the students Communication in English.<br>
+									•	 Organizing the sessions for making the students employable and to meet the corporate expectations.<br>
+									•	 Individual counselling to make them understand the certainty of life.<br>
+									•	Train them to work towards the goal.
+								</p>
+									<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
+										The record breaking placement at Department of Computer Engineering is an apt testimony to its focus on upholding the highest academic standards right from selecting topmost faculty to help students, introducing world-class pedagogical practices to personality development of the students.<br>
 
-							<h5>Our Mission</h5>
-							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
+										Training and Placement cell is well organized by<span style="font-weight:900;color:blue;"> Mr.  Abhishek Dadhich,</span>  Hardworking, Dedication and Experience of many years in various aspects and he also maintains the amicable environment with the good organizations. In his presence students procure so many placements in top MNC companies.<br>
 
-							<h5>Quality Policy</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
 
-							<h5>Core Values</h5>
-							To pursue global standards of excellence in all our endeavors namely teaching, research, and consultancy and continuing education and to remain accountable in our core and support functions, through processes of self-evaluation and continuous improvement.<h5></h5>
-						</p>
+									</p>
+								<h2 style=" font-style: italic;font-size: 1.875em; background-color:lightgrey; "align="center">Corporate Relations Officers</h2>
+								<table width="643" height="340" border="1" align="center">
+  <tr>
+    <td width="24" height="69"  ><p><strong>Sr.<br />
+No.</strong></p>
+    </td>
+    <td width="128"><strong>Name</strong></td>
+    <td width="143"><strong>Designation</strong></td>
+    <td width="200"><strong>Email</strong></td>
+    <td width="114"><strong>Mobile  Number</strong></td>
+  </tr>
+  <tr>
+    <td height="77">1</td>
+    <td><u><strong>Deepak Moud</strong></u></td>
+    <td>Head  of Department, Department of Computer Engineering</td>
+    <td ><a href="mailto:deepakmoud@poornima.org"><span style="color:blue;">deepakmoud@poornima.org</span></a></td>
+    <td>+91-7568748510</td>
+  </tr>
+  <tr>
+    <td>2</td>
+   	<td><u><strong>Abhishek Dadhich</strong></u></td>
+    <td>Senior  Manager Corporate Relations,&nbsp;<br />
+Department of Computer Engineering</td>
+    <td><a href="mailto:abhishek.dadhich@poornima.org"><span style="color:blue;">abhishek.dadhich@poornima.org</span></a></td>
+    <td>+91-9001571710</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><u><strong>Krutibash Nayak</strong></u></td>
+    <td>Placement  In-Charge,<br />
+Department of Computer Engineering</td>
+    <td><a href="mailto:kruti@poornima.org"><span style="color:blue;">kruti@poornima.org</span></a></td>
+    <td>+91-9799644596</td>
+  </tr>
+</table>
+						</div>
 					</div>
-		    			<div align="center">
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/Summer_internship.php">Summer Internship</a></div>
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../internship/foreign_internship.php">Foreign Internship</a></div>
-    					</div>
-
 				</section>
 
         <footer class="footer">
@@ -237,7 +280,7 @@ function loginButton($part){
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
-                  <li><a href="placement/activity.php">Placement Activities</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
                  
@@ -286,9 +329,10 @@ function loginButton($part){
     							<li><a href="../aboutus/index.php">About us</a></li>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
+    									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/index.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    								
+    									
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>

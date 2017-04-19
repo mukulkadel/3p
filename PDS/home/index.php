@@ -138,9 +138,6 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="../aboutus/index.php">About us</a></li>
                    <li><a href="../contactus/index.php">Contact us</a></li>
                   <li><a href="../internship/index.php">Internship</a></li>
-
-
-
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -152,9 +149,9 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -167,7 +164,6 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
                   <li><a href="../recruiters/index.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
-
                 </ul>
 
         </footer>
