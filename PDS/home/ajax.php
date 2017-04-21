@@ -62,7 +62,7 @@
           $output.="<tr>\n<td>"."Email"."</td>\n<td> ".$row["email"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Alternative email"."</td>\n<td> ".$row["email_alter"] ."</td></tr>\n";
           if(isset($row["fb"]))
-            $output.="<tr>\n<td>"."Facebook"."</td>\n<td> <a href=\"https://www.facebook.com/".$row["fb"] ."\" >".$row["fb"] ."</a></td></tr>\n";
+            $output.="<tr>\n<td>"."Facebook"."</td>\n<td> <a href=\"https://www.facebook.com/".$row["fb"] ."\" target=\"_blank\">".$row["fb"] ."</a></td></tr>\n";
           $output.="<tr>\n<td>"."Mobile "."</td>\n<td> ".$row["mobile"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Father's mobile"."</td>\n<td> ".$row["mobile_father"] ."</td></tr>\n";
           $output.="<tr>\n<td>"."Higher studies"."</td>\n<td> ".(($row["higher_studies"]=="")?"No":$row["higher_studies"]) ."</td></tr>\n";

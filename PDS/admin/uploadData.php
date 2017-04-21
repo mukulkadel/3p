@@ -154,9 +154,10 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
+
                 </ul>
               </div>
               <div class="spacing"></div>

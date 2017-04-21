@@ -21,7 +21,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Upload Student Details</title>
+	<title>Requests | PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -91,6 +91,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
               <div class="panel panel-info">
                 <div class="panel-heading">
                   <span>Requests</span>
+                  <div style="float:right"><form><label>Search:</label><input id="searchValue" type="text" onkeyup="display()" style="color:#000000;"/></form></div>
                 </div>
                 <div class="panel-body">
                   <table class="table">
@@ -105,10 +106,35 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
             </div>
           </div>
         </section>
+        <div id="viewRequest" class="modal fade" role="dialog" style="margin-top:7%;">
+          <div class="modal-dialog">
 
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Request Details</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <table class="table table-hover">
+                    <tr><td>Request ID:</td><td id="requestId"></td></tr>
+                    <tr><td>Registration no:</td><td id="reg_no"></td></tr>
+                    <tr><td>Name:</td><td id="name"></td></tr>
+                    <tr><td>Status:</td><td id="status"></td></tr>
+                  </table>
+                  <table class="table" id="requestContainer"></table>
+                  </table>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <span id="viewButtons"></span>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
 
-
-
+          </div>
+        </div>
         <footer class="footer">
           <div class="three spacing"></div>
     	  <div class="container">
@@ -170,7 +196,6 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-                  <li><a href="../placement/previous2year.php">Previous two year</a></li>
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -230,16 +255,63 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	 <script type="text/javascript">
+   //previous display mode
+   var pmode;
+   function viewDetails(req_id){
+     $.ajax({
+       type:"post",
+       url:"./prequests.php",
+       data:{"action":"viewDetails",
+            "id":req_id},
+        dataType:"json",
+        success:function(out){
+          $("#requestId").html(out["id"]);
+          $("#reg_no").html(out["reg_no"]);
+          $("#name").html(out["name"]);
+          $("#status").html(out["status"]);
+          $("#requestContainer").html(out["data"]);
+          $("#viewButtons").html(out["viewButtons"]);
+        }
+     });
+   }
+   function acceptRequest(req_id){
+     $.ajax({
+       type:"post",
+       url:"./prequests.php",
+       data:{action:"acceptRequest",
+            "id":req_id},
+       success:function(out){
+         display("ALL");
+       }
+      });
+   }
+   function rejectRequest(req_id){
+     $.ajax({
+       type:"post",
+       url:"./prequests.php",
+       data:{"action":"rejectRequest",
+            "id":req_id},
+       success:function(out){
+         display("ALL");
+       }
+      });
+   }
    function display(mode){
+     var name = $("#searchValue").val();
+     //initializing if mode not specified
+     if(typeof(mode)=="undefined") mode=pmode;
+
      $.ajax({
        type:"post",
        url:"./prequests.php",
        data:{"action":"display",
-             "mode":mode},
+             "mode":mode,
+            "name":name},
        success:function(out){
          $("#output").html(out);
        }
      });
+     pmode=mode;
    }
    $(document).ready(function(){
      display("ALL");

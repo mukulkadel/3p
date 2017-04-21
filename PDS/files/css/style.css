@@ -16,7 +16,7 @@ body
  font-family: 'Open Sans', sans-serif;
  }
 section {
-  padding: 10px 0;
+  padding: 100px 0;
 }
 p {
   font-size: 13px;
@@ -367,7 +367,7 @@ font-size:20px;
 }
 .links {
     margin-bottom: 40px;
-	
+
 }
 .links h4,.footer h4
 {
@@ -1356,7 +1356,7 @@ h6 {
 font-size:35px;
  text-align:center;
  color:#fff;
- 
+
 }
 .service-item h3 {
   font-size: 16px;
@@ -1413,7 +1413,7 @@ color:#00FF00;
   letter-spacing: 1px;
 }
 .call-to-action-1 p {
- 
+
 }
 .call-to-action-1 .btn-black {
   float: left;
@@ -1681,7 +1681,7 @@ color:#00FF00;
   background-color: #dddddd;
   margin: 15px 0 60px 0;
 }
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.3.3
  */
@@ -1896,7 +1896,7 @@ color:#00FF00;
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
- * 
+ *
  */
 /* ====================================================================================================================
  * FONT-FACE
