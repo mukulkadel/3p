@@ -148,7 +148,7 @@ function loginButton($part){
 
 
 				<section>
-					<div>
+					<div class="container">
 						<h1>  Foreign Internship	</h1>
 						<p style="text-align: justify;">Internships have long been valued as a vital tool for college students and graduates to gain important work experience before embarking on a career path. But it has only been little over a decade that international internships and work abroad experiences have become ever-more-popular. In particular during the past few years due to a rapidly growing international work environment in many careers and companies internships abroad have caught the attention of companies, educators, and students as a valuable career tool. Keeping this in mind Poornima Foundation has tie up with following foreign institutions :</p>
 					</div>
