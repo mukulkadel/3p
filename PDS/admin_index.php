@@ -112,6 +112,7 @@ if ($gClient->getAccessToken()) {
 											<li><a href="acadmic/planning.php">Planning</a></li>
 
 											<li><a href="acadmic/syllabus.php">syllabus</a></li>
+											   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
 											
 										</ul>
 									</li>
@@ -128,7 +129,7 @@ if ($gClient->getAccessToken()) {
 										<ul class="sub-menu">
 											<li><a href="placement/current.php">current</a></li>
 											<li><a href="placement/previous1year.php">previous 1 year</a></li>
-											<li><a href="placement/previous2year.php">previous 2 year</a></li>
+											
 										</ul>
 									</li>
 									<li><a href="contactus/contact.php">Contact us</a></li>
@@ -297,7 +298,7 @@ if ($gClient->getAccessToken()) {
               <li><a href="acadmic/syllabus.php">syllabus</a></li>
               <li><a href="placement/current.php">current</a></li>
               <li><a href="placement/previous1year.php">previous one year</a></li>
-              <li><a href="placement/previous2year.php">previous two year</a></li>
+              
             </ul>
           </div>
           <div class="spacing"></div>
@@ -330,7 +331,8 @@ if ($gClient->getAccessToken()) {
 							<li class="menu-item-has-children"><a href="#" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="acadmic/planning.php">Planning</a></li>
-										<li><a href="acadmic/syllabus.php">syllabus</a></li>								
+										<li><a href="acadmic/syllabus.php">syllabus</a></li>
+										   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>								
 										</ul>
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
@@ -345,7 +347,7 @@ if ($gClient->getAccessToken()) {
 								<ul class="sub-menu">
 									<li><a href="placement/current.php">current</a></li>
 									<li><a href="placement/previous1year.php">previous 1 year</a></li>
-									<li><a href="placement/previous2year.php">previous 2 year</a></li>
+									
 								</ul>
 							</li>
 							<li><a href="contactus/contact.php">Contact us</a></li>

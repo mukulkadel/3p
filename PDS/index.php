@@ -61,6 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+
 	<title>PDS</title>
 
 
@@ -73,11 +74,16 @@ function loginButton($part){
 	<link rel="stylesheet" href="files/css/font-awesome.min.css">
 	<link rel="stylesheet" href="files/css/style.css">
 	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
 	<![endif]-->
+	<style>
+.mySlides {display:none;}
+</style>
 
 </head>
 <body>
@@ -108,6 +114,7 @@ function loginButton($part){
 											<li><a href="acadmic/planning.php">Planning</a></li>
 
 											<li><a href="acadmic/syllabus.php">Syllabus</a></li>
+											   <li><a href="acadmic/Placement_pre.php">Placement Preparations</a></li>
 
 										</ul>
 									</li>
@@ -146,32 +153,39 @@ function loginButton($part){
 
         <!-- Login button Popup-->
 				<?php echo loginButton(1); ?>
+				<br><br><br>
 
-				<div class="slider">
-					<div class="fullwidthbanner-container">
-						<div class="fullwidthbanner">
-							<ul>
-								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide" style="border-radius: 100px;">
+		<!--slider-->		
 
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="files/images/1.JPG" style="width:100%" >
+  <img class="mySlides" src="files/images/22.png" style="width:100%" >
+  <img class="mySlides" src="files/images/11.png" style="width:100%" >
+  <img class="mySlides" src="files/images/4.JPG" style="width:100%" >
 
-								</li>
-								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/22.png" data-fullwidthcentering="on" alt="slide">
-
-
-								</li>
-								<li class="first-slide" data-transition="fade" data-slotamount="10" data-masterspeed="300">
-									<img src="files/images/def.png" data-fullwidthcentering="on" alt="slide">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
 
 
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+<script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
+<!--/slider-->
 <!--calender section-->
 				<section>
 					<div class="container">
@@ -283,6 +297,7 @@ function loginButton($part){
 								<ul class="sub-menu">
 										<li><a href="acadmic/planning.php">Planning</a></li>
 										<li><a href="acadmic/syllabus.php">Syllabus</a></li>
+										   <li><a href="sacadmic/Placement_pre.php">Placement Preparations</a></li>
 										</ul>
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>

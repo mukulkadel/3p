@@ -79,6 +79,47 @@ function loginButton($part){
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Playball|Roboto" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/compiled.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/prism.css" rel="stylesheet">
+		<!-- Your custom styles (optional) -->
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+
+
+<!-- Latest compiled and minified JavaScript -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <link href="style.css" rel="stylesheet">
+		
+		
+		
+
+        <style type="text/css">
+			img.wp-smiley,
+			img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 1em !important;
+			}
+		
+
+</style>
+
 </head>
 <body>
 
@@ -101,40 +142,41 @@ function loginButton($part){
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
-								<ul>
-									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
-										<ul class="sub-menu">
-											<li><a href="../acadmic/planning.php">Planning</a></li>
+                                <ul>
+                                    <li><a href="../index.php">Home</a></li>
+                                    <li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="../acadmic/planning.php">Planning</a></li>
 
-											<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                                            <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
 
-										</ul>
-									</li>
-									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
-										<ul class="sub-menu">
-											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
-											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+                      <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                                            <li><a href="../recruiters/index.php">Present</a></li>
+                                            <li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
 
-										</ul>
-									</li>
-									<li><a href="../aboutus/index.php">About us</a></li>
-									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
-										<ul class="sub-menu">
-										<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/index.php">Current</a></li>
-											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-										
-										</ul>
-									</li>
-									<li><a href="../contactus/index.php">Contact us</a></li>
-									<li><a href="../internship/index.php" class="has-submenu">Internship</a>
-										<ul class="sub-menu">
-											<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
-											<li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
-										</ul>
-									</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../aboutus/index.php">About us</a></li>
+                                    <li><a href="../placement/index.php" class="has-submenu">Placement</a>
+                                        <ul class="sub-menu">
+                    <li><a href="../placement/activity.php"> Activities</a></li>
+                                            <li><a href="../placement/index.php">Current</a></li>
+                                            <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="../contactus/index.php">Contact us</a></li>
+                                    <li><a href="../internship/index.php" class="has-submenu">Internship</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+                                            <li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+                                        </ul>
+                                    </li>
 									<!-- Login button -->
 								  <?php echo loginButton(0); ?>
 								</ul>
@@ -149,60 +191,479 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>Contact Us</h1>
-							<span>Lovely layout of heading</span>
-						</div>
-					</div>
-				</section>
-
-				<section class="contact-map-wrapper">
-					<div class="container">
-						<div class="section-heading">
-							<h2>Find Us On Map</h2>
-							<div class="section-dec"></div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="contact-map" style="height: 380px;"></div>
-							</div>
+							<h1>Team</h1>
+							
 						</div>
 					</div>
 				</section>
 
 
-				<section class="contact-us">
-					<div class="container">
-						<div class="section-heading">
-							<h2>Send Us A Message</h2>
-							<div class="section-dec"></div>
-						</div>
-						<div class="send-message col-sm-12">
-							<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-								<div class=" col-md-4 col-sm-4 col-xs-6">
-									<input type="text" class="blog-search-field" name="s" placeholder="Your name..." value="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-6">
-									<input type="text" class="blog-search-field" name="s" placeholder="Your email..." value="">
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-12">
-									<input type="text" class="subject" name="s" placeholder="Subject..." value="">
-								</div>
-								<div class="col-md-12 col-sm-12">
-									<textarea id="message" class="input" name="message" placeholder="Message..."></textarea>
-								</div>
-								<div class="submit-coment col-md-12">
-									<div class="btn-black">
-										<a href="#">Send now</a>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section>
+
+				
+	<!--Section: Team v.4-->
+<section  class="section" style="background-color: #8c1aff;" > 
+
+    <!--Section heading-->
+    <h1 class="section-heading">Our amazing team </h1>
+    <!--Section sescription-->
+    <p class="section-description">Faces Behind The Project</p>
+    <br>
+
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-lg-4 col-md-2">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-1" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="2.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="2.jpg" class="img-circle img-responsive">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>DEEPAK MOUD</h4>
+                            <p>HOD CS DEPARTMENT</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here for more</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                        <br>Handling Departmental Placement cell<br>
+                        & Placement Coordinator <br>
+                        <p><b>Email:-abhi231186@gmail.com<b>
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-1"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/First column-->
+
+
+        <!--Second column-->
+        <div class="col-lg-4 col-md-6">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-2" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="2.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="2.jpg" class="img-circle img-responsive">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>ABHISHEK DADHICH</h4>
+                            <p>PIET CS Department <br></p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-2"><i class="fa fa-repeat"></i> Click here for more</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>-----------------</p>
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="icons-sm drib-ic"><i class="fa fa-dribbble"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-2"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Second column-->
+
+
+        <!--Third column-->
+        <div class="col-lg-4 col-md-6">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-3" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="Mukul.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="Mukul.jpg" class="img-circle img-responsive">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>KRUTIBASH NAYAK</h4>
+                            <p>PIET CS DEPARTMENT</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-3"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                            <li><a class="icons-sm git-ic"><i class="fa fa-github"> </i></a></li>
+                            <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-3"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Third column-->
+
+
+        <!--Fourth  column-->
+        <div class="col-lg-4 col-md-2">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-4" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="mukul.jpg" style="border-radius: 40px; height: 350px; width: 50%;">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="mukul.jpg" class="img-circle img-responsive" style="border-radius: 60px;">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                         <h4>Mukul Kadel</h4>
+                            <p>TL</p>
+                           
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-4"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
+                        <p>Email:-abhishek@gmail.com
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-4"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Fourth column-->
+
+<!--Fifth  column-->
+        <div class="col-lg-4 col-md-2">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-5" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="bhanu.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="bhanu.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>Bhanu Bhist</h4>
+                            <p>Developer</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-5"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
+                        <p>Email:-abhishek@gmail.com
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-5"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Fifth column-->
+
+        <!--Sixth column-->
+        <div class="col-lg-4 col-md-2" >
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-6" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="tiwari.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="tiwari.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
+                        </div>
+
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>Ashutosh Tiwari</h4>
+                            <p>Developer</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-6"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
+                        <p>Email:-abhishek@gmail.com
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-6"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Sixth column-->
+
+         <!--seven column-->
+        <div class="col-lg-6 col-md-2" style="padding-left:130px">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-7" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="gaurav.JPG">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="gaurav.JPG" class="img-circle img-responsive" style="border-radius: 50px;">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>Gaurav Goyal</h4>
+                            <p>Designer</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-7"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
+                        <p>Email:-abhishek@gmail.com
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-7"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/seven column-->
+
+ <!--Eight column-->
+        <div class="col-lg-6 col-md-2" style="padding-right:130px">
+
+            <!--Rotating card-->
+            <div class="card-wrapper">
+                <div id="card-8" class="card-rotating effect__click">
+
+                    <!--Front Side-->
+                    <div class="face front">
+
+                        <!-- Image-->
+                        <div class="card-up">
+                            <img src="1.jpg">
+                        </div>
+                        <!--Avatar-->
+                        <div class="avatar"><img src="1.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
+                        </div>
+                        <!--Content-->
+                        <div class="card-block">
+                            <h4>Gaurav Goyal</h4>
+                            <p>Designer</p>
+                            <!--Triggering button-->
+                            <a class="rotate-btn" data-card="card-8"><i class="fa fa-repeat"></i> Click here to rotate</a>
+                        </div>
+                    </div>
+                    <!--/.Front Side-->
+
+                    <!--Back Side-->
+                    <div class="face back">
+
+                        <!--Content-->
+                        <h4>About me</h4>
+                        <hr>
+                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
+                        <p>Email:-abhishek@gmail.com
+                        <hr>
+                        <!--Social Icons-->
+                        <ul class="inline-ul">
+                            <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                            <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                            <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        </ul>
+                        <!--Triggering button-->
+                        <a class="rotate-btn" data-card="card-8"><i class="fa fa-undo"></i> Click here to rotate back</a>
+
+                    </div>
+                    <!--/.Back Side-->
+
+                </div>
+            </div>
+            <!--/.Rotating card-->
+        </div>
+        <!--/Eightumn-->
+
+
+    </div>
+
+</section>
 
         <footer class="footer">
           <div class="three spacing"></div>
-    	  <div class="container">
+          <div class="container">
           <div class="row">
             <div class="col-md-3">
               <h1>
@@ -262,7 +723,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-               
+                
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -280,57 +741,57 @@ function loginButton($part){
 
         </footer>
 
-    				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+                    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-    			</div>
+                </div>
 
-    		</div>
+            </div>
 
-    		<nav class="sidebar-menu slide-from-left">
-    			<div class="nano">
-    				<div class="content">
-    					<nav class="responsive-menu">
-    						<ul>
-    							<li><a href="../index.php">Home</a></li>
-    							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
-    								<ul class="sub-menu">
-    										<li><a href="../acadmic/planning.php">Planning</a></li>
-    										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
-    										</ul>
-    							</li>
-    							<li class="menu-item-has-children"><a href="#">Recruiters</a>
-    								<ul class="sub-menu">
-    									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/index.php">Present</a></li>
-    									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
-    								</ul>
-    							</li>
-    							<li><a href="../aboutus/index.php">About us</a></li>
-    							<li class="menu-item-has-children"><a href="#">Placement</a>
-    								<ul class="sub-menu">
-    									<li><a href="../placement/activity.php">Activities</a></li>
-    									<li><a href="../placement/index.php">Current</a></li>
-    									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    								
-    								</ul>
-    							</li>
-    							<li><a href="../contactus/index.php">Contact us</a></li>
-    							<li class="menu-item-has-children"><a href="#">Internship</a>
-    								<ul class="sub-menu">
-    									<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
-    									<li><a href="../internship/Foregin_internship.php">Foreign Internship</a></li>
-    								</ul>
-    							</li>
-    							<!-- Login button -->
-    							<?php echo loginButton(0); ?>
-    						</ul>
-    					</nav>
-    				</div>
-    			</div>
-    		</nav>
+            <nav class="sidebar-menu slide-from-left">
+                <div class="nano">
+                    <div class="content">
+                        <nav class="responsive-menu">
+                            <ul>
+                                <li><a href="../index.php">Home</a></li>
+                                <li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
+                                    <ul class="sub-menu">
+                                            <li><a href="../acadmic/planning.php">Planning</a></li>
+                                            <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                        <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
+                                            </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Recruiters</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                                        <li><a href="../recruiters/index.php">Present</a></li>
+                                        <li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../aboutus/index.php">About us</a></li>
+                                <li class="menu-item-has-children"><a href="#">Placement</a>
+                                    <ul class="sub-menu">
+                    <li><a href="../placement/activity.php">Activities</a></li>
+                                        <li><a href="../placement/index.php">Current</a></li>
+                                        <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                                
+                                    </ul>
+                                </li>
+                                <li><a href="../contactus/index.php">Contact us</a></li>
+                                <li class="menu-item-has-children"><a href="#">Internship</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+                                        <li><a href="../internship/Foregin_internship.php">Foreign Internship</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Login button -->
+                                <?php echo loginButton(0); ?>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
 
-    	</div>
-
+        </div>
 <script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
@@ -339,7 +800,18 @@ function loginButton($part){
 	<script type="text/javascript" src="../files/js/plugins.js"></script>
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
-
+<!-- JQuery card -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
 
 </body>
 

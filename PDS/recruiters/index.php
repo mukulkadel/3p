@@ -108,6 +108,7 @@ function loginButton($part){
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
 											<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+											   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
 
 										</ul>
 									</li>
@@ -259,6 +260,7 @@ function loginButton($part){
     								<ul class="sub-menu">
     										<li><a href="../acadmic/planning.php">Planning</a></li>
     										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+    										   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
     										</ul>
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
