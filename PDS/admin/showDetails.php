@@ -99,9 +99,9 @@ if($q->rowCount()>0){
               <div class="row">Email: <?php echo $_SESSION['student_email']; ?></div>
               <div class="row" style="margin-top:40px;">
               <ul style="list-style-type:none;">
-                <li><a href="./index.php" style="color:#ff0000;">Show Details</a></li>
-                  <li><a href="./update.php">Update</a></li>
-                <li><a href="./requests.php">Requests</a></li>
+                <li><a href="./index.php">Search</a></li>
+                <li><a href="./showDetails.php" style="color:#ff0000;">Show Details</a></li>
+                <li><a href="./requests.php?searchValue=<?php echo urlencode($_SESSION['student_name']); ?>">Requests</a></li>
               </ul>
               </div>
             </div>
