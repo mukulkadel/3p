@@ -29,7 +29,7 @@
       $con->exec($query);
 
       //For success upload
-      $status="s";
+      $status="success";
     }
     catch(PDOException $e)
     {

@@ -481,6 +481,9 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
 			  searchq();
 
 
+        function logout(){
+          window.location="../logout.php"
+        }
           </script>
 
 
