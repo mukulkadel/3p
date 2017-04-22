@@ -61,7 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Gallery | PDS</title>
+	<title>Eminent Recruiters | PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -78,6 +78,22 @@ function loginButton($part){
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
+		<style type="text/css">
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #00ccff;
+  color: #EEA200;
+  padding: 24px 10px;
+
+}
+</style>
 
 </head>
 <body>
@@ -101,7 +117,7 @@ function loginButton($part){
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
-								<ul>
+									<ul>
 									<li><a href="../index.php">Home</a></li>
 									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
 										<ul class="sub-menu">
@@ -123,7 +139,7 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
-											<li><a href="../placement/activity.php"> Activities</a></li>
+										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 											
@@ -147,154 +163,32 @@ function loginButton($part){
         <!-- Login button Popup-->
 				<?php echo loginButton(1); ?>
 
+
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>Gallery</h1>
-							<span>Lovely layout </span>
+							<h1>Eminent Recruiters</h1>
+							
 						</div>
 					</div>
 				</section>
 
-				<section class="portfolio on-portfolio">
+				<section >
 					<div class="container">
-						<div class="col-sm-12 text-center">
-							<div id="projects-filter">
-								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".furniture">local</a>
-								<a href="#" data-filter=".wallpaper">other</a>
+						<div class="row" style=" text-align: left;">
+						<h2 style=" font-style: italic;font-size: 1.875em;">Eminent Recruiters</h2>
+						<p style="font-size:110%;color:black; padding-left:20px;text-align:justify;padding-right:20px " ><br>
+						It is really amazing for students to have their "Appointment Order" even before they finish their degree, it is happening here in Department of Computer Engineering. In the past years, the department has done commendably well in ensuring placement of our students in top MNCs, private and public sector enterprises.<br><br>
+The On-Campus recruitment program keeps continuing till the end of their final semester, and then we help our students by arranging Off-Campus Interview too.<br><br>
 
-							</div>
-						</div>
-						<div class="row">
-							<div class="row" id="portfolio-grid">
-								<div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-								<figure>
-			        					<img alt="author" src="../files/images/gallery/1.jpg">
-			        					<figcaption>
-			            					<h3>Majestic Technosoft Pvt. Ltd.</h3>
-			            					<p>Majestic Technosoft’s award winning web design and digital marketing experts have helped hundreds of local, national and international clients achieve new levels of success through exemplary site designs, optimum web development and innovative & intelligent marketing campaigns.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
+ Over 20 top organizations from various sectors, like IT, FMCG, Banking, Insurance, Advertising, Consultancy etc. visited and placed our students in the current year. Some of our esteemed recruiting organisations include: <br><br>
 
-
-
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="2-image" src="../files/images/gallery/2.png">
-			        					<figcaption>
-			            					<h3>Noto IT Solutions</h3>
-			            					<p>The company commenced its operations in Dot Net, PHP, Mobile Technology, Digital Marketing, SEO, Agile, IOS8, Windows 8.1, Android Lollipop, PhoneGap, Unity, SharePoint2013, Drupal, Joomla, Azure, Amazon web service, Magento and Laravel.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="3-image" src="../files/images/gallery/3.png">
-			        					<figcaption>
-			            					<h3>Cognizant</h3>
-			            					<p>Cognizant is an American multinational corporation that provides digital, technology, consulting, and operations services. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="4-image" src="../files/images/gallery/4.png">
-			        					<figcaption>
-			            					<h3>Activant Solutions</h3>
-			            					<p>Activant Solutions contributes to the continuous improvement of education and delivers best value. These services are delivered under direct contract or in partnership with private or public sector organizations.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="5-image" src="../files/images/gallery/5.jpg">
-			        					<figcaption>
-			            					<h3>Appirio</h3>
-			            					<p>Appirio is a global services company that helps customers create next-generation Worker & Customer Experiences using the latest cloud technologies. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="6-image" src="../files/images/gallery/6.png">
-			        					<figcaption>
-			            					<h3>ARVA SOFTWARE</h3>
-			            					<p>Arva SoftwareSolution is an Innovative, Leading-edge BPO and IT Solutions Provider. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="7-image" src="../files/images/gallery/7.png">
-			        					<figcaption>
-			            					<h3>Infosys</h3>
-			            					<p>Infosys Limited is an Indian multinational corporation that provides business consulting, information technology .</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper ">
-							  		<figure>
-			        					<img alt="8-image" src="../files/images/gallery/8.png">
-			        					<figcaption>
-			            					<h3>Metacube Software</h3>
-			            					<p>We are a leading software product development services company, partnering with both start-ups and established players globally in their innovation journey. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/9.png">
-			        					<figcaption>
-			            					<h3>Nagarro</h3>
-			            					<p>Nagarro is a custom software development and business consulting company that provides consulting and technology services to its clients.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/10.png">
-			        					<figcaption>
-			            					<h3>Tata Consultancy Services</h3>
-			            					<p>Tata Consultancy Services' IT services, consulting and business solutions deliver real results to global.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/11.png">
-			        					<figcaption>
-			            					<h3>BigStep Technologies</h3>
-			            					<p></p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture ">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/12.png">
-			        					<figcaption>
-			            					<h3>Wipro</h3>
-			            					<p>Wipro demerged its non-IT businesses into a separate companies to bring in more focus on independent businesses.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="portfolio-page-nav text-center">
-								<ul>
-									<li><a href="../recruiters/gallery.php"  class="current" >1</a></li>
-									<li><a href="../recruiters/gallery1.php" >2</a></li>
-									<li><a href="../recruiters/gallery2.php">3</a></li>
-									<li><a href="../recruiters/gallery1.php"><i class="fa fa-angle-double-right"></i></a></li>
-								</ul>
-							</div>
+						</p>
 						</div>
 					</div>
 				</section>
 
-        <footer class="footer">
+      <footer class="footer">
           <div class="three spacing"></div>
     	  <div class="container">
           <div class="row">
@@ -356,7 +250,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-               
+                 
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -425,7 +319,6 @@ function loginButton($part){
     		</nav>
 
     	</div>
-
 <script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->

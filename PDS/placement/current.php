@@ -61,7 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Gallery | PDS</title>
+	<title>Placement | PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -123,8 +123,8 @@ function loginButton($part){
 									<li><a href="../aboutus/index.php">About us</a></li>
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
-											<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/current.php">Current</a></li>
+										<li><a href="../placement/activity.php"> Activities</a></li>
+											<li><a href="../placement/curent.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 											
 										</ul>
@@ -150,147 +150,73 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>Gallery</h1>
+							<h1>current placement</h1>
 							<span>Lovely layout </span>
 						</div>
 					</div>
 				</section>
 
-				<section class="portfolio on-portfolio">
+				<section class="single-project">
 					<div class="container">
-						<div class="col-sm-12 text-center">
-							<div id="projects-filter">
-								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".furniture">local</a>
-								<a href="#" data-filter=".wallpaper">other</a>
-
-							</div>
-						</div>
 						<div class="row">
-							<div class="row" id="portfolio-grid">
-								<div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-								<figure>
-			        					<img alt="author" src="../files/images/gallery/1.jpg">
-			        					<figcaption>
-			            					<h3>Majestic Technosoft Pvt. Ltd.</h3>
-			            					<p>Majestic Technosoft’s award winning web design and digital marketing experts have helped hundreds of local, national and international clients achieve new levels of success through exemplary site designs, optimum web development and innovative & intelligent marketing campaigns.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
 
+							<div class="col-md-4">
+								<div class="single-project-sidebar">
+									<div class="about-author">
+										<img src="../files/images/author.png" alt="author">
+										<div class="author-contet">
+											<h3>Syam Meri</h3>
+											<span>Webdesigner</span>
+											<p>Lore</p>
+										</div>
+									</div>
 
-
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="2-image" src="../files/images/gallery/2.png">
-			        					<figcaption>
-			            					<h3>Noto IT Solutions</h3>
-			            					<p>The company commenced its operations in Dot Net, PHP, Mobile Technology, Digital Marketing, SEO, Agile, IOS8, Windows 8.1, Android Lollipop, PhoneGap, Unity, SharePoint2013, Drupal, Joomla, Azure, Amazon web service, Magento and Laravel.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="3-image" src="../files/images/gallery/3.png">
-			        					<figcaption>
-			            					<h3>Cognizant</h3>
-			            					<p>Cognizant is an American multinational corporation that provides digital, technology, consulting, and operations services. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="4-image" src="../files/images/gallery/4.png">
-			        					<figcaption>
-			            					<h3>Activant Solutions</h3>
-			            					<p>Activant Solutions contributes to the continuous improvement of education and delivers best value. These services are delivered under direct contract or in partnership with private or public sector organizations.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="5-image" src="../files/images/gallery/5.jpg">
-			        					<figcaption>
-			            					<h3>Appirio</h3>
-			            					<p>Appirio is a global services company that helps customers create next-generation Worker & Customer Experiences using the latest cloud technologies. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="6-image" src="../files/images/gallery/6.png">
-			        					<figcaption>
-			            					<h3>ARVA SOFTWARE</h3>
-			            					<p>Arva SoftwareSolution is an Innovative, Leading-edge BPO and IT Solutions Provider. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
-							  		<figure>
-			        					<img alt="7-image" src="../files/images/gallery/7.png">
-			        					<figcaption>
-			            					<h3>Infosys</h3>
-			            					<p>Infosys Limited is an Indian multinational corporation that provides business consulting, information technology .</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper ">
-							  		<figure>
-			        					<img alt="8-image" src="../files/images/gallery/8.png">
-			        					<figcaption>
-			            					<h3>Metacube Software</h3>
-			            					<p>We are a leading software product development services company, partnering with both start-ups and established players globally in their innovation journey. </p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/9.png">
-			        					<figcaption>
-			            					<h3>Nagarro</h3>
-			            					<p>Nagarro is a custom software development and business consulting company that provides consulting and technology services to its clients.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/10.png">
-			        					<figcaption>
-			            					<h3>Tata Consultancy Services</h3>
-			            					<p>Tata Consultancy Services' IT services, consulting and business solutions deliver real results to global.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/11.png">
-			        					<figcaption>
-			            					<h3>BigStep Technologies</h3>
-			            					<p></p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture ">
-							  		<figure>
-			        					<img alt="9-image" src="../files/images/gallery/12.png">
-			        					<figcaption>
-			            					<h3>Wipro</h3>
-			            					<p>Wipro demerged its non-IT businesses into a separate companies to bring in more focus on independent businesses.</p>
-			        					</figcaption>
-			    					</figure>
-							    </div>
+									<div class="info share-on">
+										<div class="social-icons">
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+												<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+												<li><a href="#"><i class="fa fa-rss"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-12">
-							<div class="portfolio-page-nav text-center">
-								<ul>
-									<li><a href="../recruiters/gallery.php"  class="current" >1</a></li>
-									<li><a href="../recruiters/gallery1.php" >2</a></li>
-									<li><a href="../recruiters/gallery2.php">3</a></li>
-									<li><a href="../recruiters/gallery1.php"><i class="fa fa-angle-double-right"></i></a></li>
-								</ul>
-							</div>
-						</div>
+					</div>
+				</section>
+
+				<section class="similar-projects">
+					<div class="container">
+						<div class="item col-md-4">
+					  		<figure>
+	        					<img alt="1-image" src="../files/images/01-portfolio.jpg">
+	        					<figcaption>
+	            					<h3>Normcore Dreamcatcher</h3>
+	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+	        					</figcaption>
+	    					</figure>
+					    </div>
+					    <div class="item col-md-4">
+					  		<figure>
+	        					<img alt="2-image" src="../files/images/02-portfolio.jpg">
+	        					<figcaption>
+	            					<h3>Meggings Mixtape</h3>
+	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+	        					</figcaption>
+	    					</figure>
+					    </div>
+					    <div class="item col-md-4">
+					  		<figure>
+	        					<img alt="3-image" src="../files/images/03-portfolio.jpg">
+	        					<figcaption>
+	            					<h3>Locavore Brooklyn</h3>
+	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
+	        					</figcaption>
+	    					</figure>
+					    </div>
 					</div>
 				</section>
 
@@ -356,7 +282,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
-               
+             
                 </ul>
               </div>
               <div class="spacing"></div>

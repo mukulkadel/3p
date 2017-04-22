@@ -48,36 +48,44 @@
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
-								<ul>
-									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
-										<ul class="sub-menu">
-											<li><a href="../acadmic/planning.php">Planning</a></li>
+								 <ul>
+                  <li><a href="../index.php">Home</a></li>
+                  <li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+                      <ul class="sub-menu">
+                      <li><a href="../acadmic/planning.php">Planning</a></li>
 
-											<li><a href="../acadmic/syllabus.php">syllabus</a></li>
-											 <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
-											
-										</ul>
-									</li>
-									<li><a href="#" class="has-submenu">Recruiters</a>
-										<ul class="sub-menu">
-											<li><a href="../recruiters/blog.php">Blog Classic</a></li>
-											<li><a href="../recruiters/blog-grid.php">Blog Grid</a></li>
-											<li><a href="../recruiters/blog-single.php">Single Post</a></li>
-										</ul>
-									</li>
-									<li><a href="../aboutus/about.php">About us</a></li>
-									<li><a href="#" class="has-submenu">placement</a>
-										<ul class="sub-menu">
-										<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/current.php">current</a></li>
-											<li><a href="../placement/previous1year.php">previous 1 year</a></li>
-											
-										</ul>
-									</li>
-									<li><a href="../contactus/contact.php">Contact us</a></li>
-									<li><a href="../internship/internship.php">Internship</a></li>
-								</ul>
+                      <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+
+                                 <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
+                    </ul>
+                    </li>
+                  </li>
+                  <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
+                    <ul class="sub-menu">
+                      <li><a href="../recruiters/gallery.php">Gallery</a></li>
+    				<li><a href="../recruiters/present.php">Present</a></li>
+    				<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+                  
+
+                    </ul>
+                  </li>
+                  <li><a href="../aboutus/index.php">About us</a></li>
+                  <li><a href="../placement/index.php" class="has-submenu">Placement</a>
+                    <ul class="sub-menu">
+                    <li><a href="../placement/activity.php">Activities</a></li>
+                      <li><a href="../placement/current.php">Current</a></li>
+                      <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="../contactus/index.php">Contact us</a></li>
+                  <li><a href="../internship/index.php" class="has-submenu">Internship</a>
+                    <ul class="sub-menu">
+                      <li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+                      <li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+                    </ul>
+                  </li>
+                  </ul>
 							</nav>
 						</div>
 					</div>

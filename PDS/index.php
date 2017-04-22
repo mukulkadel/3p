@@ -121,7 +121,7 @@ function loginButton($part){
 									<li><a href="recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="recruiters/gallery.php">Gallery</a></li>
-											<li><a href="recruiters/index.php">Present</a></li>
+											<li><a href="recruiters/present.php">Present</a></li>
 											<li><a href="recruiters/upcoming.php">Upcoming recruiters</a></li>
 
 										</ul>
@@ -130,8 +130,9 @@ function loginButton($part){
 									<li><a href="placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
 											<li><a href="placement/activity.php">Activities</a></li>
-											<li><a href="placement/index.php">Current</a></li>
+											<li><a href="placement/current.php">Current</a></li>
 											<li><a href="placement/previous1year.php">Previous 1 year</a></li>
+											
 											
 
 										</ul>
@@ -263,7 +264,7 @@ function carousel() {
               <li><a href="placement/activity.php">Placement Activities</a></li>
               <li><a href="placement/index.php">Current</a></li>
               <li><a href="placement/previous1year.php">Previous one year</a></li>
-              <li><a href="placement/previous2year.php">Previous two year</a></li>
+             
             </ul>
           </div>
           <div class="spacing"></div>
@@ -274,7 +275,7 @@ function carousel() {
           <h4>Recruiters</h4>
            <ul>
               <li><a href="recruiters/gallery.php">Gallery</a></li>
-              <li><a href="recruiters/index.php">Present</a></li>
+              <li><a href="recruiters/present.php">Present</a></li>
               <li><a href="recruiters/upcoming.php">Upcoming</a></li>
 
             </ul>
@@ -303,16 +304,18 @@ function carousel() {
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
 								<ul class="sub-menu">
 									<li><a href="recruiters/gallery.php">Gallery</a></li>
-									<li><a href="recruiters/index.php">Present</a></li>
+									<li><a href="recruiters/present .php">Present</a></li>
 									<li><a href="recruiters/upcoming.php">Upcoming recruiters</a></li>
+									
 								</ul>
 							</li>
 							<li><a href="aboutus/index.php">About us</a></li>
 							<li class="menu-item-has-children"><a href="#">Placement</a>
 								<ul class="sub-menu">
 								<li><a href="placement/activity.php"> Activities</a></li>
-									<li><a href="placement/index.php">Current</a></li>
+									<li><a href="placement/current.php">Current</a></li>
 									<li><a href="placement/previous1year.php">Previous 1 year</a></li>
+									
 									
 								</ul>
 							</li>

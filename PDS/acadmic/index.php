@@ -115,7 +115,7 @@ function loginButton($part){
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
 
 										</ul>
@@ -225,7 +225,7 @@ function loginButton($part){
                 <ul>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
-                  <li><a href="../placement/index.php">Current</a></li>
+                  <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
                   <li><a href="../placement/previous2year.php">Previous two year</a></li>
                 </ul>
@@ -238,7 +238,7 @@ function loginButton($part){
               <h4>Recruiters</h4>
                <ul>
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/present.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
@@ -256,36 +256,42 @@ function loginButton($part){
     				<div class="content">
     					<nav class="responsive-menu">
     						<ul>
-    							<li><a href="../index.php">Home</a></li>
-    							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
-    								<ul class="sub-menu">
-    										<li><a href="../acadmic/planning.php">Planning</a></li>
-    										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
-    										<li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
-    										</ul>
-    							</li>
-    							<li class="menu-item-has-children"><a href="#">Recruiters</a>
-    								<ul class="sub-menu">
-    									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/index.php">Present</a></li>
-    									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
-    								</ul>
-    							</li>
-    							<li><a href="../aboutus/index.php">About us</a></li>
-    							<li class="menu-item-has-children"><a href="#">Placement</a>
-    								<ul class="sub-menu">
-    									<li><a href="../placement/index.php">Current</a></li>
-    									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-    									<li><a href="../placement/previous2year.php">Previous 2 year</a></li>
-    								</ul>
-    							</li>
-    							<li><a href="../contactus/index.php">Contact us</a></li>
-    							<li class="menu-item-has-children"><a href="#">Internship</a>
-    								<ul class="sub-menu">
-    									<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
-    									<li><a href="../internship/Foregin_internship.php">Foreign Internship</a></li>
-    								</ul>
-    							</li>
+    								<ul>
+									<li><a href="../index.php">Home</a></li>
+									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+											<ul class="sub-menu">
+											<li><a href="../acadmic/planning.php">Planning</a></li>
+
+											<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+
+                     						 <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
+										</ul>
+									</li>
+									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
+										<ul class="sub-menu">
+											<li><a href="../placement/activity.php">Activities</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
+											<li><a href="../placement/previous1year.php">Upcomimg</a></li>
+									
+
+										</ul>
+									</li>
+									<li><a href="../aboutus/index.php">About us</a></li>
+									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
+										<ul class="sub-menu">
+										<li><a href="../placement/activity.php">Activities</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
+											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+											
+										</ul>
+									</li>
+									<li><a href="../contactus/index.php">Contact us</a></li>
+									<li><a href="../internship/index.php" class="has-submenu">Internship</a>
+										<ul class="sub-menu">
+											<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+											<li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+										</ul>
+									</li>
     							<!-- Login button -->
     							<?php echo loginButton(0); ?>
     						</ul>

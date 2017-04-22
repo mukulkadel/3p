@@ -115,7 +115,7 @@ function loginButton($part){
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
 
 										</ul>
@@ -124,7 +124,7 @@ function loginButton($part){
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
 										<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/index.php">Current</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 											
 										</ul>
@@ -150,75 +150,22 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>current placement</h1>
-							<span>Lovely layout </span>
+							<h1> placement</h1>
+							
 						</div>
 					</div>
 				</section>
+				<section>
+		    			<div class="container" align="center">
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../placement/activity.php">Activity</a></div>
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../placement/current.php">Current Placement</a></div>
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../placement/previous1year.php">Prevoius 1 Year</a></div>
+		    				
+    					</div>
 
-				<section class="single-project">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-4">
-								<div class="single-project-sidebar">
-									<div class="about-author">
-										<img src="../files/images/author.png" alt="author">
-										<div class="author-contet">
-											<h3>Syam Meri</h3>
-											<span>Webdesigner</span>
-											<p>Lore</p>
-										</div>
-									</div>
-
-									<div class="info share-on">
-										<div class="social-icons">
-											<ul>
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-												<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-												<li><a href="#"><i class="fa fa-rss"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</section>
 
-				<section class="similar-projects">
-					<div class="container">
-						<div class="item col-md-4">
-					  		<figure>
-	        					<img alt="1-image" src="../files/images/01-portfolio.jpg">
-	        					<figcaption>
-	            					<h3>Normcore Dreamcatcher</h3>
-	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-	        					</figcaption>
-	    					</figure>
-					    </div>
-					    <div class="item col-md-4">
-					  		<figure>
-	        					<img alt="2-image" src="../files/images/02-portfolio.jpg">
-	        					<figcaption>
-	            					<h3>Meggings Mixtape</h3>
-	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-	        					</figcaption>
-	    					</figure>
-					    </div>
-					    <div class="item col-md-4">
-					  		<figure>
-	        					<img alt="3-image" src="../files/images/03-portfolio.jpg">
-	        					<figcaption>
-	            					<h3>Locavore Brooklyn</h3>
-	            					<p>Lorem ipsum dolor sit amet consectetur.</p>
-	        					</figcaption>
-	    					</figure>
-					    </div>
-					</div>
-				</section>
+			
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -280,7 +227,7 @@ function loginButton($part){
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
-                  <li><a href="../placement/index.php">Current</a></li>
+                  <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
              
                 </ul>
@@ -293,7 +240,7 @@ function loginButton($part){
               <h4>Recruiters</h4>
                <ul>
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/present.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
@@ -322,15 +269,15 @@ function loginButton($part){
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
     									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/index.php">Present</a></li>
+    									<li><a href="../recruiters/present.php">Present</a></li>
     									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
     								</ul>
     							</li>
     							<li><a href="../aboutus/index.php">About us</a></li>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
-    									<li><a href="../placement/activity.php">Activities</a></li>
-    									<li><a href="../placement/index.php">Current</a></li>
+    					 				<li><a href="../placement/activity.php">Activities</a></li>
+    									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
     									
     								</ul>

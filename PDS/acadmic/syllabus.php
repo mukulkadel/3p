@@ -101,41 +101,42 @@ function loginButton($part){
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
 							</div>
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
-								<ul>
-									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
-										  <ul class="sub-menu">
+								 <ul>
+                  <li><a href="../index.php">Home</a></li>
+                  <li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+                      <ul class="sub-menu">
                       <li><a href="../acadmic/planning.php">Planning</a></li>
 
                       <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
 
-											<li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
-										</ul>
-									</li>
-									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
-										<ul class="sub-menu">
-											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
-											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+                                 <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
+                    <ul class="sub-menu">
+                      <li><a href="../placement/activity.php">Activities</a></li>
+                      <li><a href="../placement/current.php">Current</a></li>
+                      <li><a href="../placement/previous1year.php">Upcomimg</a></li>
+                  
 
-										</ul>
-									</li>
-									<li><a href="../aboutus/index.php">About us</a></li>
-									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
-										<ul class="sub-menu">
+                    </ul>
+                  </li>
+                  <li><a href="../aboutus/index.php">About us</a></li>
+                  <li><a href="../placement/index.php" class="has-submenu">Placement</a>
+                    <ul class="sub-menu">
                     <li><a href="../placement/activity.php">Activities</a></li>
-											<li><a href="../placement/index.php">Current</a></li>
-											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
-											
-										</ul>
-									</li>
-									<li><a href="../contactus/index.php">Contact us</a></li>
-									<li><a href="../internship/index.php" class="has-submenu">Internship</a>
-										<ul class="sub-menu">
-											<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
-											<li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
-										</ul>
-									</li>
+                      <li><a href="../placement/current.php">Current</a></li>
+                      <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="../contactus/index.php">Contact us</a></li>
+                  <li><a href="../internship/index.php" class="has-submenu">Internship</a>
+                    <ul class="sub-menu">
+                      <li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+                      <li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+                    </ul>
+                  </li>
 									<!-- Login button -->
 								  <?php echo loginButton(0); ?>
 								</ul>
@@ -219,7 +220,7 @@ function loginButton($part){
 				                  <br>
 				                  <h3>Campus Recruitment Training</h3>
 									<p style="font-size: 120%;"><strong>Verbal English Devlopment :-</strong></p> <p style="text-align:left; font-size: 120%;" >This capsule program primarily focuses on those elements of training that requires changes in behaviour and thinking. Organizations today recognize the strong relationship between the soft skills of their employees and effective customer relationships.</p>
-									<p style="font-size: 120%;""><strong>Aptitude Building Program :-</strong> </p>
+									<p style="font-size: 120%;"><strong>Aptitude Building Program :-</strong> </p>
 									 <p style="font-size: 120%;" >This program primarily focuses on those topics of
 									Math and Reasoning required by various Public Sector Examinations and Campus Selection of various Private Sector Companies. Efforts have been made to incorporate revised and updated questions to help students incorporate high reasoning and aptitude level.
 									 </p>
@@ -429,7 +430,7 @@ function loginButton($part){
               <h4>Recruiters</h4>
                <ul>
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/present.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
@@ -458,7 +459,7 @@ function loginButton($part){
                   <li class="menu-item-has-children"><a href="#">Recruiters</a>
                     <ul class="sub-menu">
                       <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                      <li><a href="../recruiters/index.php">Present</a></li>
+                      <li><a href="../recruiters/present.php">Present</a></li>
                       <li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
                     </ul>
                   </li>
@@ -466,7 +467,7 @@ function loginButton($part){
                   <li class="menu-item-has-children"><a href="#">Placement</a>
                     <ul class="sub-menu">
                     <li><a href="../placement/activity.php">Activities</a></li>
-                      <li><a href="../placement/index.php">Current</a></li>
+                      <li><a href="../placement/current.php">Current</a></li>
                       <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
                    
                     </ul>

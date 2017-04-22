@@ -115,7 +115,7 @@ function loginButton($part){
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
 
 										</ul>
@@ -124,7 +124,7 @@ function loginButton($part){
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
 										<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/index.php">Current</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 											
 										</ul>
@@ -156,12 +156,16 @@ function loginButton($part){
 					</div>
 				</section>
 
-				<section class="on-blog-grid">
-					<div class="container">
-						<div class="row">
+				<section>
+		    			<div class="container" align="center">
+		    				<div class="col-md-3 align="center""><a class="btn btn-primary" href="../recruiters/eminent receuiters.php">eminent receuiters</a></div>
+		    				<div class="col-md-3 align="center""><a class="btn btn-primary" href="../recruiters/gallery.php">Gallery</a></div>
+		    				<div class="col-md-3 align="center""><a class="btn btn-primary" href="../recruiters/present.php">Present</a></div>
+		    				<div class="col-md-3 align="center""><a class="btn btn-primary" href="../recruiters/upcoming.php">Upcoming</a></div>
+		    				
+		    				
+    					</div>
 
-						</div>
-					</div>
 				</section>
 
         <footer class="footer">
@@ -224,7 +228,7 @@ function loginButton($part){
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
-                  <li><a href="../placement/index.php">Current</a></li>
+                  <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
                
                 </ul>
@@ -237,7 +241,7 @@ function loginButton($part){
               <h4>Recruiters</h4>
                <ul>
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/present.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
@@ -266,7 +270,7 @@ function loginButton($part){
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
     									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/index.php">Present</a></li>
+    									<li><a href="../recruiters/present.php">Present</a></li>
     									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
     								</ul>
     							</li>
@@ -274,7 +278,7 @@ function loginButton($part){
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
     									<li><a href="../placement/activity.php">Activities</a></li>
-    									<li><a href="../placement/index.php">Current</a></li>
+    									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
     									
     								</ul>

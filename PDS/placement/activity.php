@@ -115,7 +115,7 @@ function loginButton($part){
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/index.php">Present</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
 
 										</ul>
@@ -124,7 +124,7 @@ function loginButton($part){
 									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
 										<ul class="sub-menu">
 										<li><a href="../placement/activity.php"> Activities</a></li>
-											<li><a href="../placement/index.php">Current</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
 										
 										</ul>
@@ -156,35 +156,47 @@ function loginButton($part){
 						</div>
 					</div>
 				</section>
+        <section>
+          <div class="container">
+          <div class="row" style=" text-align: left;">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#er">Placement Activities</a></li>
+              <li><a data-toggle="tab" href="#res"> Corporate Relations Officers</a></li>
+              <li><a data-toggle="tab" href="#prept">Placement Model</a></li>
+              <li><a data-toggle="tab" href="#sch">Placement Records</a></li>
+               <li><a data-toggle="tab" href="#st">Student Testimonial</a></li>
+            </ul>
+          <div class="tab-content">
+          <div id="er" class="tab-pane fade in active">
+            <br>
+            <h5 align="justify">
+              <p>
+              
+                 • Weekly two hours training on Aptitude.<br>
+                  •  Weekly two hours training on Verbal and Non-Verbal Reasoning sessions.<br>
+                  •  Monthly one group discussion session.<br>
+                  • Special Communication Development Training programs will be conducted by P-PROSKEP once in a month<br>
+                  • Fortnightly once communication development training will be conducted by our trained faculties.<br>
+                  •  The division mainly focuses on 100 % Placements.<br>
+                  •  Regular interaction by the Placement Officer with the students for fine tuning.<br>
+                  • Imparting the importance of English by implementing as English Campus.<br>
+                  •  Equipped Language laboratory used to improve the students Communication in English.<br>
+                  •  Organizing the sessions for making the students employable and to meet the corporate expectations.<br>
+                  •  Individual counselling to make them understand the certainty of life.<br>
+                  • Train them to work towards the goal.
+                  
+                  </p>
+                  <p >
+                    The record breaking placement at Department of Computer Engineering is an apt testimony to its focus on upholding the highest academic standards right from selecting topmost faculty to help students, introducing world-class pedagogical practices to personality development of the students.<br>
 
-				<section class="call-to-action-1" >
-					<div class="container">
-						<div class="row" style=" text-align: left;">
-								<h2 style=" font-style: italic;font-size: 1.875em;">Placement Activities</h2>
-								<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
-									
-									•	Weekly two hours training on Aptitude.<br>
-									•	 Weekly two hours training on Verbal and Non-Verbal Reasoning sessions.<br>
-									•	 Monthly one group discussion session.<br>
-									•	Special Communication Development Training programs will be conducted by P-PROSKEP once in a month<br>
-									•	Fortnightly once communication development training will be conducted by our trained faculties.<br>
-									•	 The division mainly focuses on 100 % Placements.<br>
-									•	 Regular interaction by the Placement Officer with the students for fine tuning.<br>
-									•	Imparting the importance of English by implementing as English Campus.<br>
-									•	 Equipped Language laboratory used to improve the students Communication in English.<br>
-									•	 Organizing the sessions for making the students employable and to meet the corporate expectations.<br>
-									•	 Individual counselling to make them understand the certainty of life.<br>
-									•	Train them to work towards the goal.
-								</p>
-									<p style="font-size:130%;font-family:  Times, serif;background-color:lightgrey; ">
-										The record breaking placement at Department of Computer Engineering is an apt testimony to its focus on upholding the highest academic standards right from selecting topmost faculty to help students, introducing world-class pedagogical practices to personality development of the students.<br>
-
-										Training and Placement cell is well organized by<span style="font-weight:900;color:blue;"> Mr.  Abhishek Dadhich,</span>  Hardworking, Dedication and Experience of many years in various aspects and he also maintains the amicable environment with the good organizations. In his presence students procure so many placements in top MNC companies.<br>
-
-
-									</p>
-								<h2 style=" font-style: italic;font-size: 1.875em; background-color:lightgrey; "align="center">Corporate Relations Officers</h2>
-								<table width="643" height="340" border="1" align="center">
+                    Training and Placement cell is well organized by<span style="font-weight:900;color:blue;"> Mr.  Abhishek Dadhich,</span>  Hardworking, Dedication and Experience of many years in various aspects and he also maintains the amicable environment with the good organizations. In his presence students procure so many placements in top MNC companies.<br>
+                  </p>
+            </h5>
+          </div>
+            <div id="res" class="row tab-pane fade" style=" text-align: left;">
+            <br>
+            
+                          <table width="643" height="340" border="1" align="center">
   <tr>
     <td width="24" height="69"  ><p><strong>Sr.<br />
 No.</strong></p>
@@ -203,7 +215,7 @@ No.</strong></p>
   </tr>
   <tr>
     <td>2</td>
-   	<td><u><strong>Abhishek Dadhich</strong></u></td>
+    <td><u><strong>Abhishek Dadhich</strong></u></td>
     <td>Senior  Manager Corporate Relations,&nbsp;<br />
 Department of Computer Engineering</td>
     <td><a href="mailto:abhishek.dadhich@poornima.org"><span style="color:blue;">abhishek.dadhich@poornima.org</span></a></td>
@@ -218,9 +230,91 @@ Department of Computer Engineering</td>
     <td>+91-9799644596</td>
   </tr>
 </table>
-						</div>
-					</div>
-				</section>
+
+
+            </div>
+            <div id="prept" class="row tab-pane fade" style=" text-align: left;">
+            <br>
+            <h5>
+            <ol>
+           
+          <p >Department of Computer Engineering provides full placement support to  its students in all in its areas of professional education &ndash; Technology. The  underlying objective of the department is to create and transfer knowledge for  the welfare of the society.<br />
+    <br />
+  Over the last decades the department has emerged as one of the most favoured  destination for hiring fresh Talent from the Campuses. Its endeavours to  provide Industry compliant talent and emphasis on Quality, Discipline,  Self-Learning, Ethics and Values have borne rich dividends.&nbsp;<br />
+  <br />
+  Our Placement model is a four-stage process involving the Pre-Placement  activities, Career Guidance, Executing Placement and Post Placement reviews.<br />
+</p>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="25%"><br />
+        <img width="250" height="200" src="../files/images/model.png"  /> </td>
+    <td width="10%"></td>
+    <td width="65%"><p >In addition to providing Placement    support to the students in the prestigious organisations, we also facilitate    training of our students in the industries during summer vacations, project    work for the students in the final year, continuous institute-industry    interactions, alumni activities, participation in exhibitions, fairs,    seminars and conferences, counselling of the students on job opportunities,    facilitating industry visits and inviting distinguished speakers to add value    in our programs.&nbsp;<br />
+      Our students today are occupying    converted positions in Multinationals, Corporates, PSUs and other    organisations with excellent compensation packages. </p></td>
+  </tr>
+</table>
+<p>Leveraging on its intellectual vitality and  integrity, the Department seeks to maximize opportunities for partnerships and  collaborations with industry in the fields of Technology leading to value  creation and continuous innovation. It is distinguished by its highly  collaborative, interdisciplinary and entrepreneurial environment.</p>
+            </ol>
+            </h5>
+
+            </div>
+        <div id="sch" class="tab-pane fade">
+        <br>
+        <h3><strong>Year: 2016-2017</strong><strong> </strong></h3>
+<table width="642" border="1" cellpadding="0" cellspacing="0" bordercolor="#FF0000">
+  <tr>
+    <td width="50%" height="42" valign="top"><p class="style8">&nbsp;Total No of Students Registered for Placement</p></td>
+    <td width="50%" valign="top"><p >&nbsp; 95</p></td>
+  </tr>
+  <tr>
+    <td width="50%" height="33" valign="top"><p class="style8">&nbsp;Total No of Students    Got Placed</p></td>
+    <td width="50%" valign="top"><p >&nbsp;74</p></td>
+  </tr>
+  <tr>
+    <td width="50%" height="37" valign="top"><p class="style8">&nbsp;% of Students Placed</p></td>
+    <td width="50%" valign="top"><p>&nbsp;78.72 (As on    15.4.2017)&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td width="50%" height="44" valign="top"><p class="style8">&nbsp;Noteworthy Companies</p></td>
+    <td width="50%" valign="top"><p >&nbsp;Infosys, Capgemini, Biz-Viz,TCS</p></td>
+  </tr>
+  <tr>
+    <td width="50%" height="52" valign="top"><p class="style8">&nbsp;Average Salary</p></td>
+    <td width="50%" valign="top"><p >&nbsp;Rs. 3.30,000 P. A.</p></td>
+  </tr>
+</table>
+         
+
+ <br>
+          </div>
+          <div id="st" class="tab-pane fade">
+          <br>
+          <p align="justify" style="font-size:15px">
+          I am really grateful to the department for the fruitful strengthening of my skills and the motivation they provided. Achieving the endeavours is a total work of mutual work, the scrum is to get and interpret well. The achievements are all a result of a strong base.<br>
+            <samp style="color:blue;font-size:90%">Gaurang, Infosys Technologies Limited </samp><br><br>
+            Getting placed in first company in campus was a different feeling because department had put lot of efforts for that. But the key point is to not stopping and keep trying to achieve more.<br>
+            <samp style="color:blue;font-size:90%">Raghav Maheshwari, Infosys Technologies Limited , calsoft , bizviz </samp><br><br>
+            Getting placed in Capgemini was such an amazing feeling and I really want to thank all the Faculty members of CS department who really helped us and had put a lot of efforts in getting placed in the company. And they really motivated us to achieve more and get more success in future.<br>
+            <samp style="color:blue;font-size:90%">SupriyaKumari, Capgemini Pvt. Ltd. </samp><br><br>
+            Getting placed was a really best feeling, it was a great achievement which I could not have achieved without all the help from department, teachers. All those tests and mock drives helped me boast my confidence which improved me in all the fields which were required to crake the placement drive.<br>
+            <samp style="color:blue;font-size:90%">Aditi Singh Parmar, Infosys Pvt. Ltd.</samp><br><br>
+            Getting placed in the second company was one of the best feeling, and one of the most important day in my life. The way department encourage me for the interview and supported me for the three years was most amazing this. All the mock test and interviews taken by the department is the best thing and it was very helpful. I personally want to thank RekhaSinghal ma’am (Asst. Professor) for always supporting me.<br>
+            <samp style="color:blue;font-size:90%">Pooja Kunwar, Capgemini Pvt. Ltd</samp><br><br>
+            I am very thankful to our dept. that helped me to get placed in a good company. Department helped us to learn different things and each teacher gave their full efforts to help us. I am very thankful to everyone for their support and encouragement. Thanks a lot.<br>
+            <samp style="color:blue;font-size:90%">Abhinav Singh Rtahore, In Time Tec Vision Soft Pvt. Ltd. </samp><br><br>
+            Well is was not easy for me to get placed in Infosys: a company which demands high level of aptitude and communication skills. I’m thankful to department for their efforts and sharpening my skills which helped me land this job.<br>
+            <samp style="color:blue;font-size:90%">Azhar Khan, Infosys Pvt. Ltd. </samp><br><br>
+            I am very thankful for my department first that, they have put a lot of efforts on each and every student for getting placed in good multinational company. Well I got placed in Infosys Pvt. Ltd. That the very first company in our college. All I have to say thanks for each and every thing to each faculty members and especially HOD sir.<br>
+            <samp style="color:blue;font-size:90%">Shiv Shakti, Infosys Pvt. Ltd. </samp><br><br>
+            I’m glad to write this because only few students are writing this over here about placement activities here. Our department really gave us their best to place their students. Only our department I can say gave this much. All I wanna say is I’m really feeling lucky being part of this college and department.<br>
+            <samp style="color:blue;font-size:90%">Krati Bhatnagar, Capegemini , BigData Technologies BizVizPvt. Ltd. </samp><br><br>
+            </p>
+
+          <br>
+          </div>
+        </section>
+
+			
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -282,7 +376,7 @@ Department of Computer Engineering</td>
                   <li><a href="../acadmic/planning.php">Planning</a></li>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
-                  <li><a href="../placement/index.php">Current</a></li>
+                  <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous one year</a></li>
                  
                 </ul>
@@ -295,7 +389,7 @@ Department of Computer Engineering</td>
               <h4>Recruiters</h4>
                <ul>
                   <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/index.php">Present</a></li>
+                  <li><a href="../recruiters/present.php">Present</a></li>
                   <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
@@ -324,7 +418,7 @@ Department of Computer Engineering</td>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
     									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/index.php">Present</a></li>
+    									<li><a href="../recruiters/present.php">Present</a></li>
     									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
     								</ul>
     							</li>
@@ -332,7 +426,7 @@ Department of Computer Engineering</td>
     							<li class="menu-item-has-children"><a href="#">Placement</a>
     								<ul class="sub-menu">
     									<li><a href="../placement/activity.php">Activities</a></li>
-    									<li><a href="../placement/index.php">Current</a></li>
+    									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
     									
     								</ul>
