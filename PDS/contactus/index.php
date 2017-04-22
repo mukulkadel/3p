@@ -207,7 +207,7 @@ function loginButton($part){
     <!--Section heading-->
     <h1 class="section-heading">Our amazing team </h1>
     <!--Section sescription-->
-    <p class="section-description">Faces Behind The Project</p>
+     <h2 class="section-description"><span > Faces Behind The Project</h2></span> 
     <br>
 
     <div class="row">
@@ -621,8 +621,8 @@ function loginButton($part){
                         </div>
                         <!--Content-->
                         <div class="card-block">
-                            <h4>Gaurav Goyal</h4>
-                            <p>Designer</p>
+                            <h4>Ayush Bhaskar</h4>
+                            <p><b>Designer</b></p>
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-8"><i class="fa fa-repeat"></i> Click here to rotate</a>
                         </div>
