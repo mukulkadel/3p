@@ -157,7 +157,7 @@ function loginButton($part){
 				</section>
 
 				<section>
-					<div align="left">
+					<div class="container" align="left">
 						<p>
 							<h5>Our Vision</h5>
 							To be an academic institution in dynamic equilibrium with its social, ecological and economic environment striving continuously for excellence in education, research and technological service to the nation.<h5></h5>
