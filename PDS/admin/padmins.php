@@ -20,7 +20,11 @@ function displayAdmins(){
   if($q->rowCount()>0){
     $rows=$q->fetchAll();
     for($i=0;$i<$q->rowCount();$i++){
-      $output.="<tr id=\"a$i\"><td id=\"email\">".$rows[$i]["email"]."</td><td id=\"authority\">".$rows[$i]["authority"]."</td><td><button onclick=\"editAdmin('a$i','".$rows[$i]["email"]."')\">Edit</button></td></tr>\n";
+      $output.="<tr id=\"a$i\"><td id=\"email\">".$rows[$i]["email"]."</td><td id=\"authority\">".$rows[$i]["authority"]."</td><td>";
+      //partial admin will not get view button
+      if($_SESSION["admin"]=="FULL")
+        $output.="<button onclick=\"editAdmin('a$i','".$rows[$i]["email"]."')\">Edit</button>";
+      $output.="</td></tr>\n";
     }
   }
   echo $output;
@@ -64,16 +68,18 @@ function addAdmin(){
 }
 
 if(isset($_POST["action"])){
+  
+  //only admin with full authority can call all functions
   switch($_POST["action"]){
     case "displayAdmins": displayAdmins();
       break;
-    case "editAdmin": editAdmin();
+    case "editAdmin": if($_SESSION["admin"]=="FULL") editAdmin();
       break;
-    case "save": saveAdmin();
+    case "save": if($_SESSION["admin"]=="FULL") saveAdmin();
       break;
-    case "deleteAdmin": deleteAdmin();
+    case "deleteAdmin": if($_SESSION["admin"]=="FULL") deleteAdmin();
       break;
-    case "addAdmin": addAdmin();
+    case "addAdmin": if($_SESSION["admin"]=="FULL") addAdmin();
       break;
   }
 }

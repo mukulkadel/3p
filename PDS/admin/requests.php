@@ -332,6 +332,9 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
        $("#REJECTED").attr("class","btn requestFilter");
      });
    });
+   function logout(){
+     window.location="../logout.php"
+   }
    </script>
 
 

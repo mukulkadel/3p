@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES ('ashdon94@gmail.com','FULL'),('ayushbhasker09@gmail.com','FULL'),('bhanucool09@gmail.com','FULL'),('mukulkadel@gmail.com','FULL');
+INSERT INTO `admin` VALUES ('ashdon94@gmail.com','FULL'),('ayushbhasker09@gmail.com','FULL'),('bhanucool09@gmail.com','FULL'),('gaurav1997dlp@gmail.com','FULL'),('mukulkadel@gmail.com','FULL');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -335,4 +335,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-21 23:22:45
+-- Dump completed on 2017-04-22 11:58:51

@@ -95,27 +95,32 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="panel panel-info" style="margin-top:15px;">
-                <div class="panel-heading">Add admin</div>
-                 <div class="panel-body">
-                   <table class="table">
-                    <tbody>
-                      <tr id="addTable">
-                        <td><label>Email</label><input type="email"/></td>
-                        <td><label>Authority</label>
-                          <select>
-                            <option value="FULL">FULL</option>
-                            <option value="PARTIAL">PARTIAL</option>
-                          </select>
-                        </td>
-                        <td style="width:150px;"><button onclick="addAdmin()">Add</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+            <?php
+            //show this panel only for FULL authority admin
+            if($_SESSION["admin"]=="FULL"){
+              echo "<div class=\"row\">\n";
+                echo "<div class=\"panel panel-info\" style=\"margin-top:15px;\">\n";
+                  echo "<div class=\"panel-heading\">Add admin</div>\n";
+                    echo "<div class=\"panel-body\">\n";
+                      echo "<table class=\"table\">\n";
+                        echo "<tbody>\n";
+                          echo "<tr id=\"addTable\">\n";
+                            echo "<td><label>Email</label><input type=\"email\"/></td>\n";
+                            echo "<td><label>Authority</label>\n";
+                            echo "<select>\n";
+                              echo "<option value=\"FULL\">FULL</option>\n";
+                              echo "<option value=\"PARTIAL\">PARTIAL</option>\n";
+                            echo "</select>\n";
+                            echo "</td>\n";
+                          echo "<td style=\"width:150px;\"><button onclick=\"addAdmin()\">Add</button></td>\n";
+                        echo "</tr>\n";
+                      echo "</tbody>\n";
+                    echo "</table>\n";
+                  echo "</div>\n";
+                echo "</div>\n";
+              echo "</div>\n";
+            }
+            ?>
           </div>
         </section>
 
@@ -313,6 +318,9 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
           $("#output").html(out);
         }
       });
+    }
+    function logout(){
+      window.location="../logout.php"
     }
    </script>
 

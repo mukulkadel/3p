@@ -19,7 +19,14 @@ if(isset($_SESSION["userData"])){
 			header('Location:./home/');
 		}
 		elseif($gpUserData["email"]=="ashdon94@gmail.com"||$gpUserData["email"]=="ayushbhaskar09@gmail.com"||$gpUserData["email"]=="bhanucool09@gmail.com"||$gpUserData["email"]=="gaurav1997dlp@gmail.com"||$gpUserData["email"]=="mukulkadel@gmail.com"){
-			$_SESSION["admin"]=1;
+			$email = $_SESSION["userData"]['email'];
+		  $con = new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
+			$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		  $query="select authority from admin where email='$email';";
+		  $q = $con->prepare($query);
+		  $q->execute();
+			$row=$q->fetch();
+			$_SESSION["admin"]=$row["authority"];
 			$_SESSION["name"]=$_SESSION["userData"]['first_name']." ".$_SESSION["userData"]['last_name'];
 			$_SESSION["email"]=$_SESSION["userData"]['email'];
 			header('Location:./admin/');
