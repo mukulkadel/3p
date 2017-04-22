@@ -109,6 +109,7 @@ function loginButton($part){
 
 											<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
 
+											<li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
 										</ul>
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
@@ -155,9 +156,10 @@ function loginButton($part){
 				</section>
 
 				<section>
-		    			<div align="center">
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../acadmic/planning.php">Planning</a></div>
-		    				<div class="col-md-6 align="center""><a class="btn btn-primary" href="../acadmic/syllabus.php">Syllabus</a></div>
+		    			<div class="container" align="center">
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../acadmic/planning.php">Planning</a></div>
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../acadmic/syllabus.php">Syllabus</a></div>
+		    				<div class="col-md-4 align="center""><a class="btn btn-primary" href="../acadmic/Placement_pre.php">Placement Preparations</a></div>
     					</div>
 
 				</section>
@@ -257,6 +259,7 @@ function loginButton($part){
     								<ul class="sub-menu">
     										<li><a href="../acadmic/planning.php">Planning</a></li>
     										<li><a href="../acadmic/syllabus.php">Syllabus</a></li>
+    										<li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
     										</ul>
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>

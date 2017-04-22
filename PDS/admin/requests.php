@@ -91,7 +91,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
               <div class="panel panel-info">
                 <div class="panel-heading">
                   <span>Requests</span>
-                  <div style="float:right"><form><label>Search:</label><input id="searchValue" type="search" onkeyup="display()" style="color:#000000;" value="<?php echo urldecode($_GET["searchValue"]); ?>"/></form></div>
+                  <div style="float:right"><form><label>Search:</label><input id="searchValue" type="search" onkeyup="display()" style="color:#000000;" value="<?php echo (isset($_GET["searchValue"])?urldecode($_GET["searchValue"]):""); ?>"/></form></div>
                 </div>
                 <div class="panel-body">
                   <table class="table">
