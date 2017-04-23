@@ -99,15 +99,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 .scrolled-header {
-  background: #ffffff;
+  background: url('../images/background-header.png');
   padding: 0;
   border-color: #dddddd;
 }
 .scrolled-header .main-header .logo a {
-  color: #272727;
+  color: #ffffff;
 }
 .scrolled-header .main-navigation ul > li > a {
-  color: #272727;
+  color: #ffffff;
 }
 .header-right-toggle {
   padding: 15px 0 15px 30px;

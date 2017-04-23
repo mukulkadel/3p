@@ -53,7 +53,7 @@ $text6=$_POST['text6'];
 					<div id="main-header" class="main-header header-sticky">
 						<div class="inner-header clearfix">
 							<div class="logo">
-								<a href="../index.php">PDS</a>
+								<a href="../index.php"><img src="../logopds.png" width="130px"></a>
 							</div>
 							<div class="header-right-toggle pull-right hidden-md hidden-lg">
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
@@ -2065,8 +2065,7 @@ Department of Computer Engineering congratulates the following students for the 
         <div class="col-md-3">
           <h1>
             <a href="../index.php">
-             PDS
-            </a>
+             <img src="../logopds.png" width="130px"></a>
           </h1>
           <p>©2017 PDS. All rights reserved.</p>
           <div class="spacing"></div>

@@ -1,0 +1,5 @@
+1) Internship drop down has to be updated
+2) login button on contact page "padding should be same "
+3)linking of admin button on home page after admin login.
+4)Ashu se bolna hai backlog vala increment karne pe kaam nhi kar rha..
+5)10th marks filter not working.

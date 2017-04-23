@@ -57,7 +57,7 @@ function loginButton($part){
 <html class="ie ie9" lang="en-US">
 <![endif]-->
 <html lang="en-US">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -91,8 +91,7 @@ function loginButton($part){
 </head>
 <body>
 
-
-	<div class="sidebar-menu-container" id="sidebar-menu-container">
+<div class="sidebar-menu-container" id="sidebar-menu-container">
 
 		<div class="sidebar-menu-push">
 
@@ -104,7 +103,8 @@ function loginButton($part){
 					<div id="main-header" class="main-header header-sticky">
 						<div class="inner-header clearfix">
 							<div class="logo">
-								<a href="index.php">PDS</a>
+
+								<a href="index.php"><img src="logopds.png" width="130px"></a>
 							</div>
 							<div class="header-right-toggle pull-right hidden-md hidden-lg">
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
@@ -145,6 +145,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 											<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
 											<li><a href="internship/Foreign_internship.php">Foreign Internship</a></li>
+											<li><a href="internship/internship_details.php">Internship Details</a></li>
 										</ul>
 									</li>
 									<!-- Login button -->
@@ -154,6 +155,7 @@ function loginButton($part){
 						</div>
 					</div>
 				</header>
+				<br><br>
 
         <!-- Login button Popup-->
 				<?php echo loginButton(1); ?>
@@ -166,6 +168,7 @@ function loginButton($part){
   <img class="mySlides" src="files/images/22.png" style="width:100%" >
   <img class="mySlides" src="files/images/11.png" style="width:100%" >
   <img class="mySlides" src="files/images/4.JPG" style="width:100%" >
+  <img class="mySlides" src="files/images/123.png" style="width:100%">
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -185,7 +188,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 </script>
 
@@ -243,9 +246,8 @@ function carousel() {
       <div class="row">
         <div class="col-md-3">
           <h1>
-            <a href="index.php">
-             PDS
-            </a>
+          <a href="index.php"><img src="logopds.png" width="130px"></a>
+
           </h1>
           <p>©2017 PDS. All rights reserved.</p>
           <div class="spacing"></div>
@@ -359,6 +361,7 @@ function carousel() {
 								<ul class="sub-menu">
 									<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
 									<li><a href="internship/Foregin_internship.php">Foreign Internship</a></li>
+									<li><a href="internship/internship_details.php">Internship Details</a></li>
 								</ul>
 							</li>
 							<!-- Login button -->

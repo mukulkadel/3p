@@ -144,8 +144,7 @@
             <div class="col-md-3">
               <h1>
                 <a href="../index.php">
-                 PDS
-                </a>
+                 <img src="../logopds.png" width="130px"></a>
               </h1>
               <p>©2017 PDS. All rights reserved.</p>
               <div class="spacing"></div>
