@@ -12,7 +12,7 @@ $pass="";
 function display(){
   global $usr,$pass;
   $con=new PDO("mysql:host=localhost;dbname=pdb",$usr,$pass);
-  $query="select r.id \"id\",r.reg_no \"reg_no\",p.name \"name\",r.status \"status\" from requests r,personal p where r.reg_no=p.reg_no and p.name like '%".$_POST["name"]."%' ";
+  $query="select r.id,r.reg_no,p.name,r.status from requests r,personal p where r.reg_no=p.reg_no and p.name like '%".$_POST["name"]."%' ";
   $output="";
   if($_POST["mode"]=="ACCEPTED"){
     $query.="and r.status='ACCEPTED' ";

@@ -75,6 +75,9 @@ function loginButton($part){
 	<link rel="stylesheet" href="files/css/style.css">
 	<link rel="stylesheet" href="files/rs-plugin/css/settings.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link href="cala.css" rel="stylesheet">
+  	<link href="files/css/addevent.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="reoccurringEventsCal.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -132,8 +135,8 @@ function loginButton($part){
 											<li><a href="placement/activity.php">Activities</a></li>
 											<li><a href="placement/current.php">Current</a></li>
 											<li><a href="placement/previous1year.php">Previous 1 year</a></li>
-											
-											
+
+
 
 										</ul>
 									</li>
@@ -156,7 +159,7 @@ function loginButton($part){
 				<?php echo loginButton(1); ?>
 				<br><br><br>
 
-		<!--slider-->		
+		<!--slider-->
 
 <div class="w3-content w3-display-container">
   <img class="mySlides" src="files/images/1.JPG" style="width:100%" >
@@ -177,11 +180,11 @@ function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
+       x[i].style.display = "none";
     }
     myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
@@ -199,6 +202,38 @@ function carousel() {
 								<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=poornima.org_r56krr5c58a3vjfimn0fbru7i8%40group.calendar.google.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
 							</div>
 						</div>
+
+						<?php
+
+						//add event button for admin only
+					if(isset($_SESSION["admin"])){
+						echo "<div align=\"center\">\n";
+							echo "<!-- 2. Include script -->\n";
+						    echo "<script type=\"text/javascript\">(function () {\n";
+						            echo "if (window.addtocalendar)if(typeof window.addtocalendar.start == \"function\")return;\n";
+						            echo "if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;\n";
+						                echo "var d = document, s = d.createElement('script'), g = 'getElementsByTagName';\n";
+						                echo "s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;\n";
+						                echo "s.src = 'addevent.js';\n";
+						                echo "var h = d[g]('body')[0];h.appendChild(s); }})();\n";
+						    echo "</script>\n";
+
+						    echo "<!-- 3. Place event data -->\n";
+						    echo "<span class=\"addtocalendar atc-style-blue\">\n";
+						        echo "<var class=\"atc_event\">\n";
+						            echo "<var class=\"atc_date_start\">".date('Y-m-d H:i:s')."</var>\n";
+						            echo "<var class=\"atc_date_end\">".date('Y-m-d H:i:s')."</var>\n";
+						            echo "<var class=\"atc_timezone\">Asia/Kolkata</var>\n";
+						            echo "<var class=\"atc_title\">Event_Title</var>\n";
+						            echo "<var class=\"atc_description\">Event_Description</var>\n";
+						            echo "<var class=\"atc_location\">Event_location</var>\n";
+						            echo "<var class=\"atc_organizer\">Event_coordinator</var>\n";
+						            echo "<var class=\"atc_organizer_email\">".$_SESSION["email"]."</var>\n";
+						        echo "</var>\n";
+						    echo "</span>\n";
+						echo "</div>\n";
+					}
+						?>
 				</section>
 
 
@@ -264,7 +299,7 @@ function carousel() {
               <li><a href="placement/activity.php">Placement Activities</a></li>
               <li><a href="placement/index.php">Current</a></li>
               <li><a href="placement/previous1year.php">Previous one year</a></li>
-             
+
             </ul>
           </div>
           <div class="spacing"></div>
@@ -306,7 +341,7 @@ function carousel() {
 									<li><a href="recruiters/gallery.php">Gallery</a></li>
 									<li><a href="recruiters/present .php">Present</a></li>
 									<li><a href="recruiters/upcoming.php">Upcoming recruiters</a></li>
-									
+
 								</ul>
 							</li>
 							<li><a href="aboutus/index.php">About us</a></li>
@@ -315,8 +350,8 @@ function carousel() {
 								<li><a href="placement/activity.php"> Activities</a></li>
 									<li><a href="placement/current.php">Current</a></li>
 									<li><a href="placement/previous1year.php">Previous 1 year</a></li>
-									
-									
+
+
 								</ul>
 							</li>
 							<li><a href="contactus/index.php">Contact us</a></li>
