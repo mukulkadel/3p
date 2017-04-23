@@ -193,7 +193,7 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>Team</h1>
+							<h1>Our Amazing Team</h1>
 							
 						</div>
 					</div>
@@ -203,12 +203,9 @@ function loginButton($part){
 
 				
 	<!--Section: Team v.4-->
-<section  class="section" style="background-color: #8c1aff;" > 
-
-    <!--Section heading-->
-    <h1 class="section-heading">Our amazing team </h1>
+<section  class="section" style="background-image: url(../files/images/01-heading.jpg)"> 
     <!--Section sescription-->
-     <h2 class="section-description"><span > Faces Behind The Project</h2></span> 
+     <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span> 
     <br>
 
     <div class="row">
