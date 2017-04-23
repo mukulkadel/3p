@@ -24,7 +24,7 @@ function loginButton($part){
 			$output.="<script>\nfunction logout(){\nwindow.location=\"./logout.php\";\n}\n</script>\n";
 		}
 		else{
-			$output.="<div id=\"login\" class=\"modal fade\" role=\"dialog\" style=\"margin-top:100px;\">";
+			$output.="<div id=\"login\" class=\"modal fade\" role=\"dialog\" style=\"margin-top:120px;\">";
 					$output.="<div class=\"modal-dialog\">";
 
 						$output.="<!-- Modal content-->";

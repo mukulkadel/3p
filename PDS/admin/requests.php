@@ -69,8 +69,20 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="./uploadData.php">Upload</a></li>
                   <li><a href="./requests.php">Requests</a></li>
                   <li><a href="./addAdmins.php">Admins</a></li>
-                  <li><a href="../placement/index.php">Placement</a></li>
-                  <li><a href="../internship/index.php">Internship</a></li>
+									<li><a href="../placement/index.php" class="has-submenu">Placement</a>
+										<ul class="sub-menu">
+										<li><a href="../placement/activity.php">Activities</a></li>
+											<li><a href="../placement/current.php">Current</a></li>
+											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+										</ul>
+									</li>
+									<li><a href="../internship/index.php" class="has-submenu">Internship</a>
+										<ul class="sub-menu">
+											<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+											<li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+											<li><a href="../internship/internship_details.php">Internship Details</a></li>
+										</ul>
+									</li>
                   <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
 								</ul>
 							</nav>
@@ -228,8 +240,20 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
               <li><a href="./uploadData.php">Upload</a></li>
               <li><a href="./requests.php">Requests</a></li>
               <li><a href="./addAdmins.php">Admins</a></li>
-              <li><a href="../placement/index.php">Placement</a></li>
-              <li><a href="../internship/index.php">Internship</a></li>
+              <li><a href="../placement/index.php" class="has-submenu">Placement</a>
+                <ul class="sub-menu">
+                <li><a href="../placement/activity.php">Activities</a></li>
+                  <li><a href="../placement/current.php">Current</a></li>
+                  <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                </ul>
+              </li>
+              <li><a href="../internship/index.php" class="has-submenu">Internship</a>
+                <ul class="sub-menu">
+                  <li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
+                  <li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+                  <li><a href="../internship/internship_details.php">Internship Details</a></li>
+                </ul>
+              </li>
               <li><button class="btn btn-info btn-lg" onclick="logout()">Log out</button></li>
 						</ul>
 					</nav>
