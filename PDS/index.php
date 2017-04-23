@@ -142,6 +142,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 											<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
 											<li><a href="internship/Foreign_internship.php">Foreign Internship</a></li>
+											<li><a href="internship/internship_details.php">Internship Details</a></li>
 										</ul>
 									</li>
 									<!-- Login button -->
@@ -325,6 +326,7 @@ function carousel() {
 								<ul class="sub-menu">
 									<li><a href="internship/Summer_internship.php">Summer Internship</a></li>
 									<li><a href="internship/Foregin_internship.php">Foreign Internship</a></li>
+									<li><a href="internship/internship_details.php">Internship Details</a></li>
 								</ul>
 							</li>
 							<!-- Login button -->

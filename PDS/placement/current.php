@@ -95,7 +95,7 @@ function loginButton($part){
 					<div id="main-header" class="main-header header-sticky">
 						<div class="inner-header clearfix">
 							<div class="logo">
-								<a href="../index.php">PDS</a>
+								<a href="../index.php"><img src="../logopds.png" width="130px"></a>
 							</div>
 							<div class="header-right-toggle pull-right hidden-md hidden-lg">
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
@@ -134,6 +134,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 											<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
 											<li><a href="../internship/Foreign_internship.php">Foreign Internship</a></li>
+											<li><a href="../internship/internship_details.php">Internship Details</a></li>
 										</ul>
 									</li>
 									<!-- Login button -->
@@ -151,7 +152,7 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>current placement</h1>
-							<span>Lovely layout </span>
+						
 						</div>
 					</div>
 				</section>
@@ -227,8 +228,7 @@ function loginButton($part){
             <div class="col-md-3">
               <h1>
                 <a href="../index.php">
-                 PDS
-                </a>
+                 <img src="../logopds.png" width="130px"></a>
               </h1>
               <p>©2017 PDS. All rights reserved.</p>
               <div class="spacing"></div>
@@ -340,6 +340,7 @@ function loginButton($part){
     								<ul class="sub-menu">
     									<li><a href="../internship/Summer_internship.php">Summer Internship</a></li>
     									<li><a href="../internship/Foregin_internship.php">Foreign Internship</a></li>
+    									<li><a href="../internship/internship_details.php">Internship Details</a></li>
     								</ul>
     							</li>
     							<!-- Login button -->

@@ -95,7 +95,7 @@ function loginButton($part){
 					<div id="main-header" class="main-header header-sticky">
 						<div class="inner-header clearfix">
 							<div class="logo">
-								<a href="../index.php">PDS</a>
+								<a href="../index.php"><img src="../logopds.png" width="130px"></a>
 							</div>
 							<div class="header-right-toggle pull-right hidden-md hidden-lg">
 								<a href="javascript:void(0)" class="side-menu-button"><i class="fa fa-bars"></i></a>
@@ -151,7 +151,7 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>internship</h1>
-							<span>Lovely layout of heading</span>
+							
 						</div>
 					</div>
 				</section>
@@ -211,6 +211,7 @@ function loginButton($part){
 		<td align="center">03-03-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	
 <tr>
@@ -222,6 +223,7 @@ function loginButton($part){
 		<td align="center">Bangalore</td>
 		<td align="center"></td>
 		<td align="center">03-03-2017</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 	</tr>
@@ -249,6 +251,7 @@ function loginButton($part){
 		<td align="center">03-08-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">7</td>
@@ -259,6 +262,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">03-08-2017</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 	</tr>
@@ -273,6 +277,7 @@ function loginButton($part){
 		<td align="center">03-08-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">9</td>
@@ -285,6 +290,7 @@ function loginButton($part){
 		<td align="center">03-10-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">10</td>
@@ -295,6 +301,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">04-05-2017</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 	</tr>
@@ -335,6 +342,7 @@ function loginButton($part){
 		<td align="center">15-03-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">14</td>
@@ -345,6 +353,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">17/03/17</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		
@@ -360,6 +369,7 @@ function loginButton($part){
 		<td align="center">17/03/17</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 		
 	</tr>
 	<tr>
@@ -371,6 +381,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">31/03/17</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		
@@ -386,6 +397,7 @@ function loginButton($part){
 		<td align="center">31/03/17</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 		
 	</tr>
 	<tr>
@@ -397,6 +409,7 @@ function loginButton($part){
 		<td align="center">Jaipur</td>
 		<td align="center"></td>
 		<td align="center">15/03/17</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 	</tr>
@@ -411,6 +424,7 @@ function loginButton($part){
 		<td align="center">15/03/17</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 <tr>
 		<td align="center">20</td>
@@ -421,6 +435,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">17/03/17</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 	</tr>
@@ -502,10 +517,12 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">27</td>
 		<td align="center">Universal Autofoundry Ltd</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
@@ -526,6 +543,7 @@ function loginButton($part){
 		<td align="center">07-05-2017</td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 
 	<tr>
@@ -540,6 +558,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">Apply Online</td>
+
 	</tr>
 
 <tr>
@@ -553,10 +572,12 @@ function loginButton($part){
 		<td align="center">July</td>
 		<td align="center">Computer Science</td>
 		<td align="center">First year M.Sc. Or equivalent B.Tech. & Integrated M.Sc. Candidates should have completed atleast 3 years.</td>
+		<td align="center"></td>
 	</tr>
 <tr>
 		<td align="center">30</td>
 		<td align="center">AARMON TECH PRIVATE LIMITED</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
@@ -577,6 +598,7 @@ function loginButton($part){
 		<td align="center">August</td>
 		<td align="center">Computer Science</td>
 		<td align="center">UG to PhD</td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">32</td>
@@ -589,10 +611,12 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center">Working towards a relevant bachelor's, specialist’s, master's, or PhD</td>
+		<td align="center"></td>
 	</tr>
 <tr>
 		<td align="center">33</td>
 		<td align="center">IIT-Palakkad, Kerala</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
@@ -613,10 +637,12 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 	<tr>
 		<td align="center">35</td>
 		<td align="center">Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
@@ -637,6 +663,7 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 <tr>
 		<td align="center">37</td>
@@ -649,10 +676,12 @@ function loginButton($part){
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
+		<td align="center"></td>
 	</tr>
 <tr>
 		<td align="center">38</td>
 		<td align="center">National Institute of Oceanography (NIO), Goa</td>
+		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
 		<td align="center"></td>
@@ -675,8 +704,7 @@ function loginButton($part){
             <div class="col-md-3">
               <h1>
                 <a href="../index.php">
-                 PDS
-                </a>
+                 <img src="../logopds.png" width="130px"></a>
               </h1>
               <p>©2017 PDS. All rights reserved.</p>
               <div class="spacing"></div>
