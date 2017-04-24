@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+//admin check & login check
+if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
+  header("location:../login.php");
 $text1=$_POST['text1'];
 $text2=$_POST['text2'];
 $text3=$_POST['text3'];
@@ -40,7 +45,7 @@ $text6=$_POST['text6'];
 </head>
 <body>
 
-	
+
 	<div class="sidebar-menu-container" id="sidebar-menu-container">
 
 		<div class="sidebar-menu-push">
@@ -67,7 +72,7 @@ $text6=$_POST['text6'];
 
 											<li><a href="../acadmic/syllabus.php">syllabus</a></li>
 											   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
-											
+
 										</ul>
 									</li>
 									<li><a href="#" class="has-submenu">Recruiters</a>
@@ -83,7 +88,7 @@ $text6=$_POST['text6'];
 											<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">current</a></li>
 											<li><a href="../placement/previous1year.php">previous 1 year</a></li>
-											
+
 										</ul>
 									</li>
 									<li><a href="../contactus/contact.php">Contact us</a></li>
@@ -101,12 +106,12 @@ $text6=$_POST['text6'];
 
 
 <div id="card">
-				
-				
+
+
 				<center>	<h3>POORNIMA FOUNDATION</h3>
 <h3>Poornima Mission for Training Placement and Outreach</h3>
 <h3>REPORT OF  <?php echo $text1; ?> RECRUITMENT DRIVE:-<br/><br/></h3></center>
- 
+
 <h5>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $text1; ?> has visited Poornima Fondatation on <?php echo $text2; ?>  .
@@ -121,7 +126,7 @@ $text6=$_POST['text6'];
 2. Written Test (Technical & Aptitude) - 1 Hour<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;
 3. Interviews - Technical & HR<br/><br/>
- 
+
 &nbsp;&nbsp;->&nbsp;
 <?php echo $text4; ?>  had cleared the 1st round (Aptitude).
  <br/>&nbsp;&nbsp;->&nbsp;
@@ -136,7 +141,7 @@ Department of Computer Engineering congratulates the following students for the 
 
 
 <!--Student table-->
-          
+
 	<table class="m_-1171728942008675527m_1788991688362864427m_6746889528198116083gmail-MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="765" style="width:574pt;margin-left:4.65pt;border-collapse:collapse">
 <tbody><tr style="height:53.25pt">
 <td width="55" nowrap="" style="width:41.55pt;border:1pt solid windowtext;background:rgb(23,55,93);padding:0in 5.4pt;height:53.25pt">
@@ -2048,8 +2053,8 @@ Department of Computer Engineering congratulates the following students for the 
 </td>
 </tr>
 </tbody></table>
-	
-	   
+
+
 			    </div>
 
 
@@ -2057,7 +2062,7 @@ Department of Computer Engineering congratulates the following students for the 
 </section>
 
 
-			
+
    <footer class="footer">
       <div class="three spacing"></div>
 	  <div class="container">
@@ -2099,14 +2104,14 @@ Department of Computer Engineering congratulates the following students for the 
             <h4>Some pages</h4>
             <ul>
                <li><a href="#">login</a></li>
-             
+
               <li><a href="../index.php">Home</a></li>
               <li><a href="../aboutus/about.php">aboutus</a></li>
                <li><a href="../contactus/contact.php">Contact us</a></li>
               <li><a href="../internship/internship.php">internship</a></li>
-            
-             
-              
+
+
+
             </ul>
           </div>
           <div class="spacing"></div>
@@ -2121,7 +2126,7 @@ Department of Computer Engineering congratulates the following students for the 
               <li><a href="../placement/activity.php">Placement Activities</a></li>
               <li><a href="../placement/current.php">current</a></li>
               <li><a href="../placement/previous1year.php">previous one year</a></li>
-              
+
             </ul>
           </div>
           <div class="spacing"></div>
@@ -2134,11 +2139,11 @@ Department of Computer Engineering congratulates the following students for the 
               <li><a href="../recruiters/gallery.php">gallery</a></li>
               <li><a href="../recruiters/present.php">present</a></li>
               <li><a href="../recruiters/upcoming.php">upcoming</a></li>
-              
+
             </ul>
-         
+
     </footer>
-				
+
 				<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 			</div>
@@ -2154,8 +2159,8 @@ Department of Computer Engineering congratulates the following students for the 
 							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
 								<ul class="sub-menu">
 										<li><a href="../acadmic/planning.php">Planning</a></li>
-										<li><a href="../acadmic/syllabus.php">syllabus</a></li>	
-										   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>							
+										<li><a href="../acadmic/syllabus.php">syllabus</a></li>
+										   <li><a href="../acadmic/Placement_pre.php">Placement Preparations</a></li>
 										</ul>
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
@@ -2172,7 +2177,7 @@ Department of Computer Engineering congratulates the following students for the 
 									<li><a href="../placement/activity.php">Placement Activities</a></li>
 									<li><a href="../placement/current.php">current</a></li>
 									<li><a href="../placement/previous1year.php">previous 1 year</a></li>
-								
+
 								</ul>
 							</li>
 							<li><a href="../contactus/contact.php">Contact us</a></li>
@@ -2186,7 +2191,7 @@ Department of Computer Engineering congratulates the following students for the 
 	</div>
 
 
-	
+
 
 	<script type="text/javascript" src="../files/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="../files/js/bootstrap.min.js"></script>
@@ -2198,7 +2203,7 @@ Department of Computer Engineering congratulates the following students for the 
 	<script type="text/javascript" src="../files/js/custom.js"></script>
 
 	<!-- Google Map -->
-    
+
 
 </body>
 

@@ -126,7 +126,7 @@ function loginButton($part){
 										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous year</a></li>
-											
+
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -152,7 +152,7 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>Gallery</h1>
-						
+
 						</div>
 					</div>
 				</section>
@@ -162,9 +162,9 @@ function loginButton($part){
 						<div class="col-sm-12 text-center">
 							<div id="projects-filter">
 								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".reg">REGINOL</a>
+								<a href="#" data-filter=".reg">REGIONAL</a>
 								<a href="#" data-filter=".mnc">MNC</a>
-							
+
 							</div>
 						</div>
 						<div class="row">
@@ -287,7 +287,7 @@ function loginButton($part){
 								<ul>
 									<li><a href="../recruiters/gallery.php"   >1</a></li>
 									<li><a href="../recruiters/gallery1.php" class="current" >2</a></li>
-									
+
 									<li><a href="../recruiters/gallery.php"><i class="fa fa-angle-double-right"></i></a></li>
 								</ul>
 							</div>
@@ -356,7 +356,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous year</a></li>
-                 
+
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -407,7 +407,7 @@ function loginButton($part){
     									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous  year</a></li>
-    								
+
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>
