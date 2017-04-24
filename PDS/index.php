@@ -190,6 +190,16 @@ function carousel() {
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
+function plusDivs(pos){			//next previous button
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex+=pos;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+}
 </script>
 
 <!--/slider-->
