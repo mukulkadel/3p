@@ -114,10 +114,10 @@ function loginButton($part){
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
+											<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
 											<li><a href="../recruiters/present.php">Present</a></li>
-											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
-
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
 										</ul>
 									</li>
 									<li><a href="../aboutus/index.php">About us</a></li>
@@ -125,7 +125,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 											<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
-											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+											<li><a href="../placement/previous1year.php">Previous  year</a></li>
 											
 										</ul>
 									</li>
@@ -162,14 +162,14 @@ function loginButton($part){
 						<div class="col-sm-12 text-center">
 							<div id="projects-filter">
 								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".furniture">REGINOL</a>
-								<a href="#" data-filter=".wallpaper">MNC</a>
+								<a href="#" data-filter=".reg">REGINOL</a>
+								<a href="#" data-filter=".mnc">MNC</a>
 
 							</div>
 						</div>
 						<div class="row">
 							<div class="row" id="portfolio-grid">
-								<div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+								<div class="item col-md-3 col-sm-5 col-xs-10 reg">
 								<figure>
 			        					<img alt="author" src="../files/images/gallery/1.jpg">
 			        					<figcaption>
@@ -181,7 +181,7 @@ function loginButton($part){
 
 
 
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg">
 							  		<figure>
 			        					<img alt="2-image" src="../files/images/gallery/2.png">
 			        					<figcaption>
@@ -190,7 +190,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 mnc">
 							  		<figure>
 			        					<img alt="3-image" src="../files/images/gallery/3.png">
 			        					<figcaption>
@@ -199,7 +199,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg">
 							  		<figure>
 			        					<img alt="4-image" src="../files/images/gallery/4.png">
 			        					<figcaption>
@@ -208,7 +208,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg">
 							  		<figure>
 			        					<img alt="5-image" src="../files/images/gallery/5.jpg">
 			        					<figcaption>
@@ -217,7 +217,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg">
 							  		<figure>
 			        					<img alt="6-image" src="../files/images/gallery/6.png">
 			        					<figcaption>
@@ -226,7 +226,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 furniture">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 mnc">
 							  		<figure>
 			        					<img alt="7-image" src="../files/images/gallery/7.png">
 			        					<figcaption>
@@ -235,7 +235,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper ">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg ">
 							  		<figure>
 			        					<img alt="8-image" src="../files/images/gallery/8.png">
 			        					<figcaption>
@@ -244,7 +244,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 mnc">
 							  		<figure>
 			        					<img alt="9-image" src="../files/images/gallery/9.png">
 			        					<figcaption>
@@ -253,7 +253,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 mnc">
 							  		<figure>
 			        					<img alt="9-image" src="../files/images/gallery/10.png">
 			        					<figcaption>
@@ -262,7 +262,7 @@ function loginButton($part){
 			        					</figcaption>
 			    					</figure>
 							    </div>
-							    <div class="item col-md-3 col-sm-5 col-xs-10 wallpaper">
+							    <div class="item col-md-3 col-sm-5 col-xs-10 reg">
 							  		<figure>
 			        					<img alt="9-image" src="../files/images/gallery/11.png">
 			        					<figcaption>
@@ -287,7 +287,7 @@ function loginButton($part){
 								<ul>
 									<li><a href="../recruiters/gallery.php"  class="current" >1</a></li>
 									<li><a href="../recruiters/gallery1.php" >2</a></li>
-									<li><a href="../recruiters/gallery2.php">3</a></li>
+									
 									<li><a href="../recruiters/gallery1.php"><i class="fa fa-angle-double-right"></i></a></li>
 								</ul>
 							</div>
@@ -355,7 +355,7 @@ function loginButton($part){
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous  year</a></li>
                
                 </ul>
               </div>
@@ -395,9 +395,10 @@ function loginButton($part){
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
-    									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/present.php">Present</a></li>
-    									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+    									<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+											<li><a href="../recruiters/gallery.php">Gallery</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
     								</ul>
     							</li>
     							<li><a href="../aboutus/index.php">About us</a></li>
@@ -405,7 +406,7 @@ function loginButton($part){
     								<ul class="sub-menu">
     									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
-    									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+    									<li><a href="../placement/previous1year.php">Previous year</a></li>
     									
     								</ul>
     							</li>

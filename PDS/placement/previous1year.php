@@ -61,7 +61,7 @@ function loginButton($part){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Previous 1 years | PDS</title>
+	<title>Previous  years | PDS</title>
 
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800' rel='stylesheet' type='text/css'>
@@ -114,10 +114,10 @@ function loginButton($part){
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
+										<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
 											<li><a href="../recruiters/present.php">Present</a></li>
-											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
-
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
 										</ul>
 									</li>
 									<li><a href="../aboutus/index.php">About us</a></li>
@@ -125,7 +125,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
-											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+											<li><a href="../placement/previous1year.php">Previous year</a></li>
 											
 										</ul>
 									</li>
@@ -151,12 +151,15 @@ function loginButton($part){
 				<section class="page-heading wow fadeIn" data-wow-duration="1.5s" style="background-image: url(../files/images/01-heading.jpg)">
 					<div class="container">
 						<div class="page-name">
-							<h1>previous1 year</h1>
+							<h1>previous year</h1>
 							
 						</div>
 					</div>
 				</section>
 
+					<section>
+						
+					</section>
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -218,7 +221,7 @@ function loginButton($part){
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous  year</a></li>
                 
                 </ul>
               </div>
@@ -258,9 +261,10 @@ function loginButton($part){
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
-    									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/present.php">Present</a></li>
-    									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+    								<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+											<li><a href="../recruiters/gallery.php">Gallery</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
     								</ul>
     							</li>
     							<li><a href="../aboutus/index.php">About us</a></li>
@@ -268,7 +272,7 @@ function loginButton($part){
     								<ul class="sub-menu">
     									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
-    									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+    									<li><a href="../placement/previous1year.php">Previous year</a></li>
     									
     								</ul>
     							</li>

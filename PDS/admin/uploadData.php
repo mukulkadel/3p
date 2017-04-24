@@ -90,7 +90,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 					</div>
 				</header>
 
-
+        <br>  <br>  <br>  <br>
 				<section class="contact-map-wrapper">
           <div class="container" style="/*box-shadow: 10px 10px -5px #888888;*/">
             <div class="container-fluid">
@@ -167,7 +167,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous year</a></li>
 
                 </ul>
               </div>

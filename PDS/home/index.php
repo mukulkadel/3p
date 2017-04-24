@@ -150,7 +150,7 @@ if(isset($_SESSION["admin"])||!isset($_SESSION["email"]))
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous year</a></li>
                 </ul>
               </div>
               <div class="spacing"></div>
