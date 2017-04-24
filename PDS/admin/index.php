@@ -197,21 +197,21 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 
  <form onchange="searchq()" method="post" action="search.php">
+<span id="range"> </span>
  <input type="range" min="0" max="100" id="min_range" name="min_range" step="0" value="0"></br>
 		<!--12th aggregate -->
-<span id="range"> </span>
 	  </form>
 
 <!--12th aggregate -->
 <form method="post" onchange="searchq()" action="search.php">
-<input type="range" min="0"  max="100" id="twelve" name="twelve" step="0" value="0"></br>
 <span id="range1"> </span>
+<input type="range" min="0"  max="100" id="twelve" name="twelve" step="0" value="0"></br>
 </form>
 
 <!--10th aggregate -->
 <form onchange="searchq()" method="post" action="search.php">
-<input type="range" min="0" max="100" id="tenth" name="tenth" step="0" value="0"></br>
 <span id="range2"></span>
+<input type="range" min="0" max="100" id="tenth" name="tenth" step="0" value="0"></br>
 </form>
 </div>
 

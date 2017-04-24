@@ -225,7 +225,7 @@ if($_POST['ae']!="")
 
 	//query to search from backlogs
 	  if($_POST['subm']!="")
-	 $query.="and pro.backs >= '".$_POST['subm']."'";
+	 $query.="and pro.backs <= '".$_POST['subm']."'";
 	//echo $query;
      $query.=";";
 	 $_SESSION['varname'] = $query;
