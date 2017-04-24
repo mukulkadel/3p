@@ -155,19 +155,19 @@ function loginButton($part){
                   </li>
                   <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
                     <ul class="sub-menu">
-                      <li><a href="../placement/activity.php">Activities</a></li>
-                      <li><a href="../placement/current.php">Current</a></li>
-                      <li><a href="../placement/previous1year.php">Upcomimg</a></li>
-                  
-
+                    <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                                            <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                                            <li><a href="../recruiters/present.php">Present</a></li>
+                                            <li><a href="../recruiters/upcoming.php">Upcoming </a></li>
                     </ul>
                   </li>
                   <li><a href="../aboutus/index.php">About us</a></li>
                   <li><a href="../placement/index.php" class="has-submenu">Placement</a>
                     <ul class="sub-menu">
+
                     <li><a href="../placement/activity.php">Activities</a></li>
                       <li><a href="../placement/current.php">Current</a></li>
-                      <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                      <li><a href="../placement/previous1year.php">Previous year</a></li>
                       
                     </ul>
                   </li>
@@ -203,7 +203,7 @@ function loginButton($part){
 
 				
 	<!--Section: Team v.4-->
-<section  class="section" style="background-image: url(../files/images/01-heading.jpg)"> 
+<section  class="section" style="background-color:#9933ff;"> 
     <!--Section sescription-->
      <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span> 
     <br>
@@ -222,14 +222,14 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="2.jpg">
+                            <img src="HOD.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="2.jpg" class="img-circle img-responsive">
+                        <div class="avatar"><img src="HOD.jpg" class="img-circle img-responsive">
                         </div>
                         <!--Content-->
                         <div class="card-block">
-                            <h4>DEEPAK MOUD</h4>
+                            <h4> MR.DEEPAK MOUD</h4>
                             <p>HOD CS DEPARTMENT</p>
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-1"><i class="fa fa-repeat"></i> Click here for more</a>
@@ -243,10 +243,10 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                        <p>Working as a Head Of Department CS, PIET<br> Also 
                         <br>Handling Departmental Placement cell<br>
                         & Placement Coordinator <br>
-                        <p><b>Email:-abhi231186@gmail.com<b>
+                        <p><b>Email:-deepakmoud@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -280,10 +280,10 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="2.jpg">
+                            <img src="ADsir.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="2.jpg" class="img-circle img-responsive">
+                        <div class="avatar"><img src="ADsir.jpg" class="img-circle img-responsive">
                         </div>
                         <!--Content-->
                         <div class="card-block">
@@ -301,7 +301,10 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>-----------------</p>
+                        <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                        <br>Handling Departmental Placement cell<br>
+                        & Placement Coordinator <br>
+                        <p><b>Email:-abhi231186@gmail.com<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -335,10 +338,10 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="Mukul.jpg">
+                            <img src="nayaksir.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="Mukul.jpg" class="img-circle img-responsive">
+                        <div class="avatar"><img src="nayaksir.jpg" class="img-circle img-responsive">
                         </div>
                         <!--Content-->
                         <div class="card-block">
@@ -356,7 +359,10 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?</p>
+                          <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                        <br>Handling Departmental Placement cell<br>
+                        & Placement Coordinator <br>
+                        <p><b>Email:-kruti@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -390,7 +396,7 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="mukul.jpg" style="border-radius: 40px; height: 350px; width: 50%;">
+                            <img src="mukul.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="mukul.jpg" class="img-circle img-responsive" style="border-radius: 60px;">
@@ -398,7 +404,7 @@ function loginButton($part){
                         <!--Content-->
                         <div class="card-block">
                          <h4>Mukul Kadel</h4>
-                            <p>TL</p>
+                            <p>Project Head</p>
                            
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-4"><i class="fa fa-repeat"></i> Click here to rotate</a>
@@ -412,8 +418,9 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
-                        <p>Email:-abhishek@gmail.com
+                          <p>Poornima Institute of Engineering and Technology <br>  
+                        2nd year student 
+                        <p><b>Email:-2015pietcsmukul@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -446,7 +453,7 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="bhanu.jpg">
+                            <img src="bhanu.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="bhanu.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -467,8 +474,9 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
-                        <p>Email:-abhishek@gmail.com
+                        <p>Poornima Institute of Engineering and Technology <br>  
+                        2nd year student 
+                        <p><b>Email:-2015pietcsbhanu@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -501,7 +509,7 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="tiwari.jpg">
+                            <img src="tiwari.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="tiwari.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -523,8 +531,9 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
-                        <p>Email:-abhishek@gmail.com
+                      <p>Poornima Institute of Engineering and Technology <br>  
+                        2nd year student 
+                        <p><b>Email:-2015pietcsashutosh@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -557,7 +566,7 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="gaurav.JPG">
+                            <img src="gaurav.JPG" style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="gaurav.JPG" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -578,8 +587,9 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
-                        <p>Email:-abhishek@gmail.com
+                        <p>Poornima Institute of Engineering and Technology <br>  
+                        2nd year student 
+                        <p><b>Email:-2015pietcsgaurav034@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -612,7 +622,7 @@ function loginButton($part){
 
                         <!-- Image-->
                         <div class="card-up">
-                            <img src="1.jpg">
+                            <img src="1.jpg"style="border-radius: 40px; height: 350px; width: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="1.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -633,8 +643,9 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a placement drive organiser for <br>computer engineering department</p>
-                        <p>Email:-abhishek@gmail.com
+                       <p>Poornima Institute of Engineering and Technology <br>  
+                        2nd year student 
+                        <p><b>Email:-2015pietcsayush@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
                         <ul class="inline-ul">
@@ -669,7 +680,7 @@ function loginButton($part){
                 <a href="../index.php">
                  <img src="../logopds.png" width="130px"></a>
               </h1>
-              <p>©2017 PDS. All rights reserved.</p>
+              <p style="font-size:1.1em">©2017 PDS. All rights reserved.</p>
               <div class="spacing"></div>
               <ul class="socials">
                 <li>
@@ -698,12 +709,12 @@ function loginButton($part){
             <div class="col-md-3">
               <div class="spacing"></div>
               <div class="links">
-                <h4>Some pages</h4>
+                <h4 style="font-size:1.7em">Some pages</h4>
                 <ul>
-                  <li><a href="../index.php">Home</a></li>
-                  <li><a href="../aboutus/index.php">About us</a></li>
-                   <li><a href="../contactus/index.php">Contact us</a></li>
-                  <li><a href="../internship/index.php">Internship</a></li>
+                  <li style="font-size:1.4em"><a href="../index.php">Home</a></li>
+                  <li style="font-size:1.4em"><a href="../aboutus/index.php">About us</a></li>
+                   <li style="font-size:1.4em"><a href="../contactus/index.php">Contact us</a></li>
+                  <li style="font-size:1.4em"><a href="../internship/index.php">Internship</a></li>
 
 
 
@@ -714,13 +725,13 @@ function loginButton($part){
             <div class="col-md-3">
               <div class="spacing"></div>
               <div class="links">
-                <h4>Placement</h4>
+                <h4 style="font-size:1.7em">Placement</h4>
                 <ul>
-                  <li><a href="../acadmic/planning.php">Planning</a></li>
-                  <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
-                  <li><a href="../placement/activity.php">Placement Activities</a></li>
-                  <li><a href="../placement/current.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li style="font-size:1.4em"><a href="../acadmic/planning.php">Planning</a></li>
+                  <li style="font-size:1.4em"><a href="../acadmic/syllabus.php">Syllabus</a></li>
+                  <li style="font-size:1.4em"><a href="../placement/activity.php">Placement Activities</a></li>
+                  <li style="font-size:1.4em"><a href="../placement/current.php">Current</a></li>
+                  <li style="font-size:1.4em"><a href="../placement/previous1year.php">Previous  year</a></li>
                 
                 </ul>
               </div>
@@ -729,11 +740,11 @@ function loginButton($part){
             <div class="col-md-3">
               <div class="spacing"></div>
                <div class="links">
-              <h4>Recruiters</h4>
+              <h4 style="font-size:1.7em">Recruiters</h4>
                <ul>
-                  <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                  <li><a href="../recruiters/present.php">Present</a></li>
-                  <li><a href="../recruiters/upcoming.php">Upcoming</a></li>
+                  <li style="font-size:1.4em"><a href="../recruiters/gallery.php">Gallery</a></li>
+                  <li style="font-size:1.4em"><a href="../recruiters/present.php">Present</a></li>
+                  <li style="font-size:1.4em"><a href="../recruiters/upcoming.php">Upcoming</a></li>
 
                 </ul>
 
@@ -760,9 +771,10 @@ function loginButton($part){
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Recruiters</a>
                                     <ul class="sub-menu">
-                                        <li><a href="../recruiters/gallery.php">Gallery</a></li>
-                                        <li><a href="../recruiters/present.php">Present</a></li>
-                                        <li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+                                       <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                                            <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                                            <li><a href="../recruiters/present.php">Present</a></li>
+                                            <li><a href="../recruiters/upcoming.php">Upcoming </a></li>
                                     </ul>
                                 </li>
                                 <li><a href="../aboutus/index.php">About us</a></li>
@@ -770,7 +782,7 @@ function loginButton($part){
                                     <ul class="sub-menu">
                     <li><a href="../placement/activity.php">Activities</a></li>
                                         <li><a href="../placement/current.php">Current</a></li>
-                                        <li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+                                        <li><a href="../placement/previous1year.php">Previous year</a></li>
                                 
                                     </ul>
                                 </li>

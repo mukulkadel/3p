@@ -77,7 +77,9 @@ function loginButton($part){
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
 	<![endif]-->
+  
 
 </head>
 <body>
@@ -114,10 +116,10 @@ function loginButton($part){
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
-											<li><a href="../recruiters/gallery.php">Gallery</a></li>
-											<li><a href="../recruiters/present.php">Present</a></li>
-											<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
-
+										<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                      <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                      <li><a href="../recruiters/present.php">Present</a></li>
+                      <li><a href="../recruiters/upcoming.php">Upcoming </a></li>
 										</ul>
 									</li>
 									<li><a href="../aboutus/index.php">About us</a></li>
@@ -125,7 +127,7 @@ function loginButton($part){
 										<ul class="sub-menu">
 										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
-											<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+											<li><a href="../placement/previous1year.php">Previous  year</a></li>
 										
 										</ul>
 									</li>
@@ -171,7 +173,7 @@ function loginButton($part){
           <div id="er" class="tab-pane fade in active">
             <br>
             <h5 align="justify">
-              <p>
+              <p style="font-size:.8em">
               
                  • Weekly two hours training on Aptitude.<br>
                   •  Weekly two hours training on Verbal and Non-Verbal Reasoning sessions.<br>
@@ -187,7 +189,7 @@ function loginButton($part){
                   • Train them to work towards the goal.
                   
                   </p>
-                  <p >
+                  <p  style="font-size:.75em">
                     The record breaking placement at Department of Computer Engineering is an apt testimony to its focus on upholding the highest academic standards right from selecting topmost faculty to help students, introducing world-class pedagogical practices to personality development of the students.<br>
 
                     Training and Placement cell is well organized by<span style="font-weight:900;color:blue;"> Mr.  Abhishek Dadhich,</span>  Hardworking, Dedication and Experience of many years in various aspects and he also maintains the amicable environment with the good organizations. In his presence students procure so many placements in top MNC companies.<br>
@@ -199,36 +201,36 @@ function loginButton($part){
             
                           <table width="643" height="340" border="1" align="center">
   <tr>
-    <td width="24" height="69"  ><p><strong>Sr.<br />
+    <td width="24" height="69"  ><p><strong>&nbsp;Sr.<br />
 No.</strong></p>
     </td>
-    <td width="128"><strong>Name</strong></td>
-    <td width="143"><strong>Designation</strong></td>
-    <td width="200"><strong>Email</strong></td>
-    <td width="114"><strong>Mobile  Number</strong></td>
+    <td width="128"><strong>&nbsp;Name</strong></td>
+    <td width="143"><strong>&nbsp;Designation</strong></td>
+    <td width="200"><strong>&nbsp;Email</strong></td>
+    <td width="114"><strong>&nbsp;Mobile  &nbsp;Number</strong></td>
   </tr>
   <tr>
-    <td height="77">1</td>
-    <td><u><strong>Deepak Moud</strong></u></td>
-    <td>Head  of Department, Department of Computer Engineering</td>
-    <td ><a href="mailto:deepakmoud@poornima.org"><span style="color:blue;">deepakmoud@poornima.org</span></a></td>
-    <td>+91-7568748510</td>
+    <td height="77">&nbsp;1</td>
+    <td><u><strong>&nbsp;Deepak Moud</strong></u></td>
+    <td>&nbsp;Head  of Department, Department of Computer Engineering</td>
+    <td ><a href="mailto:deepakmoud@poornima.org"><span style="color:blue;">&nbsp;deepakmoud@poornima.org</span></a></td>
+    <td>&nbsp;+91-7568748510</td>
   </tr>
   <tr>
-    <td>2</td>
-    <td><u><strong>Abhishek Dadhich</strong></u></td>
-    <td>Senior  Manager Corporate Relations,&nbsp;<br />
+    <td>&nbsp;2</td>
+    <td><u><strong>&nbsp;Abhishek Dadhich</strong></u></td>
+    <td>&nbsp;Senior  Manager Corporate Relations,&nbsp;<br />
 Department of Computer Engineering</td>
-    <td><a href="mailto:abhishek.dadhich@poornima.org"><span style="color:blue;">abhishek.dadhich@poornima.org</span></a></td>
-    <td>+91-9001571710</td>
+    <td><a href="mailto:abhishek.dadhich@poornima.org"><span style="color:blue;">&nbsp;abhishek.dadhich@poornima.org</span></a></td>
+    <td>&nbsp;+91-9001571710</td>
   </tr>
   <tr>
-    <td>3</td>
-    <td><u><strong>Krutibash Nayak</strong></u></td>
-    <td>Placement  In-Charge,<br />
+    <td>&nbsp;3</td>
+    <td><u><strong>&nbsp;Krutibash Nayak</strong></u></td>
+    <td>&nbsp;Placement  In-Charge,<br />
 Department of Computer Engineering</td>
-    <td><a href="mailto:kruti@poornima.org"><span style="color:blue;">kruti@poornima.org</span></a></td>
-    <td>+91-9799644596</td>
+    <td><a href="mailto:kruti@poornima.org"><span style="color:blue;">&nbsp;kruti@poornima.org</span></a></td>
+    <td>&nbsp;+91-9799644596</td>
   </tr>
 </table>
 
@@ -239,7 +241,7 @@ Department of Computer Engineering</td>
             <h5>
             <ol>
            
-          <p >Department of Computer Engineering provides full placement support to  its students in all in its areas of professional education &ndash; Technology. The  underlying objective of the department is to create and transfer knowledge for  the welfare of the society.<br />
+          <p style="font-size:.9em" >Department of Computer Engineering provides full placement support to  its students in all in its areas of professional education &ndash; Technology. The  underlying objective of the department is to create and transfer knowledge for  the welfare of the society.<br />
     <br />
   Over the last decades the department has emerged as one of the most favoured  destination for hiring fresh Talent from the Campuses. Its endeavours to  provide Industry compliant talent and emphasis on Quality, Discipline,  Self-Learning, Ethics and Values have borne rich dividends.&nbsp;<br />
   <br />
@@ -249,12 +251,12 @@ Department of Computer Engineering</td>
   <tr>
     <td width="25%"><br />
         <img width="250" height="200" src="../files/images/model.png"  /> </td>
-    <td width="10%"></td>
-    <td width="65%"><p >In addition to providing Placement    support to the students in the prestigious organisations, we also facilitate    training of our students in the industries during summer vacations, project    work for the students in the final year, continuous institute-industry    interactions, alumni activities, participation in exhibitions, fairs,    seminars and conferences, counselling of the students on job opportunities,    facilitating industry visits and inviting distinguished speakers to add value    in our programs.&nbsp;<br />
+    
+    <td width="65%"><p  style="font-size:.9em" >In addition to providing Placement    support to the students in the prestigious organisations, we also facilitate    training of our students in the industries during summer vacations, project    work for the students in the final year, continuous institute-industry    interactions, alumni activities, participation in exhibitions, fairs,    seminars and conferences, counselling of the students on job opportunities,    facilitating industry visits and inviting distinguished speakers to add value    in our programs.&nbsp;<br />
       Our students today are occupying    converted positions in Multinationals, Corporates, PSUs and other    organisations with excellent compensation packages. </p></td>
   </tr>
 </table>
-<p>Leveraging on its intellectual vitality and  integrity, the Department seeks to maximize opportunities for partnerships and  collaborations with industry in the fields of Technology leading to value  creation and continuous innovation. It is distinguished by its highly  collaborative, interdisciplinary and entrepreneurial environment.</p>
+<p style="font-size:.9em" >Leveraging on its intellectual vitality and  integrity, the Department seeks to maximize opportunities for partnerships and  collaborations with industry in the fields of Technology leading to value  creation and continuous innovation. It is distinguished by its highly  collaborative, interdisciplinary and entrepreneurial environment.</p>
             </ol>
             </h5>
 
@@ -262,25 +264,25 @@ Department of Computer Engineering</td>
         <div id="sch" class="tab-pane fade">
         <br>
         <h3><strong>Year: 2016-2017</strong><strong> </strong></h3>
-<table width="642" border="1" cellpadding="0" cellspacing="0" bordercolor="#FF0000">
+<table width="642" border="0" cellpadding="0" cellspacing="0" bordercolor="#FF0000">
   <tr>
-    <td width="50%" height="42" valign="top"><p class="style8">&nbsp;Total No of Students Registered for Placement</p></td>
+    <td width="50%" height="42" valign="top"><p class="style8">&nbsp;Total No of Students Registered for Placement:</p></td>
     <td width="50%" valign="top"><p >&nbsp; 95</p></td>
   </tr>
   <tr>
-    <td width="50%" height="33" valign="top"><p class="style8">&nbsp;Total No of Students    Got Placed</p></td>
+    <td width="50%" height="33" valign="top"><p class="style8">&nbsp;Total No of Students    Got Placed:</p></td>
     <td width="50%" valign="top"><p >&nbsp;74</p></td>
   </tr>
   <tr>
-    <td width="50%" height="37" valign="top"><p class="style8">&nbsp;% of Students Placed</p></td>
+    <td width="50%" height="37" valign="top"><p class="style8">&nbsp;% of Students Placed:</p></td>
     <td width="50%" valign="top"><p>&nbsp;78.72 (As on    15.4.2017)&nbsp;</p></td>
   </tr>
   <tr>
-    <td width="50%" height="44" valign="top"><p class="style8">&nbsp;Noteworthy Companies</p></td>
+    <td width="50%" height="44" valign="top"><p class="style8">&nbsp;Noteworthy Companies:</p></td>
     <td width="50%" valign="top"><p >&nbsp;Infosys, Capgemini, Biz-Viz,TCS</p></td>
   </tr>
   <tr>
-    <td width="50%" height="52" valign="top"><p class="style8">&nbsp;Average Salary</p></td>
+    <td width="50%" height="52" valign="top"><p class="style8">&nbsp;Average Salary:</p></td>
     <td width="50%" valign="top"><p >&nbsp;Rs. 3.30,000 P. A.</p></td>
   </tr>
 </table>
@@ -377,7 +379,7 @@ Department of Computer Engineering</td>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous year</a></li>
                  
                 </ul>
               </div>
@@ -417,9 +419,10 @@ Department of Computer Engineering</td>
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
-    									<li><a href="../recruiters/gallery.php">Gallery</a></li>
-    									<li><a href="../recruiters/present.php">Present</a></li>
-    									<li><a href="../recruiters/upcoming.php">Upcoming recruiters</a></li>
+    									<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                      <li><a href="../recruiters/gallery.php">Gallery</a></li>
+                      <li><a href="../recruiters/present.php">Present</a></li>
+                      <li><a href="../recruiters/upcoming.php">Upcoming </a></li>
     								</ul>
     							</li>
     							<li><a href="../aboutus/index.php">About us</a></li>
@@ -427,7 +430,7 @@ Department of Computer Engineering</td>
     								<ul class="sub-menu">
     									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
-    									<li><a href="../placement/previous1year.php">Previous 1 year</a></li>
+    									<li><a href="../placement/previous1year.php">Previous year</a></li>
     									
     								</ul>
     							</li>

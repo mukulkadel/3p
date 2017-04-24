@@ -118,9 +118,10 @@ if ($gClient->getAccessToken()) {
 									</li>
 									<li><a href="#" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
-											<li><a href="recruiters/gallery.php">Gallery</a></li>
-											<li><a href="recruiters/present.php">present</a></li>
-											<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
+										<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+											<li><a href="../recruiters/gallery.php">Gallery</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
 											
 										</ul>
 									</li>
@@ -128,7 +129,7 @@ if ($gClient->getAccessToken()) {
 									<li><a href="#" class="has-submenu">placement</a>
 										<ul class="sub-menu">
 											<li><a href="placement/current.php">current</a></li>
-											<li><a href="placement/previous1year.php">previous 1 year</a></li>
+											<li><a href="placement/previous1year.php">previous year</a></li>
 											
 										</ul>
 									</li>
@@ -296,7 +297,7 @@ if ($gClient->getAccessToken()) {
               <li><a href="acadmic/planning.php">planning</a></li>
               <li><a href="acadmic/syllabus.php">syllabus</a></li>
               <li><a href="placement/current.php">current</a></li>
-              <li><a href="placement/previous1year.php">previous one year</a></li>
+              <li><a href="placement/previous1year.php">previous  year</a></li>
               
             </ul>
           </div>
@@ -336,16 +337,17 @@ if ($gClient->getAccessToken()) {
 							</li>
 							<li class="menu-item-has-children"><a href="#">Recruiters</a>
 								<ul class="sub-menu">
-									<li><a href="recruiters/gallery.php">Gallery</a></li>
-									<li><a href="recruiters/present.php">present</a></li>
-									<li><a href="recruiters/upcoming.php">upcoming recruiters</a></li>
+									<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+											<li><a href="../recruiters/gallery.php">Gallery</a></li>
+											<li><a href="../recruiters/present.php">Present</a></li>
+											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
 								</ul>
 							</li>
 							<li><a href="aboutus/about.php">About us</a></li>
 							<li class="menu-item-has-children"><a href="#">placement</a>
 								<ul class="sub-menu">
 									<li><a href="placement/current.php">current</a></li>
-									<li><a href="placement/previous1year.php">previous 1 year</a></li>
+									<li><a href="placement/previous1year.php">previous  year</a></li>
 									
 								</ul>
 							</li>

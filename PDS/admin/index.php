@@ -90,9 +90,10 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 					</div>
 				</header>
 
-
 				<section class="contact-map-wrapper">
 
+					
+					<br><br>	
 
 <div class="container">
 <div class="col-sm-3 col-md-3">
@@ -331,7 +332,7 @@ MAX <input type="text" style="width:50px;" name="max3" onKeyUp="searchq()"/>
                   <li><a href="../acadmic/syllabus.php">Syllabus</a></li>
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/index.php">Current</a></li>
-                  <li><a href="../placement/previous1year.php">Previous one year</a></li>
+                  <li><a href="../placement/previous1year.php">Previous  year</a></li>
 
                 </ul>
               </div>
