@@ -173,6 +173,7 @@ function loginButton($part){
               <br>
                 <div class="col-md-2">
                 <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a data-toggle="pill" href="#about">About US</a></li>
                 <li ><a data-toggle="pill" href="#ob">Objective</a></li>
                 <li><a data-toggle="pill" href="#inc">Mission</a></li>
                 <li><a data-toggle="pill" href="#to">Vision</a></li>
@@ -180,7 +181,7 @@ function loginButton($part){
               </ul>
               </div>
                 <div class="tab-content col-md-10">
-                <div id="ppp" class="tab-pane fade in active" align="justify">
+                <div id="about" class="tab-pane fade in active">
                   <br>
                   <h3>About Placement Cell-</h3>
                   The Department of Training & Placement is the backbone of any institute. From the very beginning the department lays greater emphasis on industrial training, practical training for Engineering. The students are introduced to industrial practices through training in the institute workshops and in industries.<br>
@@ -230,17 +231,16 @@ function loginButton($part){
                 </div>
                 </div>
                 </div>
-                
                  <div id="sst" class="row tab-pane fade">
                 <br>
                 <div class="col-md-2">
                 <ul class="nav nav-pills nav-stacked">
-                <li ><a data-toggle="pill" href="#intro">HOD Message</a></li>
+                <li class="active"><a data-toggle="pill" href="#intro">HOD Message</a></li>
                 <li><a data-toggle="pill" href="#sy">TPO message</a></li>
               </ul>
               </div>
                 <div class="tab-content col-md-10">
-                <div id="intro" class="tab-pane fade " align="justify">
+                <div id="intro" class="tab-pane fade in active" align="justify">
                   <br>
                   <h3> HOD Message</h3>
                   The Industry is changing at a fast pace. We need to adapt ourselves with this changing scenario in the professional environment. At our department; our mission is to produce professionally competent world class Engineers by providing value based and quality education to the students and to make them adaptable to ever changing demands and requirements of the industry by grooming their soft skills and life skills.<br>
