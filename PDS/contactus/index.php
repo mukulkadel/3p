@@ -203,7 +203,7 @@ function loginButton($part){
 
 				
 	<!--Section: Team v.4-->
-<section  class="section" style="background-color:#9933ff;"> 
+<section  class="section" style="background-image: url(../files/images/01-heading.jpg)"> 
     <!--Section sescription-->
      <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span> 
     <br>
@@ -395,11 +395,11 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="mukul.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="mukul.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="mukul.jpg" class="img-circle img-responsive" style="border-radius: 60px;">
+                        <div class="avatar"><img src="Mukul1.jpg" class="img-circle img-responsive" style="border-radius: 60px; height: 180px">
                         </div>
                         <!--Content-->
                         <div class="card-block">
@@ -452,11 +452,11 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="bhanu.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="bhanu1.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="bhanu.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
+                        <div class="avatar"><img src="bhanu.jpg" class="img-circle img-responsive" style="border-radius: 50px; height: 120px;">
                         </div>
                         <!--Content-->
                         <div class="card-block">
@@ -498,7 +498,7 @@ function loginButton($part){
         <!--/Fifth column-->
 
         <!--Sixth column-->
-        <div class="col-lg-4 col-md-2" >
+               <div class="col-lg-4 col-md-2" >
 
             <!--Rotating card-->
             <div class="card-wrapper">
@@ -508,11 +508,11 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="tiwari.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="tiwari.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="tiwari.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
+                        <div class="avatar"><img src="tiwari.jpg" class="img-circle img-responsive" style="border-radius: 50px; height: 100%">
                         </div>
 
                         <!--Content-->

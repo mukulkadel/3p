@@ -162,7 +162,7 @@ function loginButton($part){
 						<div class="col-sm-12 text-center">
 							<div id="projects-filter">
 								<a href="#" data-filter="*" class="active">Show All</a>
-								<a href="#" data-filter=".reg">REGINOL</a>
+								<a href="#" data-filter=".reg">REGIONAL</a>
 								<a href="#" data-filter=".mnc">MNC</a>
 
 							</div>
