@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES ('ashdon94@gmail.com','FULL'),('ayushbhasker09@gmail.com','FULL'),('bhanucool09@gmail.com','FULL'),('gaurav1997dlp@gmail.com','FULL'),('mukulkadel@gmail.com','FULL');
+INSERT INTO `admin` VALUES ('ashdon94@gmail.com','FULL'),('ayushbhaskar09@gmail.com','FULL'),('bhanucool09@gmail.com','FULL'),('gaurav1997dlp@gmail.com','FULL'),('mukulkadel@gmail.com','FULL');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -62,6 +62,34 @@ CREATE TABLE `events` (
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `feedback`
+--
+
+DROP TABLE IF EXISTS `feedback`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `feedback` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `success` int(11) DEFAULT NULL,
+  `efforts` int(11) DEFAULT NULL,
+  `video` int(11) DEFAULT NULL,
+  `suggestion` varchar(1000) DEFAULT NULL,
+  `summery` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `feedback`
+--
+
+LOCK TABLES `feedback` WRITE;
+/*!40000 ALTER TABLE `feedback` DISABLE KEYS */;
+INSERT INTO `feedback` VALUES (12,8,8,8,'further extension\r\nhimani.goyal@poornima.org',''),(14,9,9,9,'Great job...\r\nHina',''),(15,8,8,7,'* popup for student.\r\n* request for marks... (only a flag)\r\n* gmail api.\r\n* filter for medium\r\n\r\nmanish sir',''),(16,8,9,8,'future implementation to be there',''),(17,9,10,9,'Reports generation on the basis of criteria of various companies.','It will be used by department in future\r\n\r\nSandeep Tuli '),(18,10,10,10,'cv up;oad to be added','better- Dr Brijendra Gupta'),(19,9,10,8,'',''),(20,9,10,8,'',''),(21,10,10,-1,'',''),(22,10,10,9,'No Suggestions...Almost PERFECT','Should immediately be used for PGC Level\r\n\r\nVidit Khandelwal'),(23,10,10,10,'',''),(24,10,10,10,'',''),(25,9,10,9,'good team effort',''),(26,9,10,9,'good team effort','');
+/*!40000 ALTER TABLE `feedback` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -335,4 +363,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-22 11:58:51
+-- Dump completed on 2017-04-26  0:06:13
