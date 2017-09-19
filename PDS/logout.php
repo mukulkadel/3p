@@ -1,12 +1,18 @@
 <?php
   include_once 'gpConfig.php';
 
-  unset($_SESSION['token']);
-  unset($_SESSION['userData']);
-  unset($_SESSION['reg_no']);
-  unset($_SESSION['name']);
-  unset($_SESSION['email']);
-  unset($_SESSION['admin']);
+  if(isset($_SESSION['token']))
+    unset($_SESSION['token']);
+  if(isset($_SESSION['userData']))
+    unset($_SESSION['userData']);
+  if(isset($_SESSION['reg_no']))
+    unset($_SESSION['reg_no']);
+  if(isset($_SESSION['name']))
+    unset($_SESSION['name']);
+  if(isset($_SESSION['email']))
+    unset($_SESSION['email']);
+  if(isset($_SESSION['admin']))
+    unset($_SESSION['admin']);
 //Reset OAuth access token
   $gClient->revokeToken();
 

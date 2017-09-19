@@ -99,9 +99,9 @@ function loginButton($part){
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
  <link href="style.css" rel="stylesheet">
-		
-		
-		
+
+
+
 
         <style type="text/css">
 			img.wp-smiley,
@@ -116,7 +116,7 @@ function loginButton($part){
 			background: none !important;
 			padding: 1em !important;
 			}
-		
+
 
 </style>
 
@@ -168,7 +168,7 @@ function loginButton($part){
                     <li><a href="../placement/activity.php">Activities</a></li>
                       <li><a href="../placement/current.php">Current</a></li>
                       <li><a href="../placement/previous1year.php">Previous year</a></li>
-                      
+
                     </ul>
                   </li>
                   <li><a href="../contactus/index.php">Contact us</a></li>
@@ -194,18 +194,18 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>Our Amazing Team</h1>
-							
+
 						</div>
 					</div>
 				</section>
 
 
 
-				
+
 	<!--Section: Team v.4-->
-<section  class="section" style="background-image: url(../files/images/01-heading.jpg)"> 
+<section  class="section" style="background-image: url(../files/images/01-heading.jpg)">
     <!--Section sescription-->
-     <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span> 
+     <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span>
     <br>
 
     <div class="row">
@@ -221,8 +221,8 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="HOD.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="HOD.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="HOD.jpg" class="img-circle img-responsive">
@@ -243,7 +243,7 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a Head Of Department CS, PIET<br> Also 
+                        <p>Working as a Head Of Department CS, PIET<br> Also
                         <br>Handling Departmental Placement cell<br>
                         & Placement Coordinator <br>
                         <p><b>Email:-deepakmoud@poornima.org<b>
@@ -279,8 +279,8 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="ADsir.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="ADsir.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="ADsir.jpg" class="img-circle img-responsive">
@@ -301,7 +301,7 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                        <p>Working as a Assistant Professor in CS, PIET<br> Also
                         <br>Handling Departmental Placement cell<br>
                         & Placement Coordinator <br>
                         <p><b>Email:-abhi231186@gmail.com<b>
@@ -337,8 +337,8 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="nayaksir.jpg" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="Krutibash-NayakCE.jpg" style="border-radius: 40px; height:100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="nayaksir.jpg" class="img-circle img-responsive">
@@ -359,7 +359,7 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                          <p>Working as a Assistant Professor in CS, PIET<br> Also 
+                          <p>Working as a Assistant Professor in CS, PIET<br> Also
                         <br>Handling Departmental Placement cell<br>
                         & Placement Coordinator <br>
                         <p><b>Email:-kruti@poornima.org<b>
@@ -405,7 +405,7 @@ function loginButton($part){
                         <div class="card-block">
                          <h4>Mukul Kadel</h4>
                             <p>Project Head</p>
-                           
+
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-4"><i class="fa fa-repeat"></i> Click here to rotate</a>
                         </div>
@@ -418,8 +418,8 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                          <p>Poornima Institute of Engineering and Technology <br>  
-                        2nd year student 
+                          <p>Poornima Institute of Engineering and Technology <br>
+                        2nd year student
                         <p><b>Email:-2015pietcsmukul@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
@@ -474,8 +474,8 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Poornima Institute of Engineering and Technology <br>  
-                        2nd year student 
+                        <p>Poornima Institute of Engineering and Technology <br>
+                        2nd year student
                         <p><b>Email:-2015pietcsbhanu@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
@@ -512,7 +512,7 @@ function loginButton($part){
                             <img src="tiwari.jpg" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
-                        <div class="avatar"><img src="tiwari.jpg" class="img-circle img-responsive" style="border-radius: 50px; height: 100%">
+                        <div class="avatar"><img src="tiwari_thumb.jpg" class="img-circle img-responsive" style="border-radius: 50px; height: 100%">
                         </div>
 
                         <!--Content-->
@@ -531,8 +531,8 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                      <p>Poornima Institute of Engineering and Technology <br>  
-                        2nd year student 
+                      <p>Poornima Institute of Engineering and Technology <br>
+                        2nd year student
                         <p><b>Email:-2015pietcsashutosh@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
@@ -565,8 +565,8 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="gaurav.JPG" style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="gaurav.JPG" style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="gaurav.JPG" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -587,8 +587,8 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                        <p>Poornima Institute of Engineering and Technology <br>  
-                        2nd year student 
+                        <p>Poornima Institute of Engineering and Technology <br>
+                        2nd year student
                         <p><b>Email:-2015pietcsgaurav034@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
@@ -621,8 +621,8 @@ function loginButton($part){
                     <div class="face front">
 
                         <!-- Image-->
-                        <div class="card-up">
-                            <img src="1.jpg"style="border-radius: 40px; height: 350px; width: 100%;">
+                        <div class="card-up" align="center">
+                            <img src="1.jpg"style="border-radius: 40px; height: 100%;">
                         </div>
                         <!--Avatar-->
                         <div class="avatar"><img src="1.jpg" class="img-circle img-responsive" style="border-radius: 50px;">
@@ -643,8 +643,8 @@ function loginButton($part){
                         <!--Content-->
                         <h4>About me</h4>
                         <hr>
-                       <p>Poornima Institute of Engineering and Technology <br>  
-                        2nd year student 
+                       <p>Poornima Institute of Engineering and Technology <br>
+                        2nd year student
                         <p><b>Email:-2015pietcsayush@poornima.org<b>
                         <hr>
                         <!--Social Icons-->
@@ -732,7 +732,7 @@ function loginButton($part){
                   <li style="font-size:1.4em"><a href="../placement/activity.php">Placement Activities</a></li>
                   <li style="font-size:1.4em"><a href="../placement/current.php">Current</a></li>
                   <li style="font-size:1.4em"><a href="../placement/previous1year.php">Previous  year</a></li>
-                
+
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -783,7 +783,7 @@ function loginButton($part){
                     <li><a href="../placement/activity.php">Activities</a></li>
                                         <li><a href="../placement/current.php">Current</a></li>
                                         <li><a href="../placement/previous1year.php">Previous year</a></li>
-                                
+
                                     </ul>
                                 </li>
                                 <li><a href="../contactus/index.php">Contact us</a></li>
@@ -813,16 +813,16 @@ function loginButton($part){
 
 <!-- JQuery card -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    
+
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
-    
+
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    
+
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
-    
+
 
 </body>
 

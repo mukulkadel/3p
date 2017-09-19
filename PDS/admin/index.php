@@ -92,8 +92,8 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 				<section class="contact-map-wrapper">
 
-					
-					<br><br>	
+
+					<br><br>
 
 <div class="container">
 <div class="col-sm-3 col-md-3">
@@ -106,7 +106,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
       </form>
 
 	  	<br/>
-    <label>On the bases of Backlogs-:</label>
+    <label>On the basis of Backlogs-:</label>
 	<!--filter according backlogs-->
       <form method="post" action="search.php">
       <input type="number" name="subm" onKeyUp="searchq()" onchange="searchq()"/>Backlogs
@@ -138,7 +138,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 	<div id="Ash" class="collapse">
 
 	<div style="overflow-y:scroll; height:200px">
-	<label>On the bases of languages-:</label>
+	<label>On the basis of languages-:</label>
 	 <form  method="post" action="search.php" onClick="searchq()">
 	 <input type="checkbox" name="a" value="C" />C<br/>
 	 <input type="checkbox" name="b" value="CPP" />C++<br/>
@@ -193,7 +193,7 @@ if(!isset($_SESSION["admin"])||!isset($_SESSION["email"]))
 
 <a href="#Eminem" aria-expanded="false" class="btn btn-default" style="height:40px; width:200px" data-toggle="collapse">percentage(Sliders)</a>
 <div  id="Eminem" class="collapse">
-	   <label>On the bases of percentage-:</label>
+	   <label>On the basis of percentage-:</label>
 
 
  <form onchange="searchq()" method="post" action="search.php">
