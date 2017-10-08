@@ -240,7 +240,7 @@ if($_POST['ae']!="")
            $reg_no=$rows['reg_no'];
            $output.="<tr><td>".$rows['reg_no']."</td><td>".$rows['name']."</td><td><button onclick=\"showDetails('$reg_no')\">Show Details</button></td></tr>\n";
           }
-		   $output.="<center><tr><td>".'<input type="button" value="Excel Format" class="btn btn-success"  onclick="location.href = \'http://localhost/3p/PDS/admin/excel.php\' ;"/>'."</td><td></center>";
+		   $output.="<center><tr><td>".'<input type="button" value="Excel Format" class="btn btn-success"  onclick="location.href = \'./excel.php\' ;"/>'."</td><td></center>";
          $output.="</table>";
      }
      else{

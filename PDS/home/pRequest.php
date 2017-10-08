@@ -22,7 +22,7 @@ if(isset($_REQUEST["submit"])&&$_REQUEST["submit"]=="Request update"){
     $query="insert into requests(reg_no";
     //adding column names in query
     foreach ($_REQUEST as $key => $value) {
-      if($key!="otherValue"&&$key!="submit")
+      if($key!="otherValue"&&$key!="submit"&&$key!="X-Mapping-hflcknee"&&$key!="PHPSESSID")
       $query.=",".$key;
     }
 
@@ -32,7 +32,7 @@ if(isset($_REQUEST["submit"])&&$_REQUEST["submit"]=="Request update"){
     if(isset($_REQUEST["other"])&&$_REQUEST["other"]=="other")
       $f=1;
     foreach ($_REQUEST as $key => $value) {
-      if(($key!="other"&&$key!="submit"&&$key!="otherValue")||($f==1&&$key=="otherValue"))
+      if(($key!="other"&&$key!="submit"&&$key!="otherValue"&&$key!="X-Mapping-hflcknee"&&$key!="PHPSESSID")||($f==1&&$key=="otherValue"))
       $query.=",'".$value."'";
     }
     $query.=");";
