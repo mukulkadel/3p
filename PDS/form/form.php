@@ -66,7 +66,7 @@ $text6=$_POST['text6'];
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+									<li><a href="../acadmic/index.php" class="has-submenu">Academic</a>
 										<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 

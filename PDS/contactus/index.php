@@ -144,7 +144,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
  <ul>
                   <li><a href="../index.php">Home</a></li>
-                  <li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+                  <li><a href="../acadmic/index.php" class="has-submenu">Academic</a>
                       <ul class="sub-menu">
                       <li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -155,7 +155,7 @@ function loginButton($part){
                   </li>
                   <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
                     <ul class="sub-menu">
-                    <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                    <li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
                                             <li><a href="../recruiters/gallery.php">Gallery</a></li>
                                             <li><a href="../recruiters/present.php">Present</a></li>
                                             <li><a href="../recruiters/upcoming.php">Upcoming </a></li>
@@ -203,10 +203,8 @@ function loginButton($part){
 
 
 	<!--Section: Team v.4-->
-<section  class="section" style="background-image: url(../files/images/01-heading.jpg)">
+<section  class="section" style="background-image: url(../files/images/01-heading.jpg)" >
     <!--Section sescription-->
-     <h2 class="section-description" style="color: white;"><span > Faces Behind The Project</h2></span>
-    <br>
 
     <div class="row">
 
@@ -404,7 +402,7 @@ function loginButton($part){
                         <!--Content-->
                         <div class="card-block">
                          <h4>Mukul Kadel</h4>
-                            <p>Project Head</p>
+                            <p>Team Leader</p>
 
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-4"><i class="fa fa-repeat"></i> Click here to rotate</a>
@@ -630,7 +628,7 @@ function loginButton($part){
                         <!--Content-->
                         <div class="card-block">
                             <h4>Ayush Bhaskar</h4>
-                            <p><b>Designer</b></p>
+                            <p><b>Designer, Content Writer</b></p>
                             <!--Triggering button-->
                             <a class="rotate-btn" data-card="card-8"><i class="fa fa-repeat"></i> Click here to rotate</a>
                         </div>
@@ -771,7 +769,7 @@ function loginButton($part){
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Recruiters</a>
                                     <ul class="sub-menu">
-                                       <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                                       <li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
                                             <li><a href="../recruiters/gallery.php">Gallery</a></li>
                                             <li><a href="../recruiters/present.php">Present</a></li>
                                             <li><a href="../recruiters/upcoming.php">Upcoming </a></li>

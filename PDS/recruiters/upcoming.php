@@ -103,7 +103,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+									<li><a href="../acadmic/index.php" class="has-submenu">Academic</a>
 										<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -114,7 +114,7 @@ function loginButton($part){
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
-											<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+											<li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
 											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
@@ -126,7 +126,7 @@ function loginButton($part){
 										<li><a href="../placement/activity.php"> Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous year</a></li>
-										
+
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -153,13 +153,16 @@ function loginButton($part){
 					<div class="container">
 						<div class="page-name">
 							<h1>upcoming recruiters</h1>
-							
+
 						</div>
 					</div>
 				</section>
 
 				<section >
-					<marquee><h2> <mark>Update Soon For Session 2017-18</mark> </h2></marquee>
+					<marquee>
+						<img src="../files/images/gallery/28.png" style="height:150px;"/>
+						<span style="width:10px;"></span>
+					</marquee>
 				</section>
 
         <footer class="footer">
@@ -223,7 +226,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous  year</a></li>
-                 
+
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -262,7 +265,7 @@ function loginButton($part){
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
-    								<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+    								<li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
 											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
@@ -274,7 +277,7 @@ function loginButton($part){
     									<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous  year</a></li>
-    									
+
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>

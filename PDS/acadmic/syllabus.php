@@ -103,7 +103,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								 <ul>
                   <li><a href="../index.php">Home</a></li>
-                  <li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+                  <li><a href="../acadmic/index.php" class="has-submenu">Academic</a>
                       <ul class="sub-menu">
                       <li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -114,7 +114,7 @@ function loginButton($part){
                   </li>
                   <li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
                     <ul class="sub-menu">
-                     <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                     <li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
 					<li><a href="../recruiters/gallery.php">Gallery</a></li>
 						<li><a href="../recruiters/present.php">Present</a></li>
 						<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
@@ -459,7 +459,7 @@ function loginButton($part){
                   </li>
                   <li class="menu-item-has-children"><a href="#">Recruiters</a>
                     <ul class="sub-menu">
-                     <li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+                     <li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
 											<li><a href="../recruiters/present.php">Present</a></li>
 											<li><a href="../recruiters/upcoming.php">Upcoming </a></li>

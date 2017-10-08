@@ -78,7 +78,7 @@ function loginButton($part){
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
-	
+
 
 </head>
 <body>
@@ -104,7 +104,7 @@ function loginButton($part){
 							<nav class="main-navigation pull-right hidden-xs hidden-sm">
 								<ul>
 									<li><a href="../index.php">Home</a></li>
-									<li><a href="../acadmic/index.php" class="has-submenu">Acadmic</a>
+									<li><a href="../acadmic/index.php" class="has-submenu">Academic</a>
 											<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -115,11 +115,11 @@ function loginButton($part){
 									</li>
 									<li><a href="../recruiters/index.php" class="has-submenu">Recruiters</a>
 										<ul class="sub-menu">
-										<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+										<li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
 											<li><a href="../recruiters/gallery.php">Gallery</a></li>
     									<li><a href="../recruiters/present.php">Present</a></li>
     									<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
-									
+
 
 										</ul>
 									</li>
@@ -129,7 +129,7 @@ function loginButton($part){
 										<li><a href="../placement/activity.php">Activities</a></li>
 											<li><a href="../placement/current.php">Current</a></li>
 											<li><a href="../placement/previous1year.php">Previous year</a></li>
-											
+
 										</ul>
 									</li>
 									<li><a href="../contactus/index.php">Contact us</a></li>
@@ -165,7 +165,7 @@ function loginButton($part){
             <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#ppp">About Placement Cell</a></li>
               <li><a data-toggle="tab" href="#sst">Message</a></li>
-             
+
             </ul>
           <div class="tab-content">
               <br>
@@ -189,7 +189,7 @@ function loginButton($part){
 								The Training and Placement Cell imparts training to students from the first year onwards giving emphasis to motivational skills, communication skills, interpersonal relationships, leadership qualities, group discussions and interview techniques. Resource persons and professionals from reputed Industries and Institutions along with college faculties train the students. The Training and Placement Cell provides the infra-structural facilities to conduct group discussions, tests and interviews besides catering to other logistics. <br>
 
 								The department of Computer Engineering provides its students the best in life, with placement centre functioning in the campus under the able administration with the assistance of an experienced faculty in each discipline. The very active placement centre serves as a foundation for many careers by guiding students in right direction through continuous counselling and arranging for campus recruitments. This centre creates a meticulous database and assists the students in getting placed in national & multinational companies through campus recruitment.The Placement Cell also helps the weak students to improve their academic performance by counselling. This cell also helpings students to improve their command on English language & Communication skill.The database of the students is managed by the cell, which plays a critical role in getting jobs for the alumni.Alumni are visiting regularly to motivate and share experience regarding current market scenario as well as placement drives.<br>
-                  
+
                 </div>
                 <div id="ob" class="tab-pane fade" align="justify">
                   <br>
@@ -201,20 +201,20 @@ function loginButton($part){
 								•	Organize activities concerning career planning.<br>
 								•	Act as a bridge between students, alumni and employers.
 
-                 
-                    
+
+
                 </div>
                 <div id="inc" class="tab-pane fade" align="justify">
                   <br>
                   <h3>Mission</h3>
                   The mission of Training and Placement Cell of the department is to achieve maximum placement for students through dedication, attitude and complete involvement.To achieve 100% placement for students through dedication, attitude and complete involvement is our mission. <br>
-								The cell conducts training activities for the students mainly focusing on Career planning, Personality Development Industry- Institute Interaction, off site training, Industrial visits, Campus placements, Entrepreneurship Development. Continuous interaction of the cell with the industries also helps in achieving the above goals & motivating students to contribute in this direction.<br> 
+								The cell conducts training activities for the students mainly focusing on Career planning, Personality Development Industry- Institute Interaction, off site training, Industrial visits, Campus placements, Entrepreneurship Development. Continuous interaction of the cell with the industries also helps in achieving the above goals & motivating students to contribute in this direction.<br>
 								Training and Placement Cell arranges and coordinates various programmes that aim at moulding the students so as to meet the expectations in career building and in turn bring glory to the parent institution. In this regard, we organize common placement programs and guide the students for campus recruitments conducted in Poornima Foundation and other reputed institutions.<br>
 								• To focus on Placement from the day one.<br>
 								• To impart the importance of Human Values to our students.<br>
 								• To help the students to get confidence psychologically to meet the reality of life and outshine in their field.<br>
 								• To maintain a regular relationship with companies and train the students according to their expectations.<br>
-                    
+
                 </div>
                 <div id="to" class="tab-pane fade">
                   <br>
@@ -227,7 +227,7 @@ function loginButton($part){
 								• Creating enthusiastic competent personalities.<br>
 								• Empowering the students with Values and professional skills to get placed in the appropriate field.<br>
 								• Students expertise themselves.
-                   
+
                 </div>
                 </div>
                 </div>
@@ -247,9 +247,9 @@ function loginButton($part){
 					Department of Computer Engineering has proved its mettle by standing amongst top department of Poornima Foundation and by providing best placement within short span of 8 years.<br>
 					Our collaboration with various industries has resulted in mutual benefits both for the students, as well for the industry. We encourage all private and government sector organizations to participate in the recruitment process towards the overall development of the students.<br>
 					It is a matter of honor to mention here that our placement process is a culmination of a strong training structure, which includes technical training, industry oriented trainings, aptitude, communication, soft skills life skills training throughout the year. With great pleasure and honour, we invite industrial & corporate houses at our department and to meet our students to share a common platform towards the overall growth of the nation.
-                   
+
                 </div>
-               
+
                 <div id="sy" class="tab-pane fade" align="justify">
                 <br>
                 <h3>TPO message</h3>
@@ -259,11 +259,11 @@ function loginButton($part){
          </section>
 
 
-   
-				
-	
 
-			
+
+
+
+
 
         <footer class="footer">
           <div class="three spacing"></div>
@@ -325,7 +325,7 @@ function loginButton($part){
                   <li><a href="../placement/activity.php">Placement Activities</a></li>
                   <li><a href="../placement/current.php">Current</a></li>
                   <li><a href="../placement/previous1year.php">Previous year</a></li>
-                 
+
                 </ul>
               </div>
               <div class="spacing"></div>
@@ -355,7 +355,7 @@ function loginButton($part){
     					<nav class="responsive-menu">
     						<ul>
     							<li><a href="../index.php">Home</a></li>
-    							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Acadmic</a>
+    							<li class="menu-item-has-children"><a href="../acadmic/index.php" >Academic</a>
     									<ul class="sub-menu">
 											<li><a href="../acadmic/planning.php">Planning</a></li>
 
@@ -366,7 +366,7 @@ function loginButton($part){
     							</li>
     							<li class="menu-item-has-children"><a href="#">Recruiters</a>
     								<ul class="sub-menu">
-    								<li><a href="../recruiters/eminent receuiters.php">Eminent Receuiters</a></li>
+    								<li><a href="../recruiters/eminent recruiters.php">Eminent Recruiters</a></li>
     									<li><a href="../recruiters/gallery.php">Gallery</a></li>
     									<li><a href="../recruiters/present.php">Present</a></li>
     									<li><a href="../recruiters/upcoming.php">Upcoming </a></li>
@@ -378,7 +378,7 @@ function loginButton($part){
     								<li><a href="../placement/activity.php">Activities</a></li>
     									<li><a href="../placement/current.php">Current</a></li>
     									<li><a href="../placement/previous1year.php">Previous year</a></li>
-    									
+
     								</ul>
     							</li>
     							<li><a href="../contactus/index.php">Contact us</a></li>
